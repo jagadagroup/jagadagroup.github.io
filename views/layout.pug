@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    block google
+    block metaseo
+    block links
+      link(rel='stylesheet', href='/stylesheets/global.css')
+      link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css')
+      link(rel='stylesheet', type='text/css', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href ='/stylesheets/layout.css')
+  body
+    include menu
+    .page
+      header
+        block header
+      block content
+      footer
+        block footer
+    i.fa.fa-bars.fa-2x
+    block scripts

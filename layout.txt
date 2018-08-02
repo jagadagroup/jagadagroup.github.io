@@ -1,0 +1,23 @@
+jumbotron:
+somethings aren't too good to be true
+experience the quality with us
+
+background image transition layout
+https://www.iconinc.co.uk/
+
+flow
+https://www.docker.com
+
+space-filler
+full fill
+https://www.escea.com/nz/
+modern empty fill
+http://jp-portfolio-210c45.webflow.io/
+
+image on hover: zoom
+
+revolving text around logo
+http://portion.io/
+
+Content:
+What previous clients say?
