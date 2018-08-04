@@ -1,9 +1,15 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title} #{omega}
-  p how are you?
-  //- include menu
+append links
+  link(rel='stylesheet', type='text/css', href='/stylesheets/index.css')
 
+block content
+  article
+    .jumbotron.jumbotron-fluid
+      .container
+        h1.display-4 jagada industries
+        h2.lead Pioneers in non metal powder metallurgy
+  
+append footer
+  include footer.pug
   script(type='text/javascript', src='/javascripts/index.js')

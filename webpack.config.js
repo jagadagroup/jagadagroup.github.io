@@ -1,11 +1,12 @@
 var webpack = require('webpack');
 var path = require('path');
+var glob = require('glob');
 
 module.exports = {
     entry: {
-        index: [
+        master: [
             'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
-            './public/javascripts/index.js'
+            // glob.sync('./public/javascripts')
         ]
     },
     output: {

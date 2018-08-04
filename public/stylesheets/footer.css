@@ -1,0 +1,57 @@
+address {
+  margin: 0; }
+
+.p-0 {
+  padding: 0; }
+
+.footer {
+  background-image: url(../images/171109_06_49_10_5DSR4201.0.jpg);
+  background-repeat: no-repeat;
+  background-position: center; }
+  .footer * {
+    color: #FFF;
+    font-size: 14px; }
+  .footer .input-group-prepend > .input-group-text {
+    color: grey !important; }
+  .footer button.input-group-text {
+    background: #007bff; }
+  .footer > img {
+    filter: grayscale(70%) contrast(60%) brightness(140%); }
+  .footer > .overlap {
+    position: relative;
+    background: rgba(0, 0, 0, 0.55);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .footer a {
+    text-transform: capitalize; }
+
+.newsletter {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px; }
+  .newsletter input[type=submit] {
+    font-size: .85rem;
+    font-weight: 700px; }
+
+.gold {
+  color: gold; }
+
+.social-footer {
+  width: 100%;
+  height: 30px;
+  background: gold; }
+
+@media (min-width: 992px) {
+  .footer-row {
+    padding: 0 10rem; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-row {
+    padding: 0 4rem; } }
+
+@media (max-width: 767.98px) {
+  .footer-row {
+    padding: 0 1rem; } }
+
+/*# sourceMappingURL=footer.css.map */

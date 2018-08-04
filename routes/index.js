@@ -3,14 +3,13 @@ var router = express.Router();
 // var path = require('path');
 // var fs = require('fs');
 var menu = require('../data/menu.json');
+var products = require('../data/products.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
-    omega: 'alpha',
-    title: 'Express',
     menu: menu,
-    text: 'text'
+    products: products
   });
 });
 

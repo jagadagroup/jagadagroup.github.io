@@ -1,0 +1,52 @@
+link(rel='stylesheet', type='text/css', href='/stylesheets/footer.css')
+.footer
+    //- img.img-fluid(alt='Jagada Industry Office', src='/images/171109_06_49_10_5DSR4201.0.jpg')
+    .overlap
+        .container-fluid
+            .row
+            .row.pb-3.footer-row.d-flex.justify-content-between
+                ul.col-6.col-md-3.col-lg-2.p-2
+                    li.gold PRODUCTS
+                    each product in products
+                        li
+                            a(href!=product.href) #{product.name}
+                ul.col-6.col-md-3.col-lg-2.p-2
+                    li.gold COMPANY
+                    li #[a(href='about-us') About Us]
+                    li #[a(href='customers') Customers]
+                    li #[a(href='press') Press]
+                    li #[a(href='jobs') Jobs]
+                ul.col-6.col-md-3.col-lg-2.p-2
+                    li.gold RESOURCES
+                    li #[a(href='resource-center') Resource Center]
+                    li #[a(href='blogs') Blogs]
+                ul.col-6.col-md-3.col-lg-2.p-2
+                    li.gold SUPPORT
+                    li #[a(href='help-center') Help Center]
+                    li #[a(href='product-status') Product Status]
+                    li #[a(href='support') Support]
+                .col-12.col-md-7.col-lg-5.mt-3.p-0
+                    form.newsletter.py-2.px-3.w-100
+                        h6 Sign up for our newsletter
+                        p.mb-1 Keep up with the latest new in industry
+                        .form-group.d-flex.flex-row
+                            .input-group
+                                .input-group-prepend
+                                    span.input-group-text @
+                                input.form-control(type='email', placeholder='ben@example.com')
+                                .input-group-append.d-md-none
+                                    button.input-group-text
+                                        i.fa.fa-paper-plane
+                            input.btn.btn-primary.d-none.d-md-block.ml-4(type='submit', value='SUBSCRIBE')
+                //- .col-lg-3.d-none.d-lg-block
+                    .social-footer
+                ul.col-12.col-md-4.col-lg-3.p-2
+                    li.gold.mb-1 CONNECT WITH US
+                    li.mb-2(itemprop='telephone') #[i.fa.fa-phone.mr-3] #[a(href='tel:+919000060000') +91-900-006-0000]
+                    li.mb-2.d-flex.flex-row.align-items-center #[i.fa.fa-address-card.mr-3]
+                        address 
+                            | 16 Berkeley Court #[br]
+                            | Manor Park, Runcorn, Cheshire #[br]
+                            | WA7 1TQ United Kingdom
+                    li #[i.fa.fa-envelope.mr-3]
+                        a(href='mailto:sales@lpwtechnology.com') sales@lpwtechnology.com
