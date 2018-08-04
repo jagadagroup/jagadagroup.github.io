@@ -2,7 +2,16 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
+}
+
+#logo {
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+    z-index: 100;
+}
 
 .page {
     position: absolute;
@@ -18,7 +27,5 @@ ul {
 }
 
 .carousel {
-    img {
-        
-    }
+    img {}
 }

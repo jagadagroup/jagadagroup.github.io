@@ -1,12 +1,14 @@
 @import '../../node_modules/bootstrap/scss/_functions.scss';
 @import '../../node_modules/bootstrap/scss/_variables.scss';
 @import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
-
-$coquelicot : #E93700;
+$coquelicot: #E93700;
 $pale-black: #445D6E;
-
 .text-center {
     text-align: center;
+}
+
+.salmon {
+    color: salmon;
 }
 
 article {
@@ -14,7 +16,9 @@ article {
     background-repeat: no-repeat;
     filter: grayscale(20%);
     background-size: cover;
-    h1, h2, .video {
+    h1,
+    h2,
+    .video {
         color: #FFF;
     }
     .fa-play-circle {
@@ -25,20 +29,37 @@ article {
 .jumbotron {
     background: transparent;
     .display-4 {
-        text-transform: capitalize;
+        text-transform: uppercase;
+        font-family: Roboto, sans-serif;
+        font-size: 100px;
+        color: #FFF;
+    }
+    h2.lead {
+        margin-left: 1rem;
+        font-size: 1.75rem;
+    }
+    @include media-breakpoint-down(md) {
+        padding-bottom: 1rem;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 4rem;
     }
 }
+
 .video {
     i {
         font-size: 60px;
     }
 }
+
 .catchy {
-    b, p {
+    b,
+    p {
         color: #FFF;
         font-family: 'Roboto', sans-serif;
     }
 }
+
 .xtra {
     a {
         background: $coquelicot;
@@ -48,7 +69,7 @@ article {
         transition: all .3s;
         &:hover {
             text-decoration: none;
-            box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.15);
+            box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.15);
         }
     }
     p {
@@ -56,9 +77,62 @@ article {
     }
 }
 
+#head-points {
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+}
+
+.head-point {
+    @include media-breakpoint-up(lg) {
+        h4 {
+            font: 25px/150% Roboto, sans-serif;
+            color: #FFF;
+        }
+        p {
+            font: 18px/150% Roboto, sans-serif;
+            color: #FFF;
+        }
+    }
+    @include media-breakpoint-only(md) {
+        h4 {
+            font: 18px/150% Roboto, sans-serif;
+            color: #FFF;
+        }
+        p {
+            font: 14px/150% Roboto, sans-serif;
+            color: #FFF;
+        }
+    }
+}
+
+.em-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 1px solid #ffb606;
+    text-align: center;
+    line-height: 150px;
+    color: #ffb606;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.em-head {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.em-para {
+    color: grey;
+    font-size: 14px;
+}
+
 .gold {
     color: gold;
 }
+
 .coquelicot {
     color: $coquelicot;
 }
@@ -93,16 +167,20 @@ article {
         font-family: 'Roboto', sans-serif;
     }
     p {
-        font-family: 'Open Sans',sans-serif;
+        font-family: 'Open Sans', sans-serif;
         line-height: 24px;
         color: $pale-black;
         font-family: 'Roboto Condensed', sans-serif;
+    }
+    img {
+        width: 10rem;
+        height: 10rem;
     }
 }
 
 .partner {
     // background: linear-gradient(45deg, rgba(19,60,85,1) 0%, rgba(129,164,205,1) 100%);
-    background: rgba(19,60,85,1);
+    background: rgba(19, 60, 85, 1);
     color: #FFF;
     h3 {
         font-size: 1.5rem;
@@ -122,15 +200,13 @@ article {
             padding: 1rem;
         }
     }
-
     a {
         color: #FFF;
-        border-radius: 3px;
-        // background: rgba(0,0,0,0.5);
+        border-radius: 3px; // background: rgba(0,0,0,0.5);
         background: #E93700;
         &:hover {
             text-decoration: none;
-            box-shadow: 0px 0px 25px 10px rgba(255,255,255,0.1);
+            box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, 0.1);
         }
     }
 }

@@ -1,12 +1,17 @@
 .text-center {
   text-align: center; }
 
+.salmon {
+  color: salmon; }
+
 article {
   background-image: url(../images/89037944.jpg);
   background-repeat: no-repeat;
   filter: grayscale(20%);
   background-size: cover; }
-  article h1, article h2, article .video {
+  article h1,
+  article h2,
+  article .video {
     color: #FFF; }
   article .fa-play-circle {
     cursor: pointer; }
@@ -14,12 +19,25 @@ article {
 .jumbotron {
   background: transparent; }
   .jumbotron .display-4 {
-    text-transform: capitalize; }
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-size: 100px;
+    color: #FFF; }
+  .jumbotron h2.lead {
+    margin-left: 1rem;
+    font-size: 1.75rem; }
+  @media (max-width: 991.98px) {
+    .jumbotron {
+      padding-bottom: 1rem; } }
+  @media (min-width: 992px) {
+    .jumbotron {
+      padding-bottom: 4rem; } }
 
 .video i {
   font-size: 60px; }
 
-.catchy b, .catchy p {
+.catchy b,
+.catchy p {
   color: #FFF;
   font-family: 'Roboto', sans-serif; }
 
@@ -35,6 +53,47 @@ article {
 
 .xtra p {
   color: #FFF; }
+
+#head-points {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 5px; }
+
+@media (min-width: 992px) {
+  .head-point h4 {
+    font: 25px/150% Roboto, sans-serif;
+    color: #FFF; }
+  .head-point p {
+    font: 18px/150% Roboto, sans-serif;
+    color: #FFF; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .head-point h4 {
+    font: 18px/150% Roboto, sans-serif;
+    color: #FFF; }
+  .head-point p {
+    font: 14px/150% Roboto, sans-serif;
+    color: #FFF; } }
+
+.em-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 1px solid #ffb606;
+  text-align: center;
+  line-height: 150px;
+  color: #ffb606;
+  font-weight: 600;
+  font-size: 30px; }
+
+.em-head {
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px; }
+
+.em-para {
+  color: grey;
+  font-size: 14px; }
 
 .gold {
   color: gold; }
@@ -68,10 +127,14 @@ article {
   font-family: 'Roboto', sans-serif; }
 
 .info p {
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 24px;
   color: #445D6E;
   font-family: 'Roboto Condensed', sans-serif; }
+
+.info img {
+  width: 10rem;
+  height: 10rem; }
 
 .partner {
   background: #133c55;

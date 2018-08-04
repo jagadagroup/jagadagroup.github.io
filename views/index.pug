@@ -9,33 +9,84 @@ block content
       .container
         h1.display-4 jagada industries
         h2.lead Pioneers in non metal powder metallurgy
-        .video.d-flex.justify-content-center
+        .video.d-flex.justify-content-center.mt-5
           i.fa.fa-play-circle
-        .catchy.w-100
-          b Somethings aren't too good to be true
-          p Experience the quality with us
         .xtra.d-flex.flex-column.align-items-center
           a.py-2.px-5.mt-5(href='about-us') Get Started
-          p Locate us at: 40° 41.23' N; 56° 11.59' W
 
+    .container-fluid.px-5.d-none.d-md-block
+      #head-points.row.p-2
+        .head-point.fade-stagger.col-md-6.col-lg-3
+          .head-inside
+            h4
+              span Global Leaders in&nbsp;
+              span.salmon Industry
+            p We produce non metal powders and products through Metallurgical processes and Metallurgical standards
+
+        .head-point.fade-stagger.col-md-6.col-lg-3
+          .head-inside
+            h4.salmon Quality standards
+            p Particle size of every powdered products are maintained throughout every process in every mesh sizes
+
+        .head-point.fade-stagger.col-md-6.col-lg-3
+          .head-inside
+            h4 Why Us?
+            p We guarantee for the best quality in the market with an affordable price along with a prompt delivery nationally or overseas
+
+        .head-point.fade-stagger.col-md-6.col-lg-3
+          .head-inside
+            h4
+              span Advanced&nbsp;
+              span.salmon Instrumentation
+            p Metal compositions are checked before and after alloying through OES (Optical Emission Spectroscopy)
+
+    
+    .xtra.d-flex.flex-column.align-items-center.my-3
+      p Locate us at: 40° 41.23' N; 56° 11.59' W
 
   section.info.container-fluid
 
     .row.d-flex.flex-column.align-items-center.mb-4
       h2.text-center Begin your journey of Quality Products with us
-      p.text-center The apps already are getting increasingly difficult and expensive to maintain. Docker Enterprise Edition optimizes existing apps while accelerating new app delivery.
+      p.text-center Somethings aren't too good to be true. Experience the quality with us.
 
     .row.d-flex.justify-content-center.p-4
-      .col-12.col-md-6.col-lg-3
+      .col-12.col-md-6.col-lg-3.d-flex.flex-column.align-items-center
+        img.mb-3(src='/svgs/horse.svg', alt='cost efficiency')
         h4 Cost efficiency
-        p Migrating to Docker EE containers can reduce total costs by 50% - from consolidating infrastructure to dramatically streamlining IT tasks like provisioning, scaling and applying updates.
-      .col-12.col-md-6.col-lg-3
+        p.text-center Migrating to Docker EE containers can reduce total costs by 50% - from consolidating infrastructure to dramatically streamlining IT tasks like provisioning, scaling and applying updates.
+      .col-12.col-md-6.col-lg-3.d-flex.flex-column.align-items-center
+        img.mb-3(src='/svgs/001-microscope.svg', alt='level of security')
         h4 New Level of Security
-        p Docker Enterprise delivers end to end security capabilities that can be applied to traditional apps to reduce the attack surface area, proactively mitigate risk and continuously monitor for vulnerabilities.
-      .col-12.col-md-6.col-lg-3
+        p.text-center Docker Enterprise delivers end to end security capabilities that can be applied to traditional apps to reduce the attack surface area, proactively mitigate risk and continuously monitor for vulnerabilities.
+      .col-12.col-md-6.col-lg-3.d-flex.flex-column.align-items-center
+        img.mb-3(src='/svgs/flask.svg', alt='level of security')
         h4 New Level of Security
-        p Docker Enterprise delivers end to end security capabilities that can be applied to traditional apps to reduce the attack surface area, proactively mitigate risk and continuously monitor for vulnerabilities.
+        p.text-center Docker Enterprise delivers end to end security capabilities that can be applied to traditional apps to reduce the attack surface area, proactively mitigate risk and continuously monitor for vulnerabilities.
 
+
+  
+  section#inspired.container-fluid.p-5
+    .row.d-flex
+      .emulate.col-12.col-md-4.col-lg-3.d-flex.flex-column.align-items-center
+        .em-circle 1992
+        .em-head mt-3 since
+        .em-para We are the leading brand
+      
+      .emulate.col-12.col-md-4.col-lg-3.d-flex.flex-column.align-items-center
+          .em-circle 1992
+          .em-head mt-3 since
+          .em-para We are the leading brand
+      
+      .emulate.col-12.col-md-4.col-lg-3.d-flex.flex-column.align-items-center
+        .em-circle.d-none.d-md-block 1992
+        .em-head.d-none.d-md-block mt-3 since
+        .em-para.d-none.d-md-block We are the leading brand
+      
+      .emulate.col-12.col-md-4.col-lg-3.d-flex.flex-column.align-items-center
+        .em-circle.d-none.d-lg-block 1992
+        .em-head.d-none.d-lg-block mt-3 since
+        .em-para.d-none.d-lg-block We are the leading brand
 
   section.partner.container-fluid
 
@@ -50,7 +101,7 @@ block content
 
       .col-12.col-md-6.col-lg-7.d-none.d-sm-block
         .row.d-flex.flex-column.mt-5.ml-5
-          i.fa.fa-quote-left.quotes.mb-5.d-block
+          i.fa.fa-quote-left.quotes.mb-5.d-block.ml-5
           #comments.carousel.slide.mb-5.d-block(data-ride='carousel')
             .carousel-inner
               each comment, index in comments
