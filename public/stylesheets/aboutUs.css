@@ -1,0 +1,17 @@
+.about-us .row:first-child > div:first-child {
+  background-color: #133C55;
+  padding: 5rem 0; }
+  .about-us .row:first-child > div:first-child h4, .about-us .row:first-child > div:first-child a {
+    color: #FFF; }
+
+.about-us .row:first-child > div:nth-child(2) {
+  padding: 5rem 0;
+  background-color: whitesmoke; }
+  .about-us .row:first-child > div:nth-child(2) h4, .about-us .row:first-child > div:nth-child(2) a {
+    color: #444; }
+
+.about-us .contact {
+  width: 7.5rem;
+  height: 7.5rem; }
+
+/*# sourceMappingURL=aboutUs.css.map */

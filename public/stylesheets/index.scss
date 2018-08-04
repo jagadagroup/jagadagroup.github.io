@@ -85,11 +85,11 @@ article {
 .head-point {
     @include media-breakpoint-up(lg) {
         h4 {
-            font: 25px/150% Roboto, sans-serif;
+            font: 22px/150% Roboto, sans-serif;
             color: #FFF;
         }
         p {
-            font: 18px/150% Roboto, sans-serif;
+            font: 16px/150% Roboto, sans-serif;
             color: #FFF;
         }
     }

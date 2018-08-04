@@ -24,4 +24,11 @@ router.get('/products', function(req, res) {
   });
 });
 
+router.get('/about-us', function(req, res) {
+  res.render('aboutUs', {
+    menu: menu,
+    products: products
+  });
+});
+
 module.exports = router;

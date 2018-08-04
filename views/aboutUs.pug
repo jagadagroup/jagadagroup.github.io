@@ -1,0 +1,25 @@
+extends layout
+
+append links
+    link(rel='stylesheet', type='text/css', href='/stylesheets/aboutUs.css')
+
+block content
+    .container-fluid.about-us
+        .row
+            .col-12.col-md-6.d-flex.flex-column.align-items-center
+                img.mb-2.contact(src='/svgs/018-physics.svg', alt='sales contact')
+                h4 SALES PERSON
+                a(href='tel:+919000060000') +91-900-006-0000
+                a(href='mailto:sales@lpwtechnology.com') sales@lpwtechnology.com
+
+            .col-12.col-md-6.d-flex.flex-column.align-items-center
+                img.mb-2.contact(src='/svgs/029-compass.svg', alt='business contact')
+                h4 SALES PERSON
+                a(href='tel:+919000060000') +91-900-006-0000
+                a(href='mailto:sales@lpwtechnology.com') sales@lpwtechnology.com
+                
+    img.img-fluid(src='/images/crafted_map.jpg', alt='location map')
+    
+
+append footer
+    script(type='text/javascript', src='/javascripts/aboutUs.js')

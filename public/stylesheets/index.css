@@ -60,10 +60,10 @@ article {
 
 @media (min-width: 992px) {
   .head-point h4 {
-    font: 25px/150% Roboto, sans-serif;
+    font: 22px/150% Roboto, sans-serif;
     color: #FFF; }
   .head-point p {
-    font: 18px/150% Roboto, sans-serif;
+    font: 16px/150% Roboto, sans-serif;
     color: #FFF; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {

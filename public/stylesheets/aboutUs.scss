@@ -1,0 +1,25 @@
+$prussian-blue: #133C55;
+$dark-pastel-blue: #81A4CD;
+
+.about-us {
+    .row:first-child>div {
+        &:first-child {
+            background-color: $prussian-blue;
+            padding: 5rem 0;
+            h4, a {
+                color: #FFF;
+            }
+        }
+        &:nth-child(2) {
+            padding: 5rem 0;
+            background-color: whitesmoke;
+            h4, a {
+                color: #444;
+            }
+        }
+    }
+    .contact {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}
