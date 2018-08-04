@@ -4,7 +4,7 @@ link(rel='stylesheet', type='text/css', href='/stylesheets/footer.css')
     .overlap
         .container-fluid
             .row
-            .row.pb-3.footer-row.d-flex.justify-content-between
+            .row.py-3.footer-row.d-flex.justify-content-between
                 ul.col-6.col-md-3.col-lg-2.p-2
                     li.gold PRODUCTS
                     each product in products
@@ -38,8 +38,12 @@ link(rel='stylesheet', type='text/css', href='/stylesheets/footer.css')
                                     button.input-group-text
                                         i.fa.fa-paper-plane
                             input.btn.btn-primary.d-none.d-md-block.ml-4(type='submit', value='SUBSCRIBE')
-                //- .col-lg-3.d-none.d-lg-block
-                    .social-footer
+                .col-lg-3.d-none.d-lg-block
+                    .social-footer.d-flex.justify-content-around.h-100.align-items-center
+                        .social-icon #[i.fa.fa-facebook]
+                        .social-icon #[i.fa.fa-twitter]
+                        .social-icon #[i.fa.fa-google-plus]
+                        .social-icon #[i.fa.fa-pinterest]
                 ul.col-12.col-md-4.col-lg-3.p-2
                     li.gold.mb-1 CONNECT WITH US
                     li.mb-2(itemprop='telephone') #[i.fa.fa-phone.mr-3] #[a(href='tel:+919000060000') +91-900-006-0000]

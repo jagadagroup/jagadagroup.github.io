@@ -1,0 +1,26 @@
+extends layout
+
+append links
+    link(rel='stylesheet', type='text/css', href='/stylesheets/products.css')
+
+block content
+    section.page-holder
+        #parallelogram-holder.d-flex.flex-row
+            each parallel, index in parallelogram
+                .parallelogram(style={'background-image': 'url(' + parallel.url + ')'})
+        .parallelogram-info.pt-2.pb-4.w-100
+            h3
+
+    //- section#tech-data.row.w-100
+        .col-3
+            .d-flex.align-items-center.justify-content-around.p-3.mx-3
+                .tech-logo.d-flex.justify-content-center.align-items-center
+                    i.fa
+                .tech-datum.d-flex.flex-column
+                    span.tech-value.d-flex.justify-content-start
+                        span
+                        span.mr-1
+                    span.tech-head
+
+block footer
+    script(type='text/javascript', src='/javascripts/products.js')

@@ -1,0 +1,88 @@
+.page-holder {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  overflow: hidden; }
+
+#parallelogram-holder {
+  overflow-x: hidden;
+  height: 100%;
+  width: 120vw;
+  transform: translateX(-10vw); }
+
+.parallelogram {
+  height: 100%;
+  flex: 1 1;
+  transition: flex .4s;
+  background-size: cover !important;
+  background-position-y: bottom !important;
+  box-shadow: 1px 1px 30px 2px rgba(0, 0, 0, 0.7);
+  transition: all .5s ease-out; }
+  .parallelogram:hover {
+    flex: 1.5 1; }
+  .parallelogram:nth-child(0) {
+    transform: skewX(-10deg); }
+  .parallelogram:nth-child(1) {
+    transform: skewX(-10deg); }
+  .parallelogram:nth-child(2) {
+    transform: skewX(-10deg); }
+  .parallelogram:nth-child(3) {
+    transform: skewX(-10deg); }
+  .parallelogram:nth-child(4) {
+    transform: skewX(-10deg); }
+  .parallelogram:nth-child(5) {
+    transform: skewX(-10deg); }
+  .parallelogram.active {
+    transform: skewX(-10deg);
+    transition: all .5s ease-in; }
+  .parallelogram.rejected {
+    flex: 0 1; }
+  .parallelogram.selected {
+    transform: none; }
+
+.parallelogram-info {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #FFF; }
+
+#tech-data {
+  position: absolute;
+  top: 100vh;
+  opacity: 0;
+  transform: scale(0);
+  transition: all .3s; }
+  #tech-data.active {
+    top: 60vh;
+    opacity: 1;
+    transform: scale(1); }
+  #tech-data > div > div {
+    background: #FFF;
+    border-radius: 3px; }
+
+.tech-logo {
+  border-radius: 50%;
+  color: #FFF;
+  font-size: 18px;
+  width: 70px;
+  height: 70px; }
+
+.tech-value {
+  flex-direction: row-reverse; }
+  .tech-value span:first-child {
+    font: 30px/100% Roboto, sans-serif;
+    color: #4A4A4A;
+    font-weight: bold; }
+  .tech-value span:last-child {
+    font: 16px/100% Roboto, sans-serif;
+    color: grey;
+    align-self: flex-end;
+    font-weight: bold; }
+
+.tech-head {
+  font: 16px/130% Roboto, sans-serif;
+  color: teal;
+  text-align: right;
+  font-weight: bold; }
+
+/*# sourceMappingURL=products.css.map */

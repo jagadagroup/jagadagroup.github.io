@@ -1,6 +1,142 @@
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+
+$coquelicot : #E93700;
+$pale-black: #445D6E;
+
+.text-center {
+    text-align: center;
+}
+
+article {
+    background-image: url(../images/89037944.jpg);
+    background-repeat: no-repeat;
+    filter: grayscale(20%);
+    background-size: cover;
+    h1, h2, .video {
+        color: #FFF;
+    }
+    .fa-play-circle {
+        cursor: pointer;
+    }
+}
+
 .jumbotron {
     background: transparent;
     .display-4 {
         text-transform: capitalize;
     }
+}
+.video {
+    i {
+        font-size: 60px;
+    }
+}
+.catchy {
+    b, p {
+        color: #FFF;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.xtra {
+    a {
+        background: $coquelicot;
+        color: #FFF;
+        height: 44px;
+        border-radius: 22px;
+        transition: all .3s;
+        &:hover {
+            text-decoration: none;
+            box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.15);
+        }
+    }
+    p {
+        color: #FFF;
+    }
+}
+
+.gold {
+    color: gold;
+}
+.coquelicot {
+    color: $coquelicot;
+}
+
+.info {
+    @include media-breakpoint-down(sm) {
+        &>.row:first-child {
+            padding: 1rem;
+        }
+    }
+    @include media-breakpoint-only(md) {
+        &>.row:first-child {
+            padding: 4rem;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        &>.row:first-child {
+            padding: 7rem;
+        }
+    }
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        color: $pale-black;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h4 {
+        color: $pale-black;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+    }
+    p {
+        font-family: 'Open Sans',sans-serif;
+        line-height: 24px;
+        color: $pale-black;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+}
+
+.partner {
+    // background: linear-gradient(45deg, rgba(19,60,85,1) 0%, rgba(129,164,205,1) 100%);
+    background: rgba(19,60,85,1);
+    color: #FFF;
+    h3 {
+        font-size: 1.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+        &>.row {
+            padding: 7.5rem;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        &>.row {
+            padding: 3rem;
+        }
+    }
+    @include media-breakpoint-only(xs) {
+        &>.row {
+            padding: 1rem;
+        }
+    }
+
+    a {
+        color: #FFF;
+        border-radius: 3px;
+        // background: rgba(0,0,0,0.5);
+        background: #E93700;
+        &:hover {
+            text-decoration: none;
+            box-shadow: 0px 0px 25px 10px rgba(255,255,255,0.1);
+        }
+    }
+}
+
+.quotes {
+    font-size: 30px;
+    color: $coquelicot;
+    line-height: 30px
 }

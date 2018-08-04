@@ -1,6 +1,103 @@
+.text-center {
+  text-align: center; }
+
+article {
+  background-image: url(../images/89037944.jpg);
+  background-repeat: no-repeat;
+  filter: grayscale(20%);
+  background-size: cover; }
+  article h1, article h2, article .video {
+    color: #FFF; }
+  article .fa-play-circle {
+    cursor: pointer; }
+
 .jumbotron {
   background: transparent; }
   .jumbotron .display-4 {
     text-transform: capitalize; }
+
+.video i {
+  font-size: 60px; }
+
+.catchy b, .catchy p {
+  color: #FFF;
+  font-family: 'Roboto', sans-serif; }
+
+.xtra a {
+  background: #E93700;
+  color: #FFF;
+  height: 44px;
+  border-radius: 22px;
+  transition: all .3s; }
+  .xtra a:hover {
+    text-decoration: none;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.15); }
+
+.xtra p {
+  color: #FFF; }
+
+.gold {
+  color: gold; }
+
+.coquelicot {
+  color: #E93700; }
+
+@media (max-width: 767.98px) {
+  .info > .row:first-child {
+    padding: 1rem; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .info > .row:first-child {
+    padding: 4rem; } }
+
+@media (min-width: 992px) {
+  .info > .row:first-child {
+    padding: 7rem; } }
+
+.info h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #445D6E;
+  font-size: 24px;
+  font-weight: bold; }
+
+.info h4 {
+  color: #445D6E;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif; }
+
+.info p {
+  font-family: 'Open Sans',sans-serif;
+  line-height: 24px;
+  color: #445D6E;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.partner {
+  background: #133c55;
+  color: #FFF; }
+  .partner h3 {
+    font-size: 1.5rem; }
+  @media (min-width: 992px) {
+    .partner > .row {
+      padding: 7.5rem; } }
+  @media (max-width: 991.98px) {
+    .partner > .row {
+      padding: 3rem; } }
+  @media (max-width: 575.98px) {
+    .partner > .row {
+      padding: 1rem; } }
+  .partner a {
+    color: #FFF;
+    border-radius: 3px;
+    background: #E93700; }
+    .partner a:hover {
+      text-decoration: none;
+      box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, 0.1); }
+
+.quotes {
+  font-size: 30px;
+  color: #E93700;
+  line-height: 30px; }
 
 /*# sourceMappingURL=index.css.map */

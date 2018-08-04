@@ -9,7 +9,56 @@ block content
       .container
         h1.display-4 jagada industries
         h2.lead Pioneers in non metal powder metallurgy
-  
+        .video.d-flex.justify-content-center
+          i.fa.fa-play-circle
+        .catchy.w-100
+          b Somethings aren't too good to be true
+          p Experience the quality with us
+        .xtra.d-flex.flex-column.align-items-center
+          a.py-2.px-5.mt-5(href='about-us') Get Started
+          p Locate us at: 40° 41.23' N; 56° 11.59' W
+
+
+  section.info.container-fluid
+
+    .row.d-flex.flex-column.align-items-center.mb-4
+      h2.text-center Begin your journey of Quality Products with us
+      p.text-center The apps already are getting increasingly difficult and expensive to maintain. Docker Enterprise Edition optimizes existing apps while accelerating new app delivery.
+
+    .row.d-flex.justify-content-center.p-4
+      .col-12.col-md-6.col-lg-3
+        h4 Cost efficiency
+        p Migrating to Docker EE containers can reduce total costs by 50% - from consolidating infrastructure to dramatically streamlining IT tasks like provisioning, scaling and applying updates.
+      .col-12.col-md-6.col-lg-3
+        h4 New Level of Security
+        p Docker Enterprise delivers end to end security capabilities that can be applied to traditional apps to reduce the attack surface area, proactively mitigate risk and continuously monitor for vulnerabilities.
+      .col-12.col-md-6.col-lg-3
+        h4 New Level of Security
+        p Docker Enterprise delivers end to end security capabilities that can be applied to traditional apps to reduce the attack surface area, proactively mitigate risk and continuously monitor for vulnerabilities.
+
+
+  section.partner.container-fluid
+
+    .row.pb-5
+      .col-12.col-md-6.col-lg-5
+        h2.mb-4 Trusted Enterprise Partner
+        h3.mb-1 Enterprise Support and Partnership
+        p.mb-5 Extend existing partner relationships with integrated solutions and deep technical support for our products. Plus a global network of resellers, consulting and training partners are there to support every stage of your journey.
+        h3 Trusted and Certified
+        p.mb-5 Certified products deliver validated technology solutions with cooperative support for the technology that powers your business.
+        a.mt-3.p-3(href='certifications') View Certifications
+
+      .col-12.col-md-6.col-lg-7.d-none.d-sm-block
+        .row.d-flex.flex-column.mt-5.ml-5
+          i.fa.fa-quote-left.quotes.mb-5.d-block
+          #comments.carousel.slide.mb-5.d-block(data-ride='carousel')
+            .carousel-inner
+              each comment, index in comments
+                .carousel-item(class=index===0?'active':'')
+                  .carousel-comments
+                    p #{comment.text}
+          i.fa.fa-quote-right.quotes.mb-5.d-block
+
+
 append footer
-  include footer.pug
   script(type='text/javascript', src='/javascripts/index.js')

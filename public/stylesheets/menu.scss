@@ -1,5 +1,7 @@
 nav {
-    position: relative;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
     & > .d-flex {
         background: rgba(23,23,23,0.3);
     }
