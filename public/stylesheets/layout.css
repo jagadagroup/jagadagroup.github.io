@@ -19,4 +19,36 @@ ul {
   right: 20px;
   color: steelblue; }
 
+#menu-button {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  border-radius: 3px;
+  transform: none;
+  transition: all .5s ease-out;
+  transition-delay: .3s; }
+  #menu-button > span {
+    transition: all .3s ease-out;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background: #FFF; }
+  #menu-button > span:nth-child(2) {
+    transform: translateX(5px); }
+  #menu-button.active {
+    transform: rotateY(180deg);
+    transition: all 0.5s ease-in;
+    transition-delay: .3s; }
+    #menu-button.active span {
+      transition: all 0.3s ease-in; }
+    #menu-button.active span:first-child {
+      transform: translateX(-8px) translateY(14px) rotateZ(45deg);
+      width: 17px; }
+    #menu-button.active span:nth-child(2) {
+      transform: none; }
+    #menu-button.active span:last-child {
+      transform: translateX(-8px) translateY(-14px) rotateZ(-45deg);
+      width: 17px; }
+
 /*# sourceMappingURL=layout.css.map */

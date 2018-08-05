@@ -1,0 +1,60 @@
+extends layout
+
+append links
+    link(rel='stylesheet', type='text/css', href='/stylesheets/researchDev.css')
+
+block content
+    //- .container-fluid
+        
+    .container-fluid.rnd
+        #r1.row
+            #c1.col-12.col-lg-8.imgc
+                .overlap
+            #c2.col-12.col-lg-4.imgc
+                .container-fluid.h-100
+                    #r5.row.d-flex.align-content-around.flex-wrap.h-100
+                        .d-flex.justify-content-center
+                            span.d-flex.justify-content-center
+                                img#i1(src='/svgs/002-flask.svg')
+                        .d-flex.justify-content-center
+                            span.d-flex.justify-content-center
+                                img#i2(src='/svgs/006-molecule.svg')
+                        .d-flex.justify-content-center
+                            span.d-flex.justify-content-center
+                                img#i3(src='/svgs/008-alarm-clock.svg')
+                        .d-flex.justify-content-center
+                            span.d-flex.justify-content-center
+                                img#i4(src='/svgs/012-test-tubes.svg')
+                        .d-flex.justify-content-center
+                            span.d-flex.justify-content-center
+                                img#i5(src='/svgs/018-clipboard.svg')
+                        .d-flex.justify-content-center
+                            span.d-flex.justify-content-center
+                                img#i6(src='/svgs/020-blackboard-1.svg')
+        .row.about-head.d-flex.flex-column.align-items-center
+            h2 BRINGING-TO-LIFE A GENERATION OF MATERIALS FOR UNIQUE AND INNOVATIVE PRODUCTS
+            h3 We hold a passion for innovation, brilliant ideas and the execution that brings them all together in one beautiful experience.
+        #r2.row
+            #c3.col-12.col-lg-5.p-0
+                .container-fluid
+                    #r3.row
+                        #c4.col-12.imgc
+                            .overlap
+                                a.learn-more.link-button(href='#') LEARN MORE
+                        #c5.col-12.imgc
+            #c6.col-12.col-lg-7.p-0
+                .container-fluid
+                    #r4.row
+                        #c7.col-6.imgc
+                            .overlap
+                        #c8.col-6.imgc
+                            .overlap
+                        #c9.col-12.imgc.d-flex.justify-content-center.align-items-center
+                            a.link-button.py-3.px-5(href='#') EXPLORE MORE
+                        #c10.col-12.imgc
+                            .overlap
+        #r6.row
+            .col-12
+
+append footer
+    script(type='text/javascript', src='/javascripts/researchDev.js')

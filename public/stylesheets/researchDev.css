@@ -1,0 +1,133 @@
+a.link-button {
+  color: #FFF;
+  font: 15px/150% Roboto, sans-serif;
+  border: solid 2px #FFF;
+  transition: all .3s; }
+  a.link-button:hover {
+    text-decoration: none;
+    background: white;
+    color: #133C55; }
+
+.about-head {
+  background: transparent; }
+  .about-head h2 {
+    font: 15px/150% Roboto, sans-serif;
+    color: #FFF;
+    text-align: center; }
+  .about-head h3 {
+    font: 13px/150% Roboto, sans-serif;
+    color: #FFF;
+    text-align: center; }
+
+@media (max-width: 767.98px) {
+  .about-head {
+    padding: 7rem 0.25rem; } }
+
+@media (min-width: 768px) {
+  .about-head {
+    padding: 10rem; } }
+
+@media (min-width: 992px) {
+  .about-head {
+    padding: 15rem; } }
+
+.p-0 {
+  padding: 0; }
+
+.imgc {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0; }
+
+img.col-6 {
+  width: 5rem;
+  height: 5rem; }
+
+.overlap {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: .3s all;
+  overflow-y: hidden; }
+  .overlap .learn-more {
+    transform: translateY(50%);
+    position: relative;
+    top: 10rem;
+    transition: all .3s; }
+  .overlap:hover {
+    background-color: rgba(0, 0, 0, 0.55); }
+    .overlap:hover .learn-more {
+      transform: translateY(0); }
+
+#c1 {
+  background-image: url(/images/tubitos.jpg); }
+
+#c4 {
+  background-image: url(/images/f_7f6fec49c82b6f7583d11e5b0dd7740f.jpg); }
+
+#c7 {
+  background-image: url(/images/abundance-bookcase-books-775998.jpg); }
+
+#c5 {
+  background-image: url(/images/architecture-berlin-building-164313.jpg); }
+
+#c8 {
+  background-image: url(/images/blank-page-blur-close-up-949218.jpg); }
+
+#c9 {
+  transition: all .3s; }
+  #c9:hover {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+#c10 {
+  background-image: url(/images/blank-page-blur-close-up-949218.jpg);
+  background-image: url(/images/busy-glassware-job-266141.jpg); }
+
+#r5 {
+  padding: 1rem 0; }
+  #r5 div {
+    flex: 0 0 50%;
+    width: 7rem;
+    height: 7rem; }
+    #r5 div span {
+      background: rgba(0, 0, 0, 0.1);
+      width: 7rem;
+      height: 7rem;
+      border-radius: 3.5rem;
+      padding: 1.25rem; }
+  #r5 img {
+    width: 4.5rem;
+    height: 4.5rem; }
+
+#r6 div {
+  height: 30vw; }
+
+@media (max-width: 991.98px) {
+  #c1,
+  #c2 {
+    height: 30vw; }
+  #c2 {
+    background: whitesmoke; }
+  #c4,
+  #c5 {
+    height: 50vw;
+    background: salmon; } }
+
+@media (min-width: 992px) {
+  #c1,
+  #c2 {
+    height: 30vw; }
+  #c2 {
+    background: whitesmoke; }
+  #c4,
+  #c5 {
+    height: 50vw; }
+  #c7,
+  #c8 {
+    height: 40vw; }
+  #c9,
+  #c10 {
+    height: 30vw; } }
+
+/*# sourceMappingURL=researchDev.css.map */

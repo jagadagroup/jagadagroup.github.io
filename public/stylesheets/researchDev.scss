@@ -1,0 +1,179 @@
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+$prussian-blue: #133C55;
+$dark-pastel-blue: #81A4CD;
+
+a.link-button {
+    color: #FFF;
+    font: 15px/150% Roboto, sans-serif;
+    border: solid 2px #FFF;
+    transition: all .3s;
+    &:hover {
+        text-decoration: none;
+        background: white;
+        color: $prussian-blue;
+    }
+}
+
+.about-head {
+    background: transparent;
+    h2 {
+        font: 15px/150% Roboto, sans-serif;
+        color: #FFF;
+        text-align: center;
+    }
+    h3 {
+        font: 13px/150% Roboto, sans-serif;
+        color: #FFF;
+        text-align: center;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .about-head {
+        padding: 7rem 0.25rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .about-head {
+        padding: 10rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .about-head {
+        padding: 15rem;
+    }
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.imgc {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+img.col-6 {
+    width: 5rem;
+    height: 5rem;
+}
+
+.overlap {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: .3s all;
+    overflow-y: hidden;
+    .learn-more {
+        transform: translateY(50%);
+        position: relative;
+        top: 10rem;
+        transition: all .3s;
+    }
+    &:hover {
+        .learn-more {
+            transform: translateY(0);
+        }
+        background-color: rgba(0, 0, 0, 0.55);
+    }
+}
+
+#c1 {
+    background-image: url(/images/tubitos.jpg);
+}
+
+#c4 {
+    background-image: url(/images/f_7f6fec49c82b6f7583d11e5b0dd7740f.jpg);
+}
+
+#c7 {
+    background-image: url(/images/abundance-bookcase-books-775998.jpg);
+}
+
+#c5 {
+    background-image: url(/images/architecture-berlin-building-164313.jpg);
+}
+
+#c8 {
+    background-image: url(/images/blank-page-blur-close-up-949218.jpg);
+}
+#c9 {
+    transition: all .3s;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+#c10 {
+    background-image: url(/images/blank-page-blur-close-up-949218.jpg);
+    background-image: url(/images/busy-glassware-job-266141.jpg);
+}
+
+#r5 {
+    padding: 1rem 0;
+    div {
+        flex: 0 0 50%;
+        width: 7rem;
+        height: 7rem;
+        span {
+            background: rgba(0, 0, 0, 0.1);
+            width: 7rem;
+            height: 7rem;
+            border-radius: 3.5rem;
+            padding: 1.25rem;
+        }
+    }
+    img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+#r6 {
+    div {
+        height: 30vw;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #c1,
+    #c2 {
+        height: 30vw;
+    }
+    #c2 {
+        background: whitesmoke;
+    }
+    #c4,
+    #c5 {
+        height: 50vw;
+        background: salmon;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #c1,
+    #c2 {
+        height: 30vw; // background: teal;
+    }
+    #c2 {
+        background: whitesmoke;
+    }
+    #c4,
+    #c5 {
+        height: 50vw;
+    }
+    #c7,
+    #c8 {
+        height: 40vw;
+    }
+    #c9,
+    #c10 {
+        height: 30vw;
+    }
+}

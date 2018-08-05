@@ -31,4 +31,12 @@ router.get('/about-us', function(req, res) {
   });
 });
 
+
+router.get('/research-and-development', function(req, res) {
+  res.render('researchDev', {
+    menu: menu,
+    products: products
+  });
+});
+
 module.exports = router;
