@@ -11,6 +11,32 @@ $pale-black: #445D6E;
     color: salmon;
 }
 
+.page {
+    background: #FFF;
+}
+
+@include media-breakpoint-down(sm) {
+    #logo {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        z-index: 100;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    #logo {
+        width: 15rem;
+        height: 15rem;
+        position: absolute;
+        top: -3rem;
+        left: -3rem;
+        z-index: 100;
+    }
+}
+
 article {
     background-image: url(../images/89037944.jpg);
     background-repeat: no-repeat;
@@ -28,11 +54,41 @@ article {
 
 .jumbotron {
     background: transparent;
-    .display-4 {
-        text-transform: uppercase;
-        font-family: Roboto, sans-serif;
-        font-size: 100px;
-        color: #FFF;
+    @include media-breakpoint-down(sm) {
+        .display-4 {
+            text-transform: uppercase;
+            font-family: Roboto, sans-serif;
+            font-size: 30px;
+            color: #FFF;
+        }
+        &>.container {
+            position: relative;
+            top: 3rem;
+        }
+    }
+    @include media-breakpoint-only(md) {
+        .display-4 {
+            text-transform: uppercase;
+            font-family: Roboto, sans-serif;
+            font-size: 70px;
+            color: #FFF;
+        }
+        &>.container {
+            position: relative;
+            top: 3rem;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .display-4 {
+            text-transform: uppercase;
+            font-family: Roboto, sans-serif;
+            font-size: 100px;
+            color: #FFF;
+        }
+        &>.container {
+            position: relative;
+            top: 3rem;
+        }
     }
     h2.lead {
         margin-left: 1rem;
@@ -74,6 +130,11 @@ article {
     }
     p {
         color: #FFF;
+    }
+}
+@include media-breakpoint-down(md) {
+    .xtra{
+        margin-bottom: 2rem;
     }
 }
 

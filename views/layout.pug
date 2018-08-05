@@ -13,7 +13,8 @@ html
     link(rel='stylesheet', type='text/css', href ='/stylesheets/layout.css')
   body
     include menu
-    img#logo(src='/svgs/jagada.svg', alt='Jagada logo')
+    .container-fluid.position-fixed
+        .row.decorator
     .page.w-100
       header
         block header

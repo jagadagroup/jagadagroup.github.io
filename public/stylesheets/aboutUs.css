@@ -1,17 +1,49 @@
+.about-head {
+  background: transparent; }
+  .about-head h2 {
+    font: 15px/150% Roboto, sans-serif;
+    color: #FFF;
+    text-align: center; }
+  .about-head h3 {
+    font: 13px/150% Roboto, sans-serif;
+    color: #FFF;
+    text-align: center; }
+
+@media (max-width: 767.98px) {
+  .about-head {
+    padding: 7rem 0.25rem; } }
+
+@media (min-width: 768px) {
+  .about-head {
+    padding: 10rem; } }
+
+@media (min-width: 992px) {
+  .about-head {
+    padding: 15rem; } }
+
 .about-us .row:first-child > div:first-child {
   background-color: #133C55;
   padding: 5rem 0; }
-  .about-us .row:first-child > div:first-child h4, .about-us .row:first-child > div:first-child a {
+  .about-us .row:first-child > div:first-child h4,
+  .about-us .row:first-child > div:first-child a {
     color: #FFF; }
 
 .about-us .row:first-child > div:nth-child(2) {
   padding: 5rem 0;
   background-color: whitesmoke; }
-  .about-us .row:first-child > div:nth-child(2) h4, .about-us .row:first-child > div:nth-child(2) a {
+  .about-us .row:first-child > div:nth-child(2) h4,
+  .about-us .row:first-child > div:nth-child(2) a {
     color: #444; }
 
 .about-us .contact {
   width: 7.5rem;
   height: 7.5rem; }
+
+.map {
+  height: 40vw;
+  background-image: url(/images/crafted_map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 /*# sourceMappingURL=aboutUs.css.map */

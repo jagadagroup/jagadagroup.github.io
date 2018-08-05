@@ -3,18 +3,15 @@ ul {
   padding: 0;
   list-style: none; }
 
-#logo {
-  width: 15rem;
-  height: 15rem;
-  position: absolute;
-  top: -3rem;
-  left: -3rem;
-  z-index: 100; }
-
 .page {
   position: absolute;
-  top: 0;
-  background: #FFF; }
+  top: 0; }
+
+.decorator {
+  background-image: url(../images/crafted_splash.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .fa-bars {
   position: fixed;
