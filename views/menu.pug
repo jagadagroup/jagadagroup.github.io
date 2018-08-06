@@ -1,8 +1,8 @@
 link(rel='stylesheet', type='text/css', href='/stylesheets/menu.css')
 nav.row.no-gutters.d-flex
     .col
-    .col-9.col-sm-8.col-md-6.col-lg-4.col-xl-3.d-flex.align-items-center
+    #menu-holder.col-9.col-sm-8.col-md-6.col-lg-4.col-xl-3.d-flex.align-items-center
         ul.menu.w-100
             each opt in menu
-                li.my-2
+                li.py-3
                     a(href!=opt.href) #{opt.name}

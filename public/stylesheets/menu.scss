@@ -1,9 +1,10 @@
+$prussian-blue: #133C55;
 nav {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    & > .d-flex {
-        background: rgba(23,23,23,0.3);
+    &>.d-flex {
+        background: rgba(23, 23, 23, 0.3);
     }
 }
 
@@ -13,7 +14,12 @@ ul.menu {
     padding: 0;
 }
 
-.menu > li {
+.menu>li {
     text-transform: uppercase;
     text-align: center;
+    transition: all .3s;
+    &:hover {
+        background: #FFF;
+        color: $prussian-blue;
+    }
 }

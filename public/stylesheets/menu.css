@@ -12,6 +12,10 @@ ul.menu {
 
 .menu > li {
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  transition: all .3s; }
+  .menu > li:hover {
+    background: #FFF;
+    color: #133C55; }
 
 /*# sourceMappingURL=menu.css.map */

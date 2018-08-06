@@ -5,7 +5,11 @@ ul {
 
 .page {
   position: absolute;
-  top: 0; }
+  top: 0;
+  transition: all .3s; }
+
+.page.active {
+  transform-origin: top left; }
 
 .decorator {
   background-image: url(../images/crafted_splash.jpg);

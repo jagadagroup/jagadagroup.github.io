@@ -5,16 +5,16 @@ html
     block google
     block metaseo
     block links
-      link(rel='stylesheet', href='/stylesheets/global.css')
       link(rel='stylesheet', type='text/css', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css')
       link(rel='stylesheet', type='text/css', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
       link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed')
+      link(rel='stylesheet', href='/stylesheets/global.css')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', type='text/css', href ='/stylesheets/layout.css')
   body
-    include menu
     .container-fluid.position-fixed
         .row.decorator
+    include menu
     .page.w-100
       header
         block header
@@ -25,6 +25,7 @@ html
           script(type='text/javascript', src='https://code.jquery.com/jquery-3.3.1.js')
           script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js')
           script(type='text/javascript', src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js')
+          script(type='text/javascript', src='/javascripts/master.js')
     //- i#ham-burger.fa.fa-bars.fa-2x
     #menu-button.d-flex.flex-column.align-items-center.justify-content-around.py-2
       span.mb-1

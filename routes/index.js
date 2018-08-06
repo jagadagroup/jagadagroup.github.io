@@ -39,4 +39,11 @@ router.get('/research-and-development', function(req, res) {
   });
 });
 
+router.get('/contact-us', function(req, res) {
+  res.render('contactUs', {
+    menu: menu,
+    products: products
+  });
+});
+
 module.exports = router;
