@@ -1,0 +1,86 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.p-0 {
+  padding: 0; }
+
+.imgc {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0; }
+
+.overlap {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: .3s all;
+  overflow-y: hidden; }
+  .overlap .learn-more {
+    transform: translateY(50%);
+    position: relative;
+    top: 10rem;
+    transition: all .3s; }
+  .overlap:hover {
+    background-color: rgba(0, 0, 0, 0.55); }
+    .overlap:hover .learn-more {
+      transform: translateY(0); }
+
+a.link-button {
+  color: #FFF;
+  font: 15px/150% Roboto, sans-serif;
+  border: solid 2px #FFF;
+  transition: all .3s; }
+  a.link-button:hover {
+    text-decoration: none;
+    background: white;
+    color: #133C55; }
+
+#contact-header {
+  background-image: url("../images/garage-hanging-mechanic-162553.jpg");
+  min-height: 30vw; }
+
+.content {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 5px; }
+  .content h2, .content h6 {
+    text-align: center; }
+
+.border-anime {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  transition: .3s all; }
+  .border-anime:hover {
+    border: double 2px #FFF;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem; }
+
+.contact-child {
+  min-height: 35vw; }
+  .contact-child img {
+    width: 4.5rem;
+    height: 4.5rem; }
+  .contact-child h2 {
+    font: 1.25rem/150% Roboto, sans-serif; }
+  .contact-child:first-child {
+    color: #3a3a3a;
+    background: whitesmoke; }
+  .contact-child:nth-child(2) {
+    color: #3a3a3a;
+    background: orange; }
+  .contact-child:nth-child(3) {
+    color: orange;
+    background: #222; }
+  .contact-child:nth-child(4) {
+    color: #FFF;
+    background: grey; }
+
+/*# sourceMappingURL=contactUs.css.map */

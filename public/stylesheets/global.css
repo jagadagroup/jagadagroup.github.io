@@ -3,4 +3,39 @@ html, body {
   padding: 0;
   height: 100%; }
 
+.p-0 {
+  padding: 0; }
+
+.imgc {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0; }
+
+.overlap {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: .3s all;
+  overflow-y: hidden; }
+  .overlap .learn-more {
+    transform: translateY(50%);
+    position: relative;
+    top: 10rem;
+    transition: all .3s; }
+  .overlap:hover {
+    background-color: rgba(0, 0, 0, 0.55); }
+    .overlap:hover .learn-more {
+      transform: translateY(0); }
+
+a.link-button {
+  color: #FFF;
+  font: 15px/150% Roboto, sans-serif;
+  border: solid 2px #FFF;
+  transition: all .3s; }
+  a.link-button:hover {
+    text-decoration: none;
+    background: white;
+    color: #133C55; }
+
 /*# sourceMappingURL=global.css.map */

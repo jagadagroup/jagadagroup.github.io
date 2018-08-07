@@ -5,10 +5,36 @@ append links
 
 block content
     .container-fluid
+        .row
+            #contact-header.col-12.imgc
+                .overlap.d-flex.align-items-center.justify-content-center
+                    .content.py-3.px-5
+                        h2 MEET OUR EXPERTISE AT WORK
+                        h6 We work closely with our customers to ensure compliance ahead of launch. Once everything is a go, your product will be on the market!
+                .border-anime
+    #contact-us.container-fluid
+        .row
+            .col-lg-3.col-md-6.col-sm-12.contact-child.d-flex.flex-column.justify-content-center.align-items-center.p-2.p-md-3.p-lg-4
+                img(src='/svgs/064-compass.svg').mb-4
+                h2 STRATEGY
+                p
+            .col-lg-3.col-md-6.col-sm-12.contact-child.d-flex.flex-column.justify-content-center.align-items-center.p-2.p-md-3.p-lg-4
+                img(src='/svgs/081-magic.svg').mb-4
+                h2 CREATIVE
+                p
+            .col-lg-3.col-md-6.col-sm-12.contact-child.d-flex.flex-column.justify-content-center.align-items-center.p-2.p-md-3.p-lg-4
+                img(src='/svgs/055-browser-1.svg').mb-4
+                h2 DIGITAL
+                p
+            .col-lg-3.col-md-6.col-sm-12.contact-child.d-flex.flex-column.justify-content-center.align-items-center.p-2.p-md-3.p-lg-4
+                img(src='/svgs/085-avatar.svg').mb-4
+                h2 SUPPORT
+                p
+    //- .container-fluid
         .row.about-head.d-flex.flex-column.align-items-center
             h2 LET'S WORK TOGETHER
             h3 Here at JagadaGroup, we hold a passion for innovation, brilliant ideas and the execution that brings them all together in one beautiful experience.
-    .container-fluid.about-us
+    //- .container-fluid.about-us
         .row
             .col-12.col-md-6.d-flex.flex-column.align-items-center
                 img.mb-2.contact(src='/svgs/018-physics.svg', alt='sales contact')
@@ -22,10 +48,8 @@ block content
                 a(href='tel:+919000060000') +91-900-006-0000
                 a(href='mailto:sales@lpwtechnology.com') sales@lpwtechnology.com
 
-    .map        
-        //- img.img-fluid(src='/images/crafted_map.jpg', alt='location map')
     
-    .window.d-flex.justify-content-center
+    //- .window.d-flex.justify-content-center
         img.d-none.d-md-block.mr-4(src='/svgs/018-clipboard.svg')
         .d-flex.flex-column.align-items-center.justify-content-center
             h3 VIEW BROCHURE HERE

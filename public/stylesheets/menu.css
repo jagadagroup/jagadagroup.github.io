@@ -18,4 +18,10 @@ ul.menu {
     background: #FFF;
     color: #133C55; }
 
+#menu-holder {
+  transform: translateX(100%);
+  transition: all .4s; }
+  #menu-holder.active {
+    transform: translateX(0); }
+
 /*# sourceMappingURL=menu.css.map */

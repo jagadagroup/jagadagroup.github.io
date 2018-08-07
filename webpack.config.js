@@ -3,7 +3,7 @@ var path = require('path');
 var glob = require('glob');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         master: [
             'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
