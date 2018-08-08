@@ -24,18 +24,18 @@ html, body {
     background-color: transparent;
     transition: .3s all;
     overflow-y: hidden;
-    .learn-more {
-        transform: translateY(50%);
-        position: relative;
-        top: 10rem;
-        transition: all .3s;
-    }
-    &:hover {
-        .learn-more {
-            transform: translateY(0);
-        }
-        background-color: rgba(0, 0, 0, 0.55);
-    }
+    // .learn-more {
+    //     transform: translateY(50%);
+    //     position: relative;
+    //     top: 10rem;
+    //     transition: all .3s;
+    // }
+    // &:hover {
+    //     .learn-more {
+    //         transform: translateY(0);
+    //     }
+    //     background-color: rgba(0, 0, 0, 0.55);
+    // }
 }
 a.link-button {
     color: #FFF;

@@ -2,7 +2,6 @@
 @import '../../node_modules/bootstrap/scss/_variables.scss';
 @import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
 @import './global.scss';
-
 .about-head {
     background: transparent;
     h2 {
@@ -47,16 +46,22 @@ img.col-6 {
     transition: .3s all;
     overflow-y: hidden;
     .learn-more {
-        transform: translateY(50%);
-        position: relative;
-        top: 10rem;
+        // transform: translateY(50%);
+        position: relative; // top: 10rem;
         transition: all .3s;
     }
     &:hover {
         .learn-more {
-            transform: translateY(0);
+            // transform: translateY(0);
         }
         background-color: rgba(0, 0, 0, 0.55);
+    }
+}
+
+.overlap-inner {
+    border-radius: 5px;
+    p {
+        text-indent: 1.5rem;
     }
 }
 
@@ -66,19 +71,37 @@ img.col-6 {
 
 #c4 {
     background-image: url(/images/f_7f6fec49c82b6f7583d11e5b0dd7740f.jpg);
+    .overlap-inner {
+        background: rgba(255, 255, 255, 0.65);
+    }
 }
 
 #c7 {
     background-image: url(/images/abundance-bookcase-books-775998.jpg);
+    .overlap-inner {
+        background: rgba(0, 0, 0, 0.6);
+    }
+    h2,
+    p {
+        color: #FFF;
+    }
 }
 
 #c5 {
     background-image: url(/images/architecture-berlin-building-164313.jpg);
+    .overlap-inner {
+        background: rgba(0, 0, 0, 0.75);
+    }
+    h2,
+    p {
+        color: #FFF;
+    }
 }
 
 #c8 {
     background-image: url(/images/blank-page-blur-close-up-949218.jpg);
 }
+
 #c9 {
     transition: all .3s;
     &:hover {
@@ -87,8 +110,15 @@ img.col-6 {
 }
 
 #c10 {
-    background-image: url(/images/blank-page-blur-close-up-949218.jpg);
+    // background-image: url(/images/blank-page-blur-close-up-949218.jpg);
     background-image: url(/images/busy-glassware-job-266141.jpg);
+    .overlap-inner {
+        background: rgba(0, 0, 0, 0.4);
+    }
+    h2,
+    p {
+        color: #FFF;
+    }
 }
 
 #r5 {
@@ -96,7 +126,7 @@ img.col-6 {
     div {
         flex: 0 0 50%;
         width: 7rem;
-        height: 7rem;
+        min-height: 7rem;
         span {
             background: rgba(0, 0, 0, 0.1);
             width: 7rem;
@@ -117,39 +147,26 @@ img.col-6 {
     }
 }
 
-@include media-breakpoint-down(md) {
-    #c1,
-    #c2 {
-        height: 30vw;
-    }
-    #c2 {
-        background: whitesmoke;
-    }
-    #c4,
-    #c5 {
-        height: 50vw;
-        background: salmon;
-    }
+#c1,
+#c2 {
+    min-height: 30vw;
 }
 
-@include media-breakpoint-up(lg) {
-    #c1,
-    #c2 {
-        height: 30vw; // background: teal;
-    }
-    #c2 {
-        background: whitesmoke;
-    }
-    #c4,
-    #c5 {
-        height: 50vw;
-    }
-    #c7,
-    #c8 {
-        height: 40vw;
-    }
-    #c9,
-    #c10 {
-        height: 30vw;
-    }
+#c2 {
+    background: whitesmoke;
+}
+
+#c4,
+#c5 {
+    min-height: 50vw;
+}
+
+#c7,
+#c8 {
+    min-height: 40vw;
+}
+
+#c9,
+#c10 {
+    min-height: 30vw;
 }

@@ -18,15 +18,6 @@ html, body {
   background-color: transparent;
   transition: .3s all;
   overflow-y: hidden; }
-  .overlap .learn-more {
-    transform: translateY(50%);
-    position: relative;
-    top: 10rem;
-    transition: all .3s; }
-  .overlap:hover {
-    background-color: rgba(0, 0, 0, 0.55); }
-    .overlap:hover .learn-more {
-      transform: translateY(0); }
 
 a.link-button {
   color: #FFF;
@@ -72,26 +63,39 @@ img.col-6 {
   transition: .3s all;
   overflow-y: hidden; }
   .overlap .learn-more {
-    transform: translateY(50%);
     position: relative;
-    top: 10rem;
     transition: all .3s; }
   .overlap:hover {
     background-color: rgba(0, 0, 0, 0.55); }
-    .overlap:hover .learn-more {
-      transform: translateY(0); }
+
+.overlap-inner {
+  border-radius: 5px; }
+  .overlap-inner p {
+    text-indent: 1.5rem; }
 
 #c1 {
   background-image: url(/images/tubitos.jpg); }
 
 #c4 {
   background-image: url(/images/f_7f6fec49c82b6f7583d11e5b0dd7740f.jpg); }
+  #c4 .overlap-inner {
+    background: rgba(255, 255, 255, 0.65); }
 
 #c7 {
   background-image: url(/images/abundance-bookcase-books-775998.jpg); }
+  #c7 .overlap-inner {
+    background: rgba(0, 0, 0, 0.6); }
+  #c7 h2,
+  #c7 p {
+    color: #FFF; }
 
 #c5 {
   background-image: url(/images/architecture-berlin-building-164313.jpg); }
+  #c5 .overlap-inner {
+    background: rgba(0, 0, 0, 0.75); }
+  #c5 h2,
+  #c5 p {
+    color: #FFF; }
 
 #c8 {
   background-image: url(/images/blank-page-blur-close-up-949218.jpg); }
@@ -102,15 +106,19 @@ img.col-6 {
     background-color: rgba(0, 0, 0, 0.3); }
 
 #c10 {
-  background-image: url(/images/blank-page-blur-close-up-949218.jpg);
   background-image: url(/images/busy-glassware-job-266141.jpg); }
+  #c10 .overlap-inner {
+    background: rgba(0, 0, 0, 0.4); }
+  #c10 h2,
+  #c10 p {
+    color: #FFF; }
 
 #r5 {
   padding: 1rem 0; }
   #r5 div {
     flex: 0 0 50%;
     width: 7rem;
-    height: 7rem; }
+    min-height: 7rem; }
     #r5 div span {
       background: rgba(0, 0, 0, 0.1);
       width: 7rem;
@@ -124,31 +132,23 @@ img.col-6 {
 #r6 div {
   height: 30vw; }
 
-@media (max-width: 991.98px) {
-  #c1,
-  #c2 {
-    height: 30vw; }
-  #c2 {
-    background: whitesmoke; }
-  #c4,
-  #c5 {
-    height: 50vw;
-    background: salmon; } }
+#c1,
+#c2 {
+  min-height: 30vw; }
 
-@media (min-width: 992px) {
-  #c1,
-  #c2 {
-    height: 30vw; }
-  #c2 {
-    background: whitesmoke; }
-  #c4,
-  #c5 {
-    height: 50vw; }
-  #c7,
-  #c8 {
-    height: 40vw; }
-  #c9,
-  #c10 {
-    height: 30vw; } }
+#c2 {
+  background: whitesmoke; }
+
+#c4,
+#c5 {
+  min-height: 50vw; }
+
+#c7,
+#c8 {
+  min-height: 40vw; }
+
+#c9,
+#c10 {
+  min-height: 30vw; }
 
 /*# sourceMappingURL=researchDev.css.map */
