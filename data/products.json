@@ -1,19 +1,119 @@
 [{
-  "name": "magnalium",
-  "href": "magnalium"
+  "name": "Mesh Magnalium Powder",
+  "href": "product?id=1",
+  "url": "../images/1.18MeshMagnaliumPowder.jpg",
+  "text": "1.18 Mesh Magnalium Powder",
+  "id": 1,
+  "data": [{
+    "class": "bug",
+    "value": "14-325 Mesh",
+    "unit": "Mesh",
+    "sub": "1400-44 um",
+    "head": "Paticle size",
+    "color": "#D34E24"
+  }, {
+    "class": "microchip",
+    "value": "99.8",
+    "unit": "%",
+    "sub": "Virgin Aluminium",
+    "head": "Raw Materials",
+    "color": "teal"
+  }, {
+    "class": "space-shuttle",
+    "value": "2.7",
+    "unit": "gm/cm3",
+    "head": "Real Density",
+    "color": "steelblue"
+  }, {
+    "class": "area-chart",
+    "value": "99",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+  }],
+  "desc": "the composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product through powder metallurgical processes",
+  "alt": "The Bulk density is maintained for Fireworks and Defence application"
 }, {
-  "name": "magnesium",
-  "href": "magnesium"
+  "name": "2.4 Mesh Magnalium Powder",
+  "href": "product?id=2",
+  "url": "/assets/img/2.40MeshMagnaliumPowder.jpg",
+  "text": "2.40 Mesh Magnalium Powder",
+  "id": 2,
+  "data": [{
+    "class": "bug",
+    "value": "Variable Sizes",
+    "head": "Paticle size",
+    "color": "#D34E24"
+  }, {
+    "class": "microchip",
+    "value": "99.8",
+    "unit": "%",
+    "sub": "Virgin Aluminium",
+    "head": "Raw Materials",
+    "color": "teal"
+  }, {
+    "class": "space-shuttle",
+    "value": "2.7",
+    "unit": "gm/cm3",
+    "head": "Real Density",
+    "color": "steelblue"
+  }, {
+    "class": "area-chart",
+    "sub": "Aluminium",
+    "value": "99",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+  }],
+  "desc": "The composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product through powder metallurgical processes.",
+  "alt": "TThe Bulk density is maintained for light weight concrete blocks and pesticides application"
 }, {
-  "name": "aluminium",
-  "href": "aluminium"
+  "name": "Grade 2 Magnalium Powder",
+  "href": "product?id=3",
+  "url": "/assets/img/2.Grade2MagnesiumPowder.jpg",
+  "text": "Grade 2 Magnalium Powder",
+  "id": 3,
+  "data": [{
+    "class": "bug",
+    "value": "15-150",
+    "unit": "Mesh",
+    "sub": "1410-90 um",
+    "head": "Paticle size",
+    "color": "#D34E24"
+  }, {
+    "class": "microchip",
+    "value": "99",
+    "unit": "%",
+    "sub": "pure Ti6Al4v ingots",
+    "head": "Raw Materials",
+    "color": "teal"
+  }, {
+    "class": "space-shuttle",
+    "value": "4.12",
+    "unit": "gm/cm3",
+    "head": "Real Density",
+    "color": "steelblue"
+  }, {
+    "class": "area-chart",
+    "value": "90 Ti, 6 Al, 4 V",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+  }],
+  "desc": "The composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product  through powder Metallurgical process",
+  "alt": "The bulk density is maintained for Fireworks and pyrotechnic applications"
 }, {
-  "name": "titanium",
-  "href": "titanium"
+  "name": "4.8 Mesh Magnalium Powder",
+  "href": "product?id=4",
+  "url": "/assets/img/4.80MeshMagnaliumPowder.jpg",
+  "text": "4.80 Mesh Magnalium Powder",
+  "id": 4,
+  "data": []
 }, {
-  "name": "magnalium",
-  "href": "magnalium"
-}, {
-  "name": "magnesium",
-  "href": "magnesium"
+  "name": "5.1 Mesh Magnalium Powder",
+  "href": "product?id=5",
+  "url": "/assets/img/5.100MeshMagnaliumPowder.jpg",
+  "text": "5.100 Mesh Magnalium Powder",
+  "id": 5,
+  "data": []
 }]

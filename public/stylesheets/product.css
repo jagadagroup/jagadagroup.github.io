@@ -1,0 +1,94 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.p-0 {
+  padding: 0; }
+
+.imgc {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0; }
+
+.overlap {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: .3s all;
+  overflow-y: hidden; }
+
+a.link-button {
+  color: #FFF;
+  font: 15px/150% Roboto, sans-serif;
+  border: solid 2px #FFF;
+  transition: all .3s; }
+  a.link-button:hover {
+    text-decoration: none;
+    background: white;
+    color: #133C55; }
+
+p {
+  color: #FFF; }
+
+.parallelogram {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#tech-data {
+  position: absolute;
+  top: 100vh;
+  opacity: 0;
+  transform: scale(0);
+  transition: all .3s; }
+  #tech-data.active {
+    top: 60vh;
+    opacity: 1;
+    transform: scale(1); }
+  #tech-data > div > div {
+    background: #FFF;
+    border-radius: 3px; }
+
+@media (max-width: 767.98px) {
+  #tech-data.active {
+    top: 10vh; } }
+
+.tech-logo {
+  border-radius: 50%;
+  color: #FFF;
+  font-size: 18px;
+  width: 70px;
+  height: 70px; }
+
+.tech-value {
+  flex-direction: row-reverse; }
+  .tech-value span:first-child {
+    font: 30px/100% Roboto, sans-serif;
+    color: #4A4A4A;
+    font-weight: bold; }
+  .tech-value span:last-child {
+    font: 16px/100% Roboto, sans-serif;
+    color: grey;
+    align-self: flex-end;
+    font-weight: bold; }
+
+.tech-head {
+  font: 16px/130% Roboto, sans-serif;
+  color: teal;
+  text-align: right;
+  font-weight: bold; }
+
+#tech-back {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5); }
+  #tech-back i {
+    color: white; }
+
+/*# sourceMappingURL=product.css.map */

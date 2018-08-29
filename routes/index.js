@@ -24,6 +24,16 @@ router.get('/products', function(req, res) {
   });
 });
 
+router.get('/product', function(req, res) {
+  res.render('product', {
+    menu: menu,
+    products: products,
+    parallelogram: parallelogram,
+    productId: req.query.id,
+    // parallel: parallelogram[+req.query.id]
+  });
+});
+
 router.get('/about-us', function(req, res) {
   res.render('aboutUs', {
     menu: menu,

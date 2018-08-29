@@ -1,0 +1,81 @@
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+@import './global.scss';
+
+p {
+    color: #FFF;
+}
+
+.parallelogram {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+#tech-data 
+{
+    position: absolute;
+    top: 100vh;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .3s;
+    &.active {
+        top: 60vh;
+        opacity: 1;
+        transform: scale(1);
+    }
+    & > div > div {
+        background: #FFF;
+        border-radius: 3px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #tech-data.active {
+        top: 10vh;
+    }
+}
+
+.tech-logo {
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 18px;
+    width: 70px;
+    height: 70px;
+}
+.tech-value {
+    flex-direction: row-reverse;
+    span:first-child {
+        font: 30px/100% Roboto, sans-serif;
+        color: #4A4A4A;
+        font-weight: bold;
+    }
+    span:last-child {
+        font: 16px/100% Roboto, sans-serif;
+        color: grey;
+        align-self: flex-end;
+        font-weight: bold;
+    }
+}
+.tech-head {
+    font: 16px/130% Roboto, sans-serif;
+    color: teal;
+    text-align: right;
+    font-weight: bold;
+}
+
+#tech-back {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 100;
+    background: rgba(0,0,0,0.5);
+    i {
+        color: white;
+    }
+}

@@ -1,0 +1,29 @@
+extends layout
+
+append links
+    link(rel='stylesheet', type='text/css', href='/stylesheets/product.css')
+
+block content
+
+    #tech-back
+        i.fa.fa-arrow-left
+
+    section.product-holder
+        each parallel, index in parallelogram
+            if index == (productId - 1)
+                .parallelogram(style={'background-image': 'url(' + parallel.url + ')'})
+
+    section#tech-data.row.w-100.active
+        each datum in parallelogram[productId].data
+            .col-lg-3.col-md-6.col-12.mb-3
+                .d-flex.align-items-center.justify-content-around.p-3.mx-3
+                    .tech-logo.d-flex.justify-content-center.align-items-center(style={'background':datum.color})
+                        i.fa(class=`fa-${datum.class}`)
+                    .tech-datum.d-flex.flex-column
+                        span.tech-value.d-flex.justify-content-start
+                            span #{datum.value}
+                            span.mr-1 #{datum.unit}
+                        span.tech-head #{datum.head}
+
+block footer
+    script(type='text/javascript', src='/javascripts/product.js')
