@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "productionQuality.css",
+	"sources": [
+		"productionQuality.scss",
+		"../../node_modules/bootstrap/scss/_functions.scss",
+		"../../node_modules/bootstrap/scss/_variables.scss",
+		"../../node_modules/bootstrap/scss/mixins/_breakpoints.scss"
+	],
+	"names": [],
+	"mappings": "AGyEI,MAAM,EAAE,SAAS,EAAE,QAAQ;EHlE3B,AAAA,OAAO,CAAC;IACJ,OAAO,EAAE,YAAY,GACxB;;AGqGD,MAAM,EAAE,SAAS,EAAE,KAAK,OAAO,SAAS,EAAE,QAAQ;EHlGlD,AAAA,OAAO,CAAC;IACJ,OAAO,EAAE,IAAI,GAChB;;AG8CD,MAAM,EAAE,SAAS,EAAE,KAAK;EH3CxB,AAAA,IAAI,CAAC;IACD,MAAM,EAAE,IAAI,GACf;EACD,AAAA,OAAO,CAAC;IACJ,OAAO,EAAE,IAAI,GAChB"
+}

@@ -1,0 +1,35 @@
+extends layout
+
+append links
+    link(rel='stylesheet', type='text/css', href='/stylesheets/productionTechnology.css')
+
+block content
+    .container-fluid
+        .row.about-head.d-flex.flex-column.align-items-center
+            h2 LET'S WORK TOGETHER
+            h3 Here at JagadaGroup, we hold a passion for innovation, brilliant ideas and the execution that brings them all together in one beautiful experience.
+    .container-fluid.about-us
+        .row
+            .col-12.col-md-6.d-flex.flex-column.align-items-center
+                img.mb-2.contact(src='/svgs/018-physics.svg', alt='sales contact')
+                h4 SALES PERSON
+                a(href='tel:+919000060000') +91-900-006-0000
+                a(href='mailto:sales@lpwtechnology.com') sales@lpwtechnology.com
+
+            .col-12.col-md-6.d-flex.flex-column.align-items-center
+                img.mb-2.contact(src='/svgs/029-compass.svg', alt='business contact')
+                h4 SALES PERSON
+                a(href='tel:+919000060000') +91-900-006-0000
+                a(href='mailto:sales@lpwtechnology.com') sales@lpwtechnology.com
+
+    .map        
+        //- img.img-fluid(src='/images/crafted_map.jpg', alt='location map')
+    
+    .window.d-flex.justify-content-center
+        img.d-none.d-md-block.mr-4(src='/svgs/018-clipboard.svg')
+        .d-flex.flex-column.align-items-center.justify-content-center
+            h3 VIEW BROCHURE HERE
+            a.py-2.px-4(href='#') DOWNLOAD
+
+append footer
+    script(type='text/javascript', src='/javascripts/productionTechnology.js')

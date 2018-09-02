@@ -94,43 +94,4 @@ a.link-button {
   text-align: center;
   color: #FFF; }
 
-#tech-data {
-  position: absolute;
-  top: 100vh;
-  opacity: 0;
-  transform: scale(0);
-  transition: all .3s; }
-  #tech-data.active {
-    top: 60vh;
-    opacity: 1;
-    transform: scale(1); }
-  #tech-data > div > div {
-    background: #FFF;
-    border-radius: 3px; }
-
-.tech-logo {
-  border-radius: 50%;
-  color: #FFF;
-  font-size: 18px;
-  width: 70px;
-  height: 70px; }
-
-.tech-value {
-  flex-direction: row-reverse; }
-  .tech-value span:first-child {
-    font: 30px/100% Roboto, sans-serif;
-    color: #4A4A4A;
-    font-weight: bold; }
-  .tech-value span:last-child {
-    font: 16px/100% Roboto, sans-serif;
-    color: grey;
-    align-self: flex-end;
-    font-weight: bold; }
-
-.tech-head {
-  font: 16px/130% Roboto, sans-serif;
-  color: teal;
-  text-align: right;
-  font-weight: bold; }
-
 /*# sourceMappingURL=products.css.map */

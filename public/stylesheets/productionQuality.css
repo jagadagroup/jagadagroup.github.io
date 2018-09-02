@@ -1,0 +1,15 @@
+@media (max-width: 767.98px) {
+  .window {
+    padding: .5rem 1.5rem; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .window {
+    padding: 3rem; } }
+
+@media (min-width: 992px) {
+  .map {
+    height: 25vw; }
+  .window {
+    padding: 5rem; } }
+
+/*# sourceMappingURL=productionQuality.css.map */

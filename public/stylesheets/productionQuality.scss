@@ -1,0 +1,108 @@
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+$prussian-blue: #133C55;
+$dark-pastel-blue: #81A4CD;
+.about-head {
+    background: transparent;
+    h2 {
+        font: 15px/150% Roboto, sans-serif;
+        color: #FFF;
+        text-align: center;
+    }
+    h3 {
+        font: 13px/150% Roboto, sans-serif;
+        color: #FFF;
+        text-align: center;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .about-head {
+        padding: 7rem 0.25rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .about-head {
+        padding: 10rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .about-head {
+        padding: 15rem;
+    }
+}
+
+.about-us {
+    .row:first-child>div {
+        &:first-child {
+            background-color: $prussian-blue;
+            padding: 5rem 0;
+            h4,
+            a {
+                color: #FFF;
+            }
+        }
+        &:nth-child(2) {
+            padding: 5rem 0;
+            background-color: whitesmoke;
+            h4,
+            a {
+                color: #444;
+            }
+        }
+    }
+    .contact {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}
+
+.map {
+    height: 40vw; // overflow: hidden;
+    background-image: url(/images/crafted_map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.window {
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+    h3,
+    a {
+        font: 15px/150% Roboto, sans-serif;
+        color: #FFF;
+    }
+    a {
+        border: solid 2px #FFF;
+        transition: .3s all;
+        background: transparent;
+        &:hover {
+            text-decoration: none;
+            color: $prussian-blue;
+            background: white;
+        }
+    }
+}
+@include media-breakpoint-down(sm) {
+    .window {
+        padding: .5rem 1.5rem;
+    }
+}
+@include media-breakpoint-only(md) {
+    .window {
+        padding: 3rem;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .map {
+        height: 25vw;
+    }
+    .window {
+        padding: 5rem;
+    }
+}

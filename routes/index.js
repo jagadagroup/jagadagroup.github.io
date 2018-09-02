@@ -16,6 +16,15 @@ router.get('/', function(req, res, next) {
   });
 });
 
+/* GET home page. */
+router.get('/home', function(req, res, next) {
+  res.render('index', {
+    menu: menu,
+    products: products,
+    comments: comments
+  });
+});
+
 router.get('/products', function(req, res) {
   res.render('products', {
     menu: menu,
@@ -41,6 +50,75 @@ router.get('/about-us', function(req, res) {
   });
 });
 
+router.get('/customers', function(req, res) {
+  res.render('customers', {
+    menu: menu,
+    products: products
+  });
+});
+
+router.get('/press', function(req, res) {
+  res.render('press', {
+    menu: menu,
+    products: products
+  });
+});
+
+router.get('/jobs', function(req, res) {
+  res.render('jobs', {
+    menu: menu,
+    products: products
+  });
+});
+
+router.get('/resource-center', function(req, res) {
+  res.render('resourceCenter', {
+    menu: menu,
+    products: products
+  });
+});
+
+router.get('/blogs', function(req, res) {
+  res.render('blogs', {
+    menu: menu,
+    products: products
+  });
+});
+
+router.get('/help-center', function(req, res) {
+  res.render('helpCenter', {
+    menu: menu,
+    products: products
+  });
+});
+
+router.get('/product-status', function(req, res) {
+  res.render('productStatus', {
+    menu: menu,
+    products: products
+  });
+});
+
+router.get('/support', function(req, res) {
+  res.render('support', {
+    menu: menu,
+    products: products
+  });
+});
+
+router.get('/production-technology', function(req, res) {
+  res.render('productionTechnology', {
+    menu: menu,
+    products: products
+  });
+});
+
+router.get('/production-quality', function(req, res) {
+  res.render('productionQuality', {
+    menu: menu,
+    products: products
+  });
+});
 
 router.get('/research-and-development', function(req, res) {
   res.render('researchDev', {
