@@ -26,7 +26,7 @@ router.get('/home', function(req, res, next) {
 });
 
 router.get('/products', function(req, res) {
-  res.render('products', {
+  res.render('productum', {
     menu: menu,
     products: products,
     parallelogram: parallelogram

@@ -1,0 +1,47 @@
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+$prussian-blue: #133C55;
+$dark-pastel-blue: #81A4CD;
+
+@include media-breakpoint-down(md) {
+    // .parallelogram {
+    //     width: 70vw;
+    //     height: 55vw;
+    // }
+    .parallel-base {
+        width: 70vw;
+        height: 55vw;
+        background-color: #FFF;
+        box-shadow: 0 0 30px 10px rgba(0,0,0,1);
+    }
+    .parallelogram {
+        width: 100%;
+        height: calc(100% - 2rem);
+    }
+    .parallel-text {
+        height: 1rem;
+        line-height: 2rem;
+        transform: translateY(0.5rem);
+        text-align: center;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .parallel-base {
+        width: 40vw;
+        height: 30vw;
+        background-color: #FFF;
+        box-shadow: 0 0 30px 10px rgba(0,0,0,1);
+    }
+    .parallelogram {
+        width: 100%;
+        height: calc(100% - 2rem);
+    }
+    .parallel-text {
+        height: 1rem;
+        line-height: 2rem;
+        transform: translateY(0.5rem);
+        text-align: center;
+    }
+}

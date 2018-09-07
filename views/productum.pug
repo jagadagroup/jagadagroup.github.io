@@ -1,0 +1,17 @@
+extends layout
+
+append links
+    link(rel='stylesheet', type='text/css', href='/stylesheets/productum.css')
+
+block content
+    .container-fluid
+        .row
+            each parallel, index in parallelogram
+                .col-12.col-lg-6.d-flex.justify-content-center.p-4.parallel-home
+                    a.parallel-base.p-1.p-md-2.p-lg-3.d-flex.flex-column(href='/product?id=' + (index + 1))
+                        img.parallelogram(src=parallel.url)
+                        .parallel-text #{parallel.text}
+                    //- .parallelogram(style={'background-image': 'url(' + parallel.url + ')'})
+
+append footer
+    script(type='text/javascript', src='/javascripts/productum.js')
