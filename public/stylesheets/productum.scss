@@ -29,19 +29,26 @@ $dark-pastel-blue: #81A4CD;
 
 @include media-breakpoint-up(lg) {
     .parallel-base {
-        width: 40vw;
-        height: 30vw;
-        background-color: #FFF;
-        box-shadow: 0 0 30px 10px rgba(0,0,0,1);
+        // width: 40vw;
+        // height: 30vw;
+        // background-color: #FFF;
+        // box-shadow: 0 0 30px 10px rgba(0,0,0,1);
+        position: relative;
     }
-    .parallelogram {
-        width: 100%;
-        height: calc(100% - 2rem);
-    }
+    // .parallelogram {
+        // width: 100%;
+        // height: calc(100% - 2rem);
+    // }
     .parallel-text {
-        height: 1rem;
-        line-height: 2rem;
-        transform: translateY(0.5rem);
+        // height: 1rem;
+        // line-height: 2rem;
+        // transform: translateY(0.5rem);
+        position: absolute;
+        color: #FFF;
+        text-shadow: 0 0 30px rgba(0,0,0,1);
         text-align: center;
+        // bottom: 1rem;
+        top: 1rem;
+        font-size: 18px;
     }
 }

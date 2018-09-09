@@ -1,6 +1,6 @@
 [{
     "url": "/images/1.18MeshMagnaliumPowder.jpg",
-    "text": "1.18 Mesh Magnalium Powder",
+    "text": "18 Mesh Magnalium Powder",
     "id": 1,
     "data": [{
         "class": "bug",
@@ -33,7 +33,7 @@
     "alt": "The Bulk density is maintained for Fireworks and Defence application"
 }, {
     "url": "/images/2.40MeshMagnaliumPowder.jpg",
-    "text": "2.40 Mesh Magnalium Powder",
+    "text": "40 Mesh Magnalium Powder",
     "id": 2,
     "data": [{
         "class": "bug",
@@ -98,12 +98,17 @@
     "alt": "The bulk density is maintained for Fireworks and pyrotechnic applications"
 }, {
     "url": "/images/4.80MeshMagnaliumPowder.jpg",
-    "text": "4.80 Mesh Magnalium Powder",
+    "text": "80 Mesh Magnalium Powder",
     "id": 4,
     "data": []
 }, {
     "url": "/images/5.100MeshMagnaliumPowder.jpg",
-    "text": "5.100 Mesh Magnalium Powder",
+    "text": "100 Mesh Magnalium Powder",
     "id": 5,
+    "data": []
+}, {
+    "url": "/images/titanium-powder-500x500.jpg",
+    "text": "Titanium Powder",
+    "id": 6,
     "data": []
 }]
