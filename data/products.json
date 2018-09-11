@@ -1,8 +1,8 @@
 [{
-  "name": "Mesh Magnalium Powder",
+  "name": "18 Mesh Magnalium Powder",
   "href": "product?id=1",
   "url": "../images/1.18MeshMagnaliumPowder.jpg",
-  "text": "1.18 Mesh Magnalium Powder",
+  "text": "18 Mesh Magnalium Powder",
   "id": 1,
   "data": [{
     "class": "bug",
@@ -34,10 +34,10 @@
   "desc": "the composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product through powder metallurgical processes",
   "alt": "The Bulk density is maintained for Fireworks and Defence application"
 }, {
-  "name": "2.4 Mesh Magnalium Powder",
+  "name": "40 Mesh Magnalium Powder",
   "href": "product?id=2",
   "url": "/assets/img/2.40MeshMagnaliumPowder.jpg",
-  "text": "2.40 Mesh Magnalium Powder",
+  "text": "40 Mesh Magnalium Powder",
   "id": 2,
   "data": [{
     "class": "bug",
@@ -103,17 +103,17 @@
   "desc": "The composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product  through powder Metallurgical process",
   "alt": "The bulk density is maintained for Fireworks and pyrotechnic applications"
 }, {
-  "name": "4.8 Mesh Magnalium Powder",
+  "name": "80 Mesh Magnalium Powder",
   "href": "product?id=4",
   "url": "/assets/img/4.80MeshMagnaliumPowder.jpg",
-  "text": "4.80 Mesh Magnalium Powder",
+  "text": "80 Mesh Magnalium Powder",
   "id": 4,
   "data": []
 }, {
-  "name": "5.1 Mesh Magnalium Powder",
+  "name": "100 Mesh Magnalium Powder",
   "href": "product?id=5",
   "url": "/assets/img/5.100MeshMagnaliumPowder.jpg",
-  "text": "5.100 Mesh Magnalium Powder",
+  "text": "100 Mesh Magnalium Powder",
   "id": 5,
   "data": []
 }]

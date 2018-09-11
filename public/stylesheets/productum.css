@@ -1,27 +1,38 @@
-@media (max-width: 991.98px) {
-  .parallel-base {
-    width: 70vw;
-    height: 55vw;
-    background-color: #FFF;
-    box-shadow: 0 0 30px 10px black; }
-  .parallelogram {
-    width: 100%;
-    height: calc(100% - 2rem); }
-  .parallel-text {
-    height: 1rem;
-    line-height: 2rem;
-    transform: translateY(0.5rem);
-    text-align: center; } }
+.parallel-base {
+  position: relative; }
+  .parallel-base > img {
+    height: 75vw; }
+
+.parallel-text {
+  position: absolute;
+  color: #FFF;
+  text-shadow: 0 0 30px black;
+  text-align: center;
+  top: 1rem;
+  font-size: 18px; }
+
+.about-head {
+  padding: 4rem 0.25rem; }
+
+.about-head {
+  background: transparent; }
+  .about-head h2 {
+    font: 15px/150% Roboto, sans-serif;
+    color: #FFF;
+    text-align: center; }
+  .about-head h3 {
+    font: 13px/150% Roboto, sans-serif;
+    color: #FFF;
+    text-align: center; }
+
+@media (min-width: 768px) {
+  .parallel-base > img {
+    height: 40vw; }
+  .about-head {
+    padding: 7rem; } }
 
 @media (min-width: 992px) {
-  .parallel-base {
-    position: relative; }
-  .parallel-text {
-    position: absolute;
-    color: #FFF;
-    text-shadow: 0 0 30px black;
-    text-align: center;
-    top: 1rem;
-    font-size: 18px; } }
+  .parallel-base > img {
+    height: 25vw; } }
 
 /*# sourceMappingURL=productum.css.map */

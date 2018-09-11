@@ -4,14 +4,21 @@ append links
     link(rel='stylesheet', type='text/css', href='/stylesheets/productum.css')
 
 block content
+    .container-fluid
+        .row.about-head.d-flex.flex-column.align-items-center
+            h2 PRODUCT CATALOG
+            h3 Where quality meets customer
     div
         .row.no-gutters
             each parallel, index in parallelogram
-                .col-12.col-lg-4.d-flex.justify-content-center.parallel-home
+                .col-12.col-sm-12.col-md-6.col-lg-4.d-flex.justify-content-center.parallel-home
                     a.parallel-base.d-flex.flex-column(href='/product?id=' + (index + 1))
-                        img.w-100.h-100(src=parallel.url)
+                        img.w-100(src=parallel.url)
                         .parallel-text.w-100 #{parallel.text}
                     //- .parallelogram(style={'background-image': 'url(' + parallel.url + ')'})
+    //- .container-fluid
+        .row.about-head.d-flex.flex-column.align-items-center
+            h2 CONTACT US
 
 append footer
     script(type='text/javascript', src='/javascripts/productum.js')
