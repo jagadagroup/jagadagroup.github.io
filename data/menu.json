@@ -1,24 +1,22 @@
-[
-    {
-      "name": "home",
-      "href": "home"
-    }, {
-      "name": "about us",
-      "href": "about-us"
-    }, {
-      "name": "products",
-      "href": "products"
-    }, {
-      "name": "research & Development",
-      "href": "research-and-development"
-    }, {
-      "name": "production technology",
-      "href": "production-technology"
-    },{
-      "name": "Production Quality",
-      "href": "production-quality"
-    },{
-      "name": "contact us",
-      "href": "contact-us"
-    }
-  ]
+[{
+  "name": "home",
+  "href": "home"
+}, {
+  "name": "about us",
+  "href": "about-us"
+}, {
+  "name": "products",
+  "href": "products"
+}, {
+  "name": "research & Development",
+  "href": "research-and-development"
+}, {
+  "name": "production technology",
+  "href": "production-technology"
+}, {
+  "name": "Production Quality",
+  "href": "production-quality"
+}, {
+  "name": "contact us",
+  "href": "contact-us"
+}]

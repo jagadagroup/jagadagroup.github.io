@@ -1,3 +1,7 @@
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+
 @import './layout.scss';
 
 $prussian-blue: #133C55;
@@ -13,16 +17,28 @@ nav {
 ul.menu {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 3rem 0 2rem;
+}
+
+@include media-breakpoint-down(sm) {
+    ul.menu {
+        padding: 0 !important;
+    }
 }
 
 .menu>li {
     text-transform: uppercase;
     text-align: center;
     transition: all .3s;
+    border-top: solid 1px #CCC;
     &:hover {
-        background: #FFF;
-        color: $prussian-blue;
+        background-color: #333;
+        a {
+            color: gold !important;
+        }
+    }
+    &:last-child {
+        border-bottom: solid 1px #CCC;
     }
 }
 
@@ -32,4 +48,5 @@ ul.menu {
     &.active {
         transform: translateX(0);
     }
+    background-color: #000;
 }

@@ -37,6 +37,9 @@ p {
 }
 
 @include media-breakpoint-down(sm) {
+    #tech-data {
+        height: 80vh;
+    }
     #tech-data.active {
         top: 10vh;
     }
@@ -49,6 +52,24 @@ p {
     width: 70px;
     height: 70px;
 }
+
+@include media-breakpoint-down(lg) {
+    .tech-logo {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 15px !important;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .tech-logo {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 14px !important;
+    }
+}
+
+
 .tech-value {
     flex-direction: row-reverse;
     span:first-child {
@@ -63,6 +84,21 @@ p {
         font-weight: bold;
     }
 }
+@include media-breakpoint-down(lg) {
+    .tech-value {
+        span:first-child {
+            font: 20px/100% $content !important;
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .tech-value {
+        span:first-child {
+            font: 30px/100% $content !important;
+        }
+    }
+}
+
 .tech-head {
     font: 16px/130% $heading;
     color: teal;
@@ -75,6 +111,9 @@ p {
     top: 1.5rem;
     left: 1.5rem;
     z-index: 100;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .25rem;
     background: rgba(0,0,0,0.5);
     i {
         color: white;

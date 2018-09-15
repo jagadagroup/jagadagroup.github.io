@@ -107,14 +107,9 @@
     "id": 5,
     "data": []
 }, {
-    "url": "/images/titanium-powder-500x500.jpg",
-    "text": "Titanium Powder",
-    "id": 6,
-    "data": []
-}, {
     "name": "Titanium Powder",
     "href": "product?id=6",
-    "url": "/assets/img/titanium-powder-500x500.jpg",
+    "url": "/images/titanium-powder-500x500.jpg",
     "text": "Titanium Powder",
     "id": 6,
     "data": [{
