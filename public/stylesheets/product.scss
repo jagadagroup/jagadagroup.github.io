@@ -2,6 +2,7 @@
 @import '../../node_modules/bootstrap/scss/_variables.scss';
 @import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
 @import './global.scss';
+@import './layout.scss';
 
 p {
     color: #FFF;
@@ -51,19 +52,19 @@ p {
 .tech-value {
     flex-direction: row-reverse;
     span:first-child {
-        font: 30px/100% Roboto, sans-serif;
+        font: 30px/100% $content;
         color: #4A4A4A;
         font-weight: bold;
     }
     span:last-child {
-        font: 16px/100% Roboto, sans-serif;
+        font: 16px/100% $content;
         color: grey;
         align-self: flex-end;
         font-weight: bold;
     }
 }
 .tech-head {
-    font: 16px/130% Roboto, sans-serif;
+    font: 16px/130% $heading;
     color: teal;
     text-align: right;
     font-weight: bold;

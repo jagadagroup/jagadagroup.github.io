@@ -116,4 +116,39 @@
   "text": "100 Mesh Magnalium Powder",
   "id": 5,
   "data": []
+}, {
+  "name": "Titanium Powder",
+  "href": "product?id=6",
+  "url": "/assets/img/titanium-powder-500x500.jpg",
+  "text": "Titanium Powder",
+  "id": 6,
+  "data": [{
+    "class": "bug",
+    "value": "15-150",
+    "unit": "Mesh",
+    "sub": "40-60 um",
+    "head": "Paticle size",
+    "color": "#D34E24"
+  }, {
+    "class": "microchip",
+    "value": "99",
+    "unit": "%",
+    "sub": "pure Ti6Al4v ingots",
+    "head": "Raw Materials",
+    "color": "teal"
+  }, {
+    "class": "space-shuttle",
+    "value": "4.54",
+    "unit": "gm/cm3",
+    "head": "Real Density",
+    "color": "steelblue"
+  }, {
+    "class": "area-chart",
+    "value": "99% Ti Powder",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+  }],
+  "desc": "Titanium is a very effective generator of white (silver) sparks when used in the manufacture of fireworks. This is because of three of its proper- ties: it ignites easily and burns readily in air, it has a high boiling point, and it is corrosion resistant. Because of this unique combination of desirable properties, the use of titanium in fireworks is generally easy, relatively safe and very effective.",
+  "alt": "The bulk density is maintained for Fireworks and pyrotechnic applications"
 }]

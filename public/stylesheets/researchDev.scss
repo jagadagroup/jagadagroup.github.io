@@ -2,15 +2,16 @@
 @import '../../node_modules/bootstrap/scss/_variables.scss';
 @import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
 @import './global.scss';
+@import './layout.scss';
 .about-head {
     background: transparent;
     h2 {
-        font: 15px/150% Roboto, sans-serif;
+        font: 15px/150% $heading;
         color: #FFF;
         text-align: center;
     }
     h3 {
-        font: 13px/150% Roboto, sans-serif;
+        font: 13px/150% $heading;
         color: #FFF;
         text-align: center;
     }

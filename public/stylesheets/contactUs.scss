@@ -2,6 +2,7 @@
 @import '../../node_modules/bootstrap/scss/_variables.scss';
 @import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
 @import './global.scss';
+@import './layout.scss';
 
 #contact-header {
     background-image: url('../images/garage-hanging-mechanic-162553.jpg');
@@ -44,7 +45,7 @@
         height: 4.5rem;
     }
     h2 {
-        font: 1.25rem/150% Roboto, sans-serif;
+        font: 1.25rem/150% $heading;
     }
     &:first-child {
         color:#3a3a3a;

@@ -1,7 +1,22 @@
+@font-face {
+  font-family: 'Adam cg Pro';
+  src: url("../fonts/ADAM.CG_PRO.otf"); }
+
+@font-face {
+  font-family: 'Pier Sans';
+  src: url("../fonts/PierSans-Regular.otf"); }
+
+@font-face {
+  font-family: 'San Fransisco';
+  src: url("../fonts/SFCompactText-Regular.otf"); }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+a:hover {
+  text-decoration: none; }
 
 .page {
   position: absolute;
