@@ -1,153 +1,168 @@
 [{
-  "name": "18 Mesh Magnalium Powder",
-  "href": "product?id=1",
-  "url": "../images/1.18MeshMagnaliumPowder.jpg",
+  "url": "/images/1.18MeshMagnaliumPowder.jpg",
   "text": "18 Mesh Magnalium Powder",
   "id": 1,
   "data": [{
-    "class": "bug",
-    "value": "14-325 Mesh",
-    "unit": "Mesh",
-    "sub": "1400-44 um",
-    "head": "Paticle size",
-    "color": "#D34E24"
+      "class": "bug",
+      "value": "14-325 Mesh",
+      "unit": "Mesh",
+      "sub": "1400-44 um",
+      "head": "Paticle size",
+      "color": "#D34E24"
   }, {
-    "class": "microchip",
-    "value": "99.8",
-    "unit": "%",
-    "sub": "Virgin Aluminium",
-    "head": "Raw Materials",
-    "color": "teal"
+      "class": "microchip",
+      "value": "99.8",
+      "unit": "%",
+      "sub": "Virgin Aluminium",
+      "head": "Raw Materials",
+      "color": "teal"
   }, {
-    "class": "space-shuttle",
-    "value": "2.7",
-    "unit": "gm/cm3",
-    "head": "Real Density",
-    "color": "steelblue"
+      "class": "space-shuttle",
+      "value": "2.7",
+      "unit": "gm/cm3",
+      "head": "Real Density",
+      "color": "steelblue"
   }, {
-    "class": "area-chart",
-    "value": "99",
-    "unit": "%",
-    "head": "Composition",
-    "color": "#F28123"
+      "class": "area-chart",
+      "value": "99",
+      "unit": "%",
+      "head": "Composition",
+      "color": "#F28123"
   }],
   "desc": "the composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product through powder metallurgical processes",
   "alt": "The Bulk density is maintained for Fireworks and Defence application"
 }, {
-  "name": "40 Mesh Magnalium Powder",
-  "href": "product?id=2",
-  "url": "/assets/img/2.40MeshMagnaliumPowder.jpg",
+  "url": "/images/2.40MeshMagnaliumPowder.jpg",
   "text": "40 Mesh Magnalium Powder",
   "id": 2,
   "data": [{
-    "class": "bug",
-    "value": "Variable Sizes",
-    "head": "Paticle size",
-    "color": "#D34E24"
+      "class": "bug",
+      "value": "Variable Sizes",
+      "head": "Paticle size",
+      "color": "#D34E24"
   }, {
-    "class": "microchip",
-    "value": "99.8",
-    "unit": "%",
-    "sub": "Virgin Aluminium",
-    "head": "Raw Materials",
-    "color": "teal"
+      "class": "microchip",
+      "value": "99.8",
+      "unit": "%",
+      "sub": "Virgin Aluminium",
+      "head": "Raw Materials",
+      "color": "teal"
   }, {
-    "class": "space-shuttle",
-    "value": "2.7",
-    "unit": "gm/cm3",
-    "head": "Real Density",
-    "color": "steelblue"
+      "class": "space-shuttle",
+      "value": "2.7",
+      "unit": "gm/cm3",
+      "head": "Real Density",
+      "color": "steelblue"
   }, {
-    "class": "area-chart",
-    "sub": "Aluminium",
-    "value": "99",
-    "unit": "%",
-    "head": "Composition",
-    "color": "#F28123"
+      "class": "area-chart",
+      "sub": "Aluminium",
+      "value": "99",
+      "unit": "%",
+      "head": "Composition",
+      "color": "#F28123"
   }],
   "desc": "The composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product through powder metallurgical processes.",
   "alt": "TThe Bulk density is maintained for light weight concrete blocks and pesticides application"
 }, {
-  "name": "Grade 2 Magnalium Powder",
-  "href": "product?id=3",
-  "url": "/assets/img/2.Grade2MagnesiumPowder.jpg",
+  "url": "/images/2.Grade2MagnesiumPowder.jpg",
   "text": "Grade 2 Magnalium Powder",
   "id": 3,
   "data": [{
-    "class": "bug",
-    "value": "15-150",
-    "unit": "Mesh",
-    "sub": "1410-90 um",
-    "head": "Paticle size",
-    "color": "#D34E24"
+      "class": "bug",
+      "value": "15-150",
+      "unit": "Mesh",
+      "sub": "1410-90 um",
+      "head": "Paticle size",
+      "color": "#D34E24"
   }, {
-    "class": "microchip",
-    "value": "99",
-    "unit": "%",
-    "sub": "pure Ti6Al4v ingots",
-    "head": "Raw Materials",
-    "color": "teal"
+      "class": "microchip",
+      "value": "99",
+      "unit": "%",
+      "sub": "pure Ti6Al4v ingots",
+      "head": "Raw Materials",
+      "color": "teal"
   }, {
-    "class": "space-shuttle",
-    "value": "4.12",
-    "unit": "gm/cm3",
-    "head": "Real Density",
-    "color": "steelblue"
+      "class": "space-shuttle",
+      "value": "4.12",
+      "unit": "gm/cm3",
+      "head": "Real Density",
+      "color": "steelblue"
   }, {
-    "class": "area-chart",
-    "value": "90 Ti, 6 Al, 4 V",
-    "unit": "%",
-    "head": "Composition",
-    "color": "#F28123"
+      "class": "area-chart",
+      "value": "90 Ti, 6 Al, 4 V",
+      "unit": "%",
+      "head": "Composition",
+      "color": "#F28123"
   }],
   "desc": "The composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product  through powder Metallurgical process",
   "alt": "The bulk density is maintained for Fireworks and pyrotechnic applications"
 }, {
-  "name": "80 Mesh Magnalium Powder",
-  "href": "product?id=4",
-  "url": "/assets/img/4.80MeshMagnaliumPowder.jpg",
+  "url": "/images/4.80MeshMagnaliumPowder.jpg",
   "text": "80 Mesh Magnalium Powder",
   "id": 4,
   "data": []
 }, {
-  "name": "100 Mesh Magnalium Powder",
-  "href": "product?id=5",
-  "url": "/assets/img/5.100MeshMagnaliumPowder.jpg",
+  "url": "/images/5.100MeshMagnaliumPowder.jpg",
   "text": "100 Mesh Magnalium Powder",
   "id": 5,
   "data": []
 }, {
+  "url": "/images/150mesh.jpg",
+  "text": "150 Mesh Magnalium Powder",
+  "id": 6,
+  "data": []
+}, {
+  "url": "/images/200mesh.jpg",
+  "text": "200 Mesh Magnalium Powder",
+  "id": 7,
+  "data": []
+}, {
+  "url": "/images/325mesh.jpg",
+  "text": "325 Mesh Magnalium Powder",
+  "id": 8,
+  "data": []
+}, {
+  "url": "/images/Grade_1_Magnesium.jpg",
+  "text": "Grade 1 Magnesium Powder",
+  "id": 9,
+  "data": []
+}, {
+  "url": "/images/Grade_2_Magnesium.jpg",
+  "text": "Grade 2 Magnesium Powder",
+  "id": 10,
+  "data": []
+}, {
   "name": "Titanium Powder",
   "href": "product?id=6",
-  "url": "/assets/img/titanium-powder-500x500.jpg",
+  "url": "/images/titanium-powder-500x500.jpg",
   "text": "Titanium Powder",
-  "id": 6,
+  "id": 11,
   "data": [{
-    "class": "bug",
-    "value": "15-150",
-    "unit": "Mesh",
-    "sub": "40-60 um",
-    "head": "Paticle size",
-    "color": "#D34E24"
+      "class": "bug",
+      "value": "40-60",
+      "unit": "Mesh",
+      "sub": "40-60 um",
+      "head": "Paticle size",
+      "color": "#D34E24"
   }, {
-    "class": "microchip",
-    "value": "99",
-    "unit": "%",
-    "sub": "pure Ti6Al4v ingots",
-    "head": "Raw Materials",
-    "color": "teal"
+      "class": "microchip",
+      "value": "99",
+      "unit": "%",
+      "sub": "pure Ti6Al4v ingots",
+      "head": "Raw Materials",
+      "color": "teal"
   }, {
-    "class": "space-shuttle",
-    "value": "4.54",
-    "unit": "gm/cm3",
-    "head": "Real Density",
-    "color": "steelblue"
+      "class": "space-shuttle",
+      "value": "4.54",
+      "unit": "gm/cm3",
+      "head": "Real Density",
+      "color": "steelblue"
   }, {
-    "class": "area-chart",
-    "value": "99% Ti Powder",
-    "unit": "%",
-    "head": "Composition",
-    "color": "#F28123"
+      "class": "area-chart",
+      "value": "99% Ti Powder",
+      "unit": "%",
+      "head": "Composition",
+      "color": "#F28123"
   }],
   "desc": "Titanium is a very effective generator of white (silver) sparks when used in the manufacture of fireworks. This is because of three of its proper- ties: it ignites easily and burns readily in air, it has a high boiling point, and it is corrosion resistant. Because of this unique combination of desirable properties, the use of titanium in fireworks is generally easy, relatively safe and very effective.",
   "alt": "The bulk density is maintained for Fireworks and pyrotechnic applications"

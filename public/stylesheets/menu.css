@@ -93,12 +93,13 @@ ul.menu {
   text-align: center;
   transition: all .3s;
   border-top: solid 1px #CCC; }
-  .menu > li:hover {
-    background-color: #333; }
-    .menu > li:hover a {
-      color: gold !important; }
+  .menu > li a:hover {
+    color: gold !important; }
   .menu > li:last-child {
     border-bottom: solid 1px #CCC; }
+
+.menu-child {
+  text-transform: capitalize; }
 
 #menu-holder {
   transform: translateX(100%);

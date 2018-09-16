@@ -146,6 +146,11 @@ img.col-6 {
     div {
         height: 30vw;
     }
+    p {
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+    }
 }
 
 #c1,
@@ -170,4 +175,12 @@ img.col-6 {
 #c9,
 #c10 {
     min-height: 30vw;
+}
+
+.video {
+    color: #FFF;
+}
+.fa-play-circle {
+    cursor: pointer;
+    font-size: 50px;
 }

@@ -107,11 +107,36 @@
     "id": 5,
     "data": []
 }, {
+    "url": "/images/150mesh.jpg",
+    "text": "150 Mesh Magnalium Powder",
+    "id": 6,
+    "data": []
+}, {
+    "url": "/images/200mesh.jpg",
+    "text": "200 Mesh Magnalium Powder",
+    "id": 7,
+    "data": []
+}, {
+    "url": "/images/325mesh.jpg",
+    "text": "325 Mesh Magnalium Powder",
+    "id": 8,
+    "data": []
+}, {
+    "url": "/images/Grade_1_Magnesium.jpg",
+    "text": "Grade 1 Magnesium 325 Mesh Magnalium Powder",
+    "id": 9,
+    "data": []
+}, {
+    "url": "/images/Grade_2_Magnesium.jpg",
+    "text": "Grade 2 Magnesium Powder",
+    "id": 10,
+    "data": []
+}, {
     "name": "Titanium Powder",
     "href": "product?id=6",
     "url": "/images/titanium-powder-500x500.jpg",
     "text": "Titanium Powder",
-    "id": 6,
+    "id": 11,
     "data": [{
         "class": "bug",
         "value": "40-60",

@@ -5,12 +5,12 @@ link(rel='stylesheet', type='text/css', href='/stylesheets/footer.css')
         .container-fluid
             .row
             .row.py-3.footer-row.d-flex.justify-content-between
-                ul.col-6.col-md-3.col-lg-2.p-2
+                ul.col-7.col-md-4.col-lg-2.p-2
                     li.gold PRODUCTS
                     each product in products
                         li
-                            a(href!=product.href) #{product.name}
-                ul.col-6.col-md-3.col-lg-2.p-2
+                            a(href!=product.href) #{product.text}
+                ul.col-5.col-md-3.col-lg-2.p-2
                     li.gold COMPANY
                     li #[a(href='about-us') About Us]
                     li #[a(href='customers') Customers]
@@ -20,7 +20,7 @@ link(rel='stylesheet', type='text/css', href='/stylesheets/footer.css')
                     li.gold RESOURCES
                     li #[a(href='resource-center') Resource Center]
                     li #[a(href='blogs') Blogs]
-                ul.col-6.col-md-3.col-lg-2.p-2
+                ul.col-6.col-md-2.col-lg-2.p-2
                     li.gold SUPPORT
                     li #[a(href='help-center') Help Center]
                     li #[a(href='product-status') Product Status]

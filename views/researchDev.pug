@@ -10,7 +10,7 @@ block content
         #r1.row
             #c1.col-12.col-lg-8.imgc
                 .overlap
-            #c2.col-12.col-lg-4.imgc
+            #c2.col-12.col-lg-4.imgc.d-none.d-lg-block
                 .container-fluid.h-100
                     #r5.row.d-flex.align-content-around.flex-wrap.h-100
                         .d-flex.justify-content-center.p-2
@@ -64,7 +64,9 @@ block content
                                     a.learn-more.link-button.py-3.px-5(href='#') LEARN MORE
                         #c8.col-6.imgc
                             .overlap
-                        #c9.col-12.imgc.d-flex.justify-content-center.align-items-center
+                        #c9.col-12.imgc.d-flex.flex-column.justify-content-center.align-items-center.p-md-5(style="color:#fff")
+                            h2 Our place in global market
+                            p Our Magnalium & Magnesium powders have better flammability and brightness while compared to Chinese Magnalium or Magnesium. We prepare Magnalium powders and Magnesium powders using Vigrin Magnesium and Virgin Aluminum as raw materials.
                             a.link-button.py-3.px-5(href='#') EXPLORE MORE
                         #c10.col-12.imgc
                             .overlap.p-2.p-md-3.p-lg-4.d-flex.flex-column.justify-content-around
@@ -74,7 +76,10 @@ block content
                                 span.py-3.px-5
                                     a.learn-more.link-button.py-3.px-5(href='#') LEARN MORE
         #r6.row
-            .col-12
+            .col-12.d-flex.flex-column.align-items-center.justify-content-center.p-md-5
+                p A short video comparing the quality and luminance of Chinese Magnalium and our Magnalium product
+                .video.d-flex.justify-content-center
+                    i.fa.fa-play-circle
 
 append footer
     script(type='text/javascript', src='/javascripts/researchDev.js')

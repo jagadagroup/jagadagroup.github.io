@@ -6,13 +6,24 @@
   "href": "about-us"
 }, {
   "name": "products",
-  "href": "products"
-}, {
-  "name": "research & Development",
-  "href": "research-and-development"
+  "href": "products",
+  "sub": [{
+    "name": "Magnalium Powder",
+    "href": "product?id=1"
+  }, {
+    "name": "Magnesium Powder",
+    "href": "product?id=3"
+  }, {
+    "name": "Titanium Powder",
+    "href": "product?id=6"
+  }]
 }, {
   "name": "production technology",
-  "href": "production-technology"
+  "href": "production-technology",
+  "sub": [{
+    "name": "research & Development",
+    "href": "research-and-development"
+  }]
 }, {
   "name": "Production Quality",
   "href": "production-quality"

@@ -6,8 +6,8 @@ append links
 block content
     section.page-holder
         #parallelogram-holder.d-flex
-            each parallel, index in parallelogram
-                .parallelogram(style={'background-image': 'url(' + parallel.url + ')'})
+            each product, index in products
+                .parallelogram(style={'background-image': 'url(' + product.url + ')'})
         .parallelogram-info.pt-2.pb-4.w-100
             h3
 

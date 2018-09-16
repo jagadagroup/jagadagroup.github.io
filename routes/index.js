@@ -5,7 +5,7 @@ var router = express.Router();
 var menu = require('../data/menu.json');
 var products = require('../data/products.json');
 var comments = require('../data/comments.json');
-var parallelogram = require('../data/parallelogram.json');
+// var parallelogram = require('../data/parallelogram.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -29,7 +29,7 @@ router.get('/products', function(req, res) {
   res.render('productum', {
     menu: menu,
     products: products,
-    parallelogram: parallelogram
+    // parallelogram: parallelogram
   });
 });
 
@@ -37,7 +37,7 @@ router.get('/product', function(req, res) {
   res.render('product', {
     menu: menu,
     products: products,
-    parallelogram: parallelogram,
+    // parallelogram: parallelogram,
     productId: req.query.id,
     // parallel: parallelogram[+req.query.id]
   });

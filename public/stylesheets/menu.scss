@@ -31,17 +31,21 @@ ul.menu {
     text-align: center;
     transition: all .3s;
     border-top: solid 1px #CCC;
-    &:hover {
-        background-color: #333;
-        a {
-            color: gold !important;
-        }
+    & a:hover {
+        // background-color: #333;
+        color: gold !important;
+        // width: 100%;
+        // text-align: center;
+        // a {
+        // }
     }
     &:last-child {
         border-bottom: solid 1px #CCC;
     }
 }
-
+.menu-child {
+    text-transform: capitalize;
+}
 #menu-holder {
     transform: translateX(100%);
     transition: all .4s;

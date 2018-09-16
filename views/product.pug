@@ -9,12 +9,12 @@ block content
         i.fa.fa-arrow-left
 
     section.product-holder
-        each parallel, index in parallelogram
+        each product, index in products
             if index == (productId - 1)
-                .parallelogram(style={'background-image': 'url(' + parallel.url + ')'})
+                .parallelogram(style={'background-image': 'url(' + product.url + ')'})
 
     section#tech-data.row.w-100.active
-        each datum in parallelogram[productId].data
+        each datum in products[productId].data
             .col-lg-3.col-md-6.col-12.mb-3
                 .d-flex.align-items-center.justify-content-around.p-3.mx-3
                     .tech-logo.d-flex.justify-content-center.align-items-center(style={'background':datum.color})

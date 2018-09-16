@@ -5,18 +5,22 @@ append links
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Trykker')
 
 block content
-  img#logo(src='/svgs/jagada.svg', alt='Jagada logo')
   article.px-3
     .jumbotron.jumbotron-fluid
-      .container-fluid.language.d-flex.flex-column.align-items-center.p-4
-        h3.estd estd 1992
+      .container-fluid.language.d-flex.flex-column.align-items-center.p-4.carousel
+        img.iso.m-2(src="/images/iso9001.jpeg")
+        img.iso.m-2(src="/images/iso14001.jpeg")
+        .estd.d-flex.justify-content-center.align-items-center.w-100
+          p(style="transform:translateX(2rem)") estd
+          #logo
+          p(style="transform:translateX(-2rem)") 1992
         h1.display-4.pl-3.pl-md-0 jagada industries
         h2.lead.english Pioneers in Pyrotechnic & Non Ferrous Metal Powders
         //- h2.lead.french Pionniers de l'industrie des poudres non métalliques
         //- h2.lead.german Pioniere der Nichtmetallpulverindustrie
         //- h2.lead.spanish Pioneers in Non-Metal Powder Industry
         //- h2.lead.italian Pioneers in Non-Metal Powder Industry
-        .video.d-flex.justify-content-center.mt-5
+        //- .video.d-flex.justify-content-center.mt-5
           i.fa.fa-play-circle
         .xtra.d-flex.flex-column.align-items-center
           a.py-2.px-5.mt-5(href='about-us') Get Started
@@ -49,7 +53,8 @@ block content
 
     
     .xtra.d-flex.flex-column.align-items-center.my-3
-      p Locate us at: 40° 41.23' N; 56° 11.59' W
+      p 
+      //- Locate us at: 40° 41.23' N; 56° 11.59' W
 
   section.info.container-fluid
 
@@ -58,18 +63,18 @@ block content
       p.text-center Somethings aren't too good to be true. Experience the quality with us.
 
     .row.d-flex.justify-content-center.p-4
-      .col-12.col-md-6.col-lg-3.d-flex.flex-column.align-items-center
-        img.mb-3(src='/svgs/horse.svg', alt='cost efficiency')
-        h4 Cost efficiency
-        p.text-center Migrating to Docker EE containers can reduce total costs by 50% - from consolidating infrastructure to dramatically streamlining IT tasks like provisioning, scaling and applying updates.
-      .col-12.col-md-6.col-lg-3.d-flex.flex-column.align-items-center
-        img.mb-3(src='/svgs/001-microscope.svg', alt='level of security')
-        h4 New Level of Security
-        p.text-center Docker Enterprise delivers end to end security capabilities that can be applied to traditional apps to reduce the attack surface area, proactively mitigate risk and continuously monitor for vulnerabilities.
-      .col-12.col-md-6.col-lg-3.d-flex.flex-column.align-items-center
-        img.mb-3(src='/svgs/flask.svg', alt='level of security')
-        h4 New Level of Security
-        p.text-center Docker Enterprise delivers end to end security capabilities that can be applied to traditional apps to reduce the attack surface area, proactively mitigate risk and continuously monitor for vulnerabilities.
+      .col-12.col-md-6.col-lg-3.d-flex.flex-column.align-items-center.mb-3.mb-lg-0
+        //- img.mb-3(src='/svgs/horse.svg', alt='cost efficiency')
+        h4 Experience, Knowledge
+        p.text-center We have extensive knowledge and long experience of manufacturing metal powders, and we can tailor our products to our customers’ requirements.
+      .col-12.col-md-6.col-lg-3.d-flex.flex-column.align-items-center.mb-3.mb-lg-0
+        //- img.mb-3(src='/svgs/001-microscope.svg', alt='level of security')
+        h4 Trust, Assurance
+        p.text-center  Our customers must be able to rest assured that the right product, of the right quality, is delivered to the right place at exactly the agreed time. That’s pure precision.
+      .col-12.col-md-6.col-lg-3.d-flex.flex-column.align-items-center.mb-3.mb-lg-0
+        //- img.mb-3(src='/svgs/flask.svg', alt='level of security')
+        h4 Raw materials, Quality
+        p.text-center Production of best product requires the use of best raw materials. We use the best of the breed to serve our customers by procuring hight quality materials. Then, we refine it in our ultra-modern production plant.
 
 
   
@@ -111,8 +116,19 @@ block content
         .em-head.d-none.d-lg-block mt-3 since
         .em-para.d-none.d-lg-block We are the leading brand
 
-  section.partner.container-fluid
+  section
+    .container-fluid(style="background:steelblue")
+        .row.about-head.d-flex.flex-column.align-items-center
+            h2 LET'S WORK TOGETHER
+            h3 With high quality and accuracy in everything we do, we contribute to our customers’ success.
+    .row.no-gutters
+      each product, index in products
+        .col-12.col-sm-12.col-md-4.col-lg-2.d-flex.justify-content-center.parallel-home
+          a.parallel-base.d-flex.flex-column(href='/product?id=' + (index + 1))
+              img.w-100(src=product.url)
+              .parallel-text.w-100 #{product.text}
 
+  section.partner.container-fluid
     .row.pb-5.position-relative
       img.position-absolute.tweet.d-none.d-lg-block(src='/svgs/073-twitter.svg', alt='twitter comments')
       .col-12.col-md-6.col-lg-5

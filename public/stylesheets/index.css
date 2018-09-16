@@ -81,23 +81,34 @@ a:hover {
 .page {
   background: #FFF; }
 
+#logo {
+  background: url(/svgs/jagada.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.iso {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px; }
+  .iso:first-child {
+    left: 0; }
+  .iso:nth-child(2) {
+    right: 0; }
+
 @media (max-width: 767.98px) {
   #logo {
-    width: 10rem;
-    height: 10rem;
-    position: absolute;
-    top: -2rem;
-    left: -2rem;
-    z-index: 100; } }
+    width: 150px;
+    height: 80px; }
+  .iso {
+    width: 60px;
+    height: 60px; } }
 
 @media (min-width: 768px) {
   #logo {
-    width: 15rem;
-    height: 15rem;
-    position: absolute;
-    top: -3rem;
-    left: -3rem;
-    z-index: 100; } }
+    width: 250px;
+    height: 120px; } }
 
 article {
   background-image: url(../images/IMG_2420.jpg);
@@ -112,7 +123,7 @@ article {
     cursor: pointer; }
 
 .jumbotron {
-  padding-top: 7.5rem;
+  padding-top: 4.5rem;
   background: transparent; }
   .jumbotron .language {
     border: double 3px #FFF; }
@@ -126,7 +137,8 @@ article {
       text-transform: capitalize;
       font-family: "Adam cg Pro", "Pier Sans", sans-serif;
       font-size: 30px;
-      color: #FFF; }
+      color: #FFF;
+      padding: 0 !important; }
     .jumbotron > .container {
       position: relative;
       top: 3rem; } }
@@ -150,16 +162,13 @@ article {
       top: 3rem; } }
   .jumbotron h2.lead {
     margin-left: 1rem;
-    font-size: 1.75rem; }
+    font-size: 1.25rem; }
   @media (max-width: 991.98px) {
     .jumbotron {
       padding-bottom: 1rem; } }
   @media (min-width: 992px) {
     .jumbotron {
       padding-bottom: 4rem; } }
-
-.video i {
-  font-size: 60px; }
 
 .catchy b,
 .catchy p {
@@ -229,6 +238,51 @@ article {
 
 .coquelicot {
   color: #E93700; }
+
+.about-head {
+  background: transparent; }
+  .about-head h2 {
+    font: 18px/150% "Adam cg Pro", "Pier Sans", sans-serif;
+    color: #FFF;
+    text-align: center; }
+  .about-head h3 {
+    font: 16px/150% "Adam cg Pro", "Pier Sans", sans-serif;
+    color: #FFF;
+    text-align: center; }
+
+@media (min-width: 768px) {
+  .about-head {
+    padding: 10rem; }
+  #inspired {
+    margin: 2rem 0 7rem; } }
+
+@media (min-width: 992px) {
+  .about-head {
+    padding: 15rem; }
+  .parallel-base > img {
+    height: 16.667vw; } }
+
+@media (max-width: 991.98px) {
+  .parallel-base > img {
+    height: 33.33vw; } }
+
+@media (max-width: 767.98px) {
+  .about-head {
+    padding: 7rem 0.25rem; }
+  .parallel-base > img {
+    height: 100vw; } }
+
+@media (min-width: 768px) {
+  .about-head {
+    padding: 7rem; } }
+
+.parallel-text {
+  position: absolute;
+  color: #FFF;
+  text-shadow: 0 0 30px black;
+  text-align: center;
+  top: 1rem;
+  font-size: 16px; }
 
 @media (max-width: 767.98px) {
   .info > .row:first-child {

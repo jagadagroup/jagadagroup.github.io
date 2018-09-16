@@ -40,6 +40,8 @@ a:hover {
 
 #menu-button {
   position: fixed;
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.5);
   top: 1.5rem;
   right: 1.5rem;
   z-index: 100;
@@ -97,7 +99,8 @@ a:hover {
   background-color: #133C55;
   padding: 5rem 0; }
   .about-us .row:first-child > div:first-child h4,
-  .about-us .row:first-child > div:first-child a {
+  .about-us .row:first-child > div:first-child a,
+  .about-us .row:first-child > div:first-child p {
     color: #FFF; }
 
 .about-us .row:first-child > div:nth-child(2) {

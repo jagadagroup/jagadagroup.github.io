@@ -18,25 +18,45 @@ $pale-black: #445D6E;
     background: #FFF;
 }
 
+#logo {
+    background: url(/svgs/jagada.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.iso {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    &:first-child {
+        left: 0;
+    }
+    &:nth-child(2) {
+        right: 0;
+    }
+}
+
 @include media-breakpoint-down(sm) {
     #logo {
-        width: 10rem;
-        height: 10rem;
-        position: absolute;
-        top: -2rem;
-        left: -2rem;
-        z-index: 100;
+        width: 150px;
+        height: 80px;
+    }
+    .iso {
+        width: 60px;
+        height: 60px;
     }
 }
 
 @include media-breakpoint-up(md) {
     #logo {
-        width: 15rem;
-        height: 15rem;
-        position: absolute;
-        top: -3rem;
-        left: -3rem;
-        z-index: 100;
+        width: 250px;
+        height: 120px;
+        // position: absolute;
+        // top: -3rem;
+        // left: -3rem;
+        // z-index: 100;
     }
 }
 
@@ -56,7 +76,7 @@ article {
 }
 
 .jumbotron {
-    padding-top: 7.5rem;
+    padding-top: 4.5rem;
     .language {
         border: double 3px #FFF;
     }
@@ -73,6 +93,7 @@ article {
             font-family: $heading;
             font-size: 30px;
             color: #FFF;
+            padding: 0 !important;
         }
         &>.container {
             position: relative;
@@ -105,7 +126,7 @@ article {
     }
     h2.lead {
         margin-left: 1rem;
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
     @include media-breakpoint-down(md) {
         padding-bottom: 1rem;
@@ -115,11 +136,11 @@ article {
     }
 }
 
-.video {
-    i {
-        font-size: 60px;
-    }
-}
+// .video {
+//     i {
+//         font-size: 60px;
+//     }
+// }
 
 .catchy {
     b,
@@ -211,6 +232,71 @@ article {
 .coquelicot {
     color: $coquelicot;
 }
+
+// ------------ product section in home page------------------
+.about-head {
+    background: transparent;
+    h2 {
+        font: 18px/150% $heading;
+        color: #FFF;
+        text-align: center;
+    }
+    h3 {
+        font: 16px/150% $heading;
+        color: #FFF;
+        text-align: center;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .about-head {
+        padding: 10rem;
+    }
+    #inspired {
+        margin: 2rem 0 7rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .about-head {
+        padding: 15rem;
+    }
+    .parallel-base>img {
+        height: 16.667vw;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .parallel-base>img {
+        height: 33.33vw;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .about-head {
+        padding: 7rem 0.25rem;
+    }
+    .parallel-base>img {
+        height: 100vw;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .about-head {
+        padding: 7rem;
+    }
+}
+
+.parallel-text {
+    position: absolute;
+    color: #FFF;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 1);
+    text-align: center;
+    top: 1rem;
+    font-size: 16px;
+}
+
+// -----------------
 
 .info {
     @include media-breakpoint-down(sm) {
