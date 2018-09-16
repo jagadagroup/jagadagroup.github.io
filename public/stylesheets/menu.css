@@ -86,14 +86,15 @@ ul.menu {
 
 @media (max-width: 767.98px) {
   ul.menu {
-    padding: 0 !important; } }
+    padding: 0 !important;
+    cursor: pointer; } }
 
 .menu > li {
   text-transform: uppercase;
   text-align: center;
   transition: all .3s;
   border-top: solid 1px #CCC; }
-  .menu > li a:hover {
+  .menu > li a:hover, .menu > li .menu-rollout:hover {
     color: gold !important; }
   .menu > li:last-child {
     border-bottom: solid 1px #CCC; }

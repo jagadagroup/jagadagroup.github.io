@@ -32,6 +32,20 @@ var main = () => {
         });
         init = false;
     }
+
+    // adding expand and collapse action to menu
+    $('.menu-rollout').click(function() {
+        var subMenu = $(this);
+        subMenu.text(
+            /\+/.test(subMenu.text())? subMenu.text().replace(/\+/, '-') : subMenu.text().replace(/\-/, '+')
+        );
+        subMenu.next()
+            .toggleClass('d-none')
+            .toggleClass('d-flex');
+        // if (subMenu.hasClass('d-none')) {
+        //     subMenu
+        // }
+    });
 }
 
 $(document).ready(main);

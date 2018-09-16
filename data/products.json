@@ -37,7 +37,7 @@
   "id": 2,
   "data": [{
       "class": "bug",
-      "value": "Variable Sizes",
+      "value": "420",
       "head": "Paticle size",
       "color": "#D34E24"
   }, {
@@ -100,37 +100,219 @@
   "url": "/images/4.80MeshMagnaliumPowder.jpg",
   "text": "80 Mesh Magnalium Powder",
   "id": 4,
-  "data": []
+  "data": [{
+    "class": "bug",
+    "value": "177",
+    "unit": "Mesh",
+    "sub": "1410-90 um",
+    "head": "Paticle size",
+    "color": "#D34E24"
+}, {
+    "class": "microchip",
+    "value": "50-60 Mg, 50-40 Al",
+    "unit": "%",
+    "sub": "Mg, Al",
+    "head": "Raw Materials",
+    "color": "teal"
+}, {
+    "class": "space-shuttle",
+    "value": "4.12",
+    "unit": "gm/cm3",
+    "head": "Real Density",
+    "color": "steelblue"
+}, {
+    "class": "area-chart",
+    "value": "50-60 Mg, 50-40 Al",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+}]
 }, {
   "url": "/images/5.100MeshMagnaliumPowder.jpg",
   "text": "100 Mesh Magnalium Powder",
   "id": 5,
-  "data": []
+  "data": [{
+    "class": "bug",
+    "value": "149",
+    "unit": "Mesh",
+    "sub": "1410-90 um",
+    "head": "Paticle size",
+    "color": "#D34E24"
+}, {
+    "class": "microchip",
+    "value": "50-60 Mg, 50-40 Al",
+    "unit": "%",
+    "sub": "Mg, Al",
+    "head": "Raw Materials",
+    "color": "teal"
+}, {
+    "class": "space-shuttle",
+    "value": "4.12",
+    "unit": "gm/cm3",
+    "head": "Real Density",
+    "color": "steelblue"
+}, {
+    "class": "area-chart",
+    "value": "50-60 Mg, 50-40 Al",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+}]
 }, {
   "url": "/images/150mesh.jpg",
   "text": "150 Mesh Magnalium Powder",
   "id": 6,
-  "data": []
+  "data": [{
+    "class": "bug",
+    "value": "100",
+    "unit": "Mesh",
+    "sub": "1410-90 um",
+    "head": "Paticle size",
+    "color": "#D34E24"
+}, {
+    "class": "microchip",
+    "value": "50-60 Mg, 50-40 Al",
+    "unit": "%",
+    "sub": "Mg, Al",
+    "head": "Raw Materials",
+    "color": "teal"
+}, {
+    "class": "space-shuttle",
+    "value": "4.12",
+    "unit": "gm/cm3",
+    "head": "Real Density",
+    "color": "steelblue"
+}, {
+    "class": "area-chart",
+    "value": "50-60 Mg, 50-40 Al",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+}]
 }, {
   "url": "/images/200mesh.jpg",
   "text": "200 Mesh Magnalium Powder",
   "id": 7,
-  "data": []
+  "data": [{
+    "class": "bug",
+    "value": "74",
+    "unit": "Mesh",
+    "sub": "1410-90 um",
+    "head": "Paticle size",
+    "color": "#D34E24"
+}, {
+    "class": "microchip",
+    "value": "50-60 Mg, 50-40 Al",
+    "unit": "%",
+    "sub": "Mg, Al",
+    "head": "Raw Materials",
+    "color": "teal"
+}, {
+    "class": "space-shuttle",
+    "value": "4.12",
+    "unit": "gm/cm3",
+    "head": "Real Density",
+    "color": "steelblue"
+}, {
+    "class": "area-chart",
+    "value": "50-60 Mg, 50-40 Al",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+}]
 }, {
   "url": "/images/325mesh.jpg",
   "text": "325 Mesh Magnalium Powder",
   "id": 8,
-  "data": []
+  "data": [{
+    "class": "bug",
+    "value": "44",
+    "unit": "Mesh",
+    "sub": "1410-90 um",
+    "head": "Paticle size",
+    "color": "#D34E24"
+}, {
+    "class": "microchip",
+    "value": "50-60 Mg, 50-40 Al",
+    "unit": "%",
+    "sub": "Mg, Al",
+    "head": "Raw Materials",
+    "color": "teal"
+}, {
+    "class": "space-shuttle",
+    "value": "4.12",
+    "unit": "gm/cm3",
+    "head": "Real Density",
+    "color": "steelblue"
+}, {
+    "class": "area-chart",
+    "value": "50-60 Mg, 50-40 Al",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+}]
 }, {
   "url": "/images/Grade_1_Magnesium.jpg",
   "text": "Grade 1 Magnesium Powder",
   "id": 9,
-  "data": []
+  "data": [{
+    "class": "bug",
+    "value": "50-100",
+    "unit": "Mesh",
+    "sub": "1410-90 um",
+    "head": "Paticle size",
+    "color": "#D34E24"
+}, {
+    "class": "microchip",
+    "value": "99.8",
+    "unit": "%",
+    "sub": "Mg",
+    "head": "Raw Materials",
+    "color": "teal"
+}, {
+    "class": "space-shuttle",
+    "value": "650 - 750",
+    "unit": "kg/m3",
+    "head": "Real Density",
+    "color": "steelblue"
+}, {
+    "class": "area-chart",
+    "value": "90 Ti, 6 Al, 4 V",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+}]
 }, {
   "url": "/images/Grade_2_Magnesium.jpg",
   "text": "Grade 2 Magnesium Powder",
   "id": 10,
-  "data": []
+  "data": [{
+    "class": "bug",
+    "value": "50-100",
+    "unit": "Mesh",
+    "sub": "1410-90 um",
+    "head": "Paticle size",
+    "color": "#D34E24"
+}, {
+    "class": "microchip",
+    "value": "99.8",
+    "unit": "%",
+    "sub": "Mg",
+    "head": "Raw Materials",
+    "color": "teal"
+}, {
+    "class": "space-shuttle",
+    "value": "650 - 750",
+    "unit": "kg/m3",
+    "head": "Real Density",
+    "color": "steelblue"
+}, {
+    "class": "area-chart",
+    "value": "90 Ti, 6 Al, 4 V",
+    "unit": "%",
+    "head": "Composition",
+    "color": "#F28123"
+}]
 }, {
   "name": "Titanium Powder",
   "href": "product?id=6",

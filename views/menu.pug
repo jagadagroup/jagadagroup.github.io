@@ -1,15 +1,15 @@
 link(rel='stylesheet', type='text/css', href='/stylesheets/menu.css')
+script.
 nav.row.no-gutters.d-flex
     .col
     #menu-holder.col-9.col-sm-8.col-md-6.col-lg-4.col-xl-3.d-flex.align-items-center
         ul.menu.w-100
             each opt in menu
                 li.d-flex.flex-column.align-items-center
-                    .d-flex.align-items-center
-                        if opt.sub
-                            span.mr-2(style="color:#fff") +
-                        a.py-3(href!=opt.href, style="color:#fff") #{opt.name}
                     if opt.sub
-                        .d-flex.flex-column
+                        .py-3.menu-rollout(href!=opt.href, style="color:#fff") +&nbsp;&nbsp;#{opt.name}
+                        .d-none.flex-column.menu-sub-container
                             each child in opt.sub
                                 a.py-3.menu-child(href!=child.href, style="color:#fff") #{child.name}
+                    else
+                        a.py-3(href!=opt.href, style="color:#fff") #{opt.name}
