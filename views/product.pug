@@ -14,7 +14,7 @@ block content
                 .parallelogram(style={'background-image': 'url(' + product.url + ')'})
 
     section#tech-data.row.w-100.active
-        each datum in products[productId].data
+        each datum in products[productId - 1].data
             .col-lg-3.col-md-6.col-12.mb-3
                 .d-flex.align-items-center.justify-content-around.p-3.mx-3
                     .tech-logo.d-flex.justify-content-center.align-items-center(style={'background':datum.color})

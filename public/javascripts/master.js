@@ -12,6 +12,7 @@ var main = () => {
     } else {
         transform = `scale(${scale})`;
     }
+    menu.unbind('click');
     if (init) {
         menu.click(event => {
             if (menu.hasClass('active')) {

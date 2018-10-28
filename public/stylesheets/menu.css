@@ -93,11 +93,11 @@ ul.menu {
   text-transform: uppercase;
   text-align: center;
   transition: all .3s;
-  border-top: solid 1px #CCC; }
+  border-bottom: solid 1px #CCC; }
   .menu > li a:hover, .menu > li .menu-rollout:hover {
     color: gold !important; }
   .menu > li:last-child {
-    border-bottom: solid 1px #CCC; }
+    border-bottom: none; }
 
 .menu-child {
   text-transform: capitalize; }

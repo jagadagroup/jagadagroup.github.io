@@ -161,8 +161,13 @@ article {
       position: relative;
       top: 3rem; } }
   .jumbotron h2.lead {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 1rem;
+    text-align: center;
+    border-radius: 2rem;
     margin-left: 1rem;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    border-radius: 20px; }
   @media (max-width: 991.98px) {
     .jumbotron {
       padding-bottom: 1rem; } }

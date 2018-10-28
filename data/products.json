@@ -64,39 +64,6 @@
   "desc": "The composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product through powder metallurgical processes.",
   "alt": "TThe Bulk density is maintained for light weight concrete blocks and pesticides application"
 }, {
-  "url": "/images/2.Grade2MagnesiumPowder.jpg",
-  "text": "Grade 2 Magnalium Powder",
-  "id": 3,
-  "data": [{
-      "class": "bug",
-      "value": "15-150",
-      "unit": "Mesh",
-      "sub": "1410-90 um",
-      "head": "Paticle size",
-      "color": "#D34E24"
-  }, {
-      "class": "microchip",
-      "value": "99",
-      "unit": "%",
-      "sub": "pure Ti6Al4v ingots",
-      "head": "Raw Materials",
-      "color": "teal"
-  }, {
-      "class": "space-shuttle",
-      "value": "4.12",
-      "unit": "gm/cm3",
-      "head": "Real Density",
-      "color": "steelblue"
-  }, {
-      "class": "area-chart",
-      "value": "90 Ti, 6 Al, 4 V",
-      "unit": "%",
-      "head": "Composition",
-      "color": "#F28123"
-  }],
-  "desc": "The composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product  through powder Metallurgical process",
-  "alt": "The bulk density is maintained for Fireworks and pyrotechnic applications"
-}, {
   "url": "/images/4.80MeshMagnaliumPowder.jpg",
   "text": "80 Mesh Magnalium Powder",
   "id": 4,

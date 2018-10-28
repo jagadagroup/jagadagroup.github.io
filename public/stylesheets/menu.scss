@@ -31,7 +31,7 @@ ul.menu {
     text-transform: uppercase;
     text-align: center;
     transition: all .3s;
-    border-top: solid 1px #CCC;
+    border-bottom: solid 1px #CCC;
     & a:hover, & .menu-rollout:hover {
         // background-color: #333;
         color: gold !important;
@@ -41,7 +41,7 @@ ul.menu {
         // }
     }
     &:last-child {
-        border-bottom: solid 1px #CCC;
+        border-bottom: none;
     }
 }
 .menu-child {
