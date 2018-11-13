@@ -8,13 +8,21 @@
   src: url('../fonts/PierSans-Regular.otf');
 }
 
+// @font-face {
+//   font-family: 'San Fransisco';
+//   src: url('../fonts/SFCompactText-Regular.otf');
+// }
+
 @font-face {
-  font-family: 'San Fransisco';
-  src: url('../fonts/SFCompactText-Regular.otf');
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue Medium'), url('../fonts/HelveticaNeueMedium.woff') format('woff');
 }
+  
 
 $heading: 'Adam cg Pro', 'Pier Sans', sans-serif;
-$content: 'San Fransisco', sans-serif;
+$content: 'Helvetica Neue Medium', sans-serif;
 
 ul {
     margin: 0;
