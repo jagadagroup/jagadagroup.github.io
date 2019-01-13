@@ -97,7 +97,8 @@ ul.menu {
   transition: all .3s;
   border-bottom: solid 1px #CCC; }
   .menu > li a:hover, .menu > li .menu-rollout:hover {
-    color: gold !important; }
+    color: gold !important;
+    cursor: pointer; }
   .menu > li:last-child {
     border-bottom: none; }
 

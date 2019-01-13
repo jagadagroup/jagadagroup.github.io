@@ -7,8 +7,10 @@
   src: url("../fonts/PierSans-Regular.otf"); }
 
 @font-face {
-  font-family: 'San Fransisco';
-  src: url("../fonts/SFCompactText-Regular.otf"); }
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Medium"), url("../fonts/HelveticaNeueMedium.woff") format("woff"); }
 
 ul {
   margin: 0;

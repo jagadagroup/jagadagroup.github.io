@@ -1,0 +1,79 @@
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+@import './global.scss';
+@import './layout.scss';
+
+.page-holder {
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+@include media-breakpoint-up(md) {
+    #parallelogram-holder {
+        overflow-x: hidden;
+        height: 100%;
+        width: 120vw;
+        transform: translateX(-10vw);
+        flex-direction: row;
+    }
+    .parallelogram {
+        height: 100%;
+        flex: 1 1;
+        // transition: flex .4s;
+        background-size: cover !important;
+        background-position-y: bottom !important;
+        box-shadow: 1px 1px 30px 2px rgba(0, 0, 0, 0.7);
+        transition: all .5s ease-out;
+        &:hover {
+            flex: 1.5 1;
+        }
+        @for $i from 0 through 5 {
+            &:nth-child(#{$i}) {
+                transform: skewX(-10deg); // transform: translateX(#{$i * -100}#{'%'}) skewX(-10deg);
+            }
+        }
+        &.active {
+            transform: skewX(-10deg);
+            transition: all .5s ease-in;
+        }
+        &.rejected {
+            flex: 0 1;
+        }
+        &.selected {
+            transform: none;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #parallelogram-holder {
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        &:hover .parallelogram {
+            height: 18%;
+            &:hover {
+                height: 28%;
+            }
+        }
+    }
+    .parallelogram {
+        height: 20%;
+        // transition: flex .4s;
+        background-size: cover !important;
+        background-position-y: bottom !important;
+        box-shadow: 1px 1px 30px 2px rgba(0, 0, 0, 0.7);
+        transition: all .5s ease-out;
+    }
+}
+
+.parallelogram-info {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #FFF;
+}

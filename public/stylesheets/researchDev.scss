@@ -68,6 +68,19 @@ img.col-6 {
 
 #c1 {
     background-image: url(/images/tubitos.jpg);
+    & .bg-div {
+        background: rgba(0,0,0,.55);
+        display: inline-block;
+        padding: 1rem 3rem;
+        border-radius: 2px;
+    }
+    h2, li,
+    p {
+        color: #FFF;
+    }
+    ul {
+        margin-left: 1rem;
+    }
 }
 
 #c4 {

@@ -9,10 +9,10 @@
   "href": "products",
   "sub": [{
     "name": "Magnalium Powder",
-    "href": "product?id=1"
+    "href": "magnalium"
   }, {
     "name": "Magnesium Powder",
-    "href": "product?id=3"
+    "href": "magnesium"
   }, {
     "name": "Titanium Powder",
     "href": "product?id=6"

@@ -4,6 +4,8 @@ var router = express.Router();
 // var fs = require('fs');
 var menu = require('../data/menu.json');
 var products = require('../data/products.json');
+var magnalium = require('../data/magnalium.json');
+var magnesium = require('../data/magnesium.json');
 var comments = require('../data/comments.json');
 // var parallelogram = require('../data/parallelogram.json');
 
@@ -29,6 +31,22 @@ router.get('/products', function(req, res) {
   res.render('productum', {
     menu: menu,
     products: products,
+    // parallelogram: parallelogram
+  });
+});
+
+router.get('/magnalium', function(req, res) {
+  res.render('productum', {
+    menu: menu,
+    products: magnalium,
+    // parallelogram: parallelogram
+  });
+});
+
+router.get('/magnesium', function(req, res) {
+  res.render('productum', {
+    menu: menu,
+    products: magnesium,
     // parallelogram: parallelogram
   });
 });

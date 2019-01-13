@@ -7,8 +7,10 @@
   src: url("../fonts/PierSans-Regular.otf"); }
 
 @font-face {
-  font-family: 'San Fransisco';
-  src: url("../fonts/SFCompactText-Regular.otf"); }
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Medium"), url("../fonts/HelveticaNeueMedium.woff") format("woff"); }
 
 ul {
   margin: 0;
@@ -95,7 +97,7 @@ html, body {
 
 a.link-button {
   color: #FFF;
-  font: 15px/150% "San Fransisco", sans-serif;
+  font: 15px/150% "Helvetica Neue Medium", sans-serif;
   border: solid 2px #FFF;
   transition: all .3s; }
   a.link-button:hover {
@@ -112,8 +114,10 @@ a.link-button {
   src: url("../fonts/PierSans-Regular.otf"); }
 
 @font-face {
-  font-family: 'San Fransisco';
-  src: url("../fonts/SFCompactText-Regular.otf"); }
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Medium"), url("../fonts/HelveticaNeueMedium.woff") format("woff"); }
 
 ul {
   margin: 0;
@@ -223,6 +227,16 @@ img.col-6 {
 
 #c1 {
   background-image: url(/images/tubitos.jpg); }
+  #c1 .bg-div {
+    background: rgba(0, 0, 0, 0.55);
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 2px; }
+  #c1 h2, #c1 li,
+  #c1 p {
+    color: #FFF; }
+  #c1 ul {
+    margin-left: 1rem; }
 
 #c4 {
   background-image: url(/images/f_7f6fec49c82b6f7583d11e5b0dd7740f.jpg); }

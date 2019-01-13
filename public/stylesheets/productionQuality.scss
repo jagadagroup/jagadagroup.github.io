@@ -38,7 +38,15 @@ $dark-pastel-blue: #81A4CD;
 
 .about-us {
     .row:first-child>div {
-        &:first-child {
+        // &:nth-child(1) {
+        //     padding: 2rem 0;
+        //     background-color: whitesmoke;
+        //     h4,
+        //     a {
+        //         color: #444;
+        //     }
+        // }
+        &:nth-child(1) {
             background-color: $prussian-blue;
             padding: 5rem 0;
             h4,

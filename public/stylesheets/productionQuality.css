@@ -7,8 +7,10 @@
   src: url("../fonts/PierSans-Regular.otf"); }
 
 @font-face {
-  font-family: 'San Fransisco';
-  src: url("../fonts/SFCompactText-Regular.otf"); }
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Medium"), url("../fonts/HelveticaNeueMedium.woff") format("woff"); }
 
 ul {
   margin: 0;
@@ -95,11 +97,11 @@ a:hover {
   .about-head {
     padding: 15rem; } }
 
-.about-us .row:first-child > div:first-child {
+.about-us .row:first-child > div:nth-child(1) {
   background-color: #133C55;
   padding: 5rem 0; }
-  .about-us .row:first-child > div:first-child h4,
-  .about-us .row:first-child > div:first-child a {
+  .about-us .row:first-child > div:nth-child(1) h4,
+  .about-us .row:first-child > div:nth-child(1) a {
     color: #FFF; }
 
 .about-us .row:first-child > div:nth-child(2) {
@@ -126,7 +128,7 @@ a:hover {
 
 .window h3,
 .window a {
-  font: 15px/150% "San Fransisco", sans-serif;
+  font: 15px/150% "Helvetica Neue Medium", sans-serif;
   color: #FFF; }
 
 .window a {

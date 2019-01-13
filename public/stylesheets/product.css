@@ -7,8 +7,10 @@
   src: url("../fonts/PierSans-Regular.otf"); }
 
 @font-face {
-  font-family: 'San Fransisco';
-  src: url("../fonts/SFCompactText-Regular.otf"); }
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Medium"), url("../fonts/HelveticaNeueMedium.woff") format("woff"); }
 
 ul {
   margin: 0;
@@ -95,7 +97,7 @@ html, body {
 
 a.link-button {
   color: #FFF;
-  font: 15px/150% "San Fransisco", sans-serif;
+  font: 15px/150% "Helvetica Neue Medium", sans-serif;
   border: solid 2px #FFF;
   transition: all .3s; }
   a.link-button:hover {
@@ -112,8 +114,10 @@ a.link-button {
   src: url("../fonts/PierSans-Regular.otf"); }
 
 @font-face {
-  font-family: 'San Fransisco';
-  src: url("../fonts/SFCompactText-Regular.otf"); }
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Medium"), url("../fonts/HelveticaNeueMedium.woff") format("woff"); }
 
 ul {
   margin: 0;
@@ -229,22 +233,22 @@ p {
 .tech-value {
   flex-direction: row-reverse; }
   .tech-value span:first-child {
-    font: 30px/100% "San Fransisco", sans-serif;
+    font: 30px/100% "Helvetica Neue Medium", sans-serif;
     color: #4A4A4A;
     font-weight: bold; }
   .tech-value span:last-child {
-    font: 16px/100% "San Fransisco", sans-serif;
+    font: 16px/100% "Helvetica Neue Medium", sans-serif;
     color: grey;
     align-self: flex-end;
     font-weight: bold; }
 
 @media (max-width: 1199.98px) {
   .tech-value span:first-child {
-    font: 20px/100% "San Fransisco", sans-serif !important; } }
+    font: 20px/100% "Helvetica Neue Medium", sans-serif !important; } }
 
 @media (max-width: 991.98px) {
   .tech-value span:first-child {
-    font: 30px/100% "San Fransisco", sans-serif !important; } }
+    font: 30px/100% "Helvetica Neue Medium", sans-serif !important; } }
 
 .tech-head {
   font: 16px/130% "Adam cg Pro", "Pier Sans", sans-serif;

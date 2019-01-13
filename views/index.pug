@@ -123,27 +123,27 @@ block content
               img.w-100(src=product.url)
               .parallel-text.w-100 #{product.text}
 
-  section.partner.container-fluid
-    .row.pb-5.position-relative
-      img.position-absolute.tweet.d-none.d-lg-block(src='/svgs/073-twitter.svg', alt='twitter comments')
-      .col-12.col-md-6.col-lg-5
-        h2.mb-4 Trusted Enterprise Partner
-        h3.mb-1 Enterprise Support and Partnership
-        p.mb-5 Extend existing partner relationships with integrated solutions and deep technical support for our products. Plus a global network of resellers, consulting and training partners are there to support every stage of your journey.
-        h3 Trusted and Certified
-        p.mb-5 Certified products deliver validated technology solutions with cooperative support for the technology that powers your business.
-        a.mt-3.p-3(href='certifications') View Certifications
+  //- section.partner.container-fluid
+  //-   .row.pb-5.position-relative
+  //-     img.position-absolute.tweet.d-none.d-lg-block(src='/svgs/073-twitter.svg', alt='twitter comments')
+  //-     .col-12.col-md-6.col-lg-5
+  //-       h2.mb-4 Trusted Enterprise Partner
+  //-       h3.mb-1 Enterprise Support and Partnership
+  //-       p.mb-5 Extend existing partner relationships with integrated solutions and deep technical support for our products. Plus a global network of resellers, consulting and training partners are there to support every stage of your journey.
+  //-       h3 Trusted and Certified
+  //-       p.mb-5 Certified products deliver validated technology solutions with cooperative support for the technology that powers your business.
+  //-       a.mt-3.p-3(href='certifications') View Certifications
 
-      .col-12.col-md-6.col-lg-7.d-none.d-sm-block
-        .row.d-flex.flex-column.mt-5.ml-5
-          i.fa.fa-quote-left.quotes.mb-5.d-block.ml-5
-          #comments.carousel.slide.mb-5.d-block(data-ride='carousel')
-            .carousel-inner
-              each comment, index in comments
-                .carousel-item(class=index===0?'active':'')
-                  .carousel-comments
-                    p #{comment.text}
-          i.fa.fa-quote-right.quotes.mb-5.d-block
+  //-     .col-12.col-md-6.col-lg-7.d-none.d-sm-block
+  //-       .row.d-flex.flex-column.mt-5.ml-5
+  //-         i.fa.fa-quote-left.quotes.mb-5.d-block.ml-5
+  //-         #comments.carousel.slide.mb-5.d-block(data-ride='carousel')
+  //-           .carousel-inner
+  //-             each comment, index in comments
+  //-               .carousel-item(class=index===0?'active':'')
+  //-                 .carousel-comments
+  //-                   p #{comment.text}
+  //-         i.fa.fa-quote-right.quotes.mb-5.d-block
 
 
 append footer
