@@ -27,8 +27,11 @@ link(rel='stylesheet', type='text/css', href='/stylesheets/footer.css')
                     li #[a(href='support') Support]
                 .col-12.col-md-7.col-lg-5.mt-3.p-0
                     form.newsletter.py-2.px-3.w-100
-                        h6 Sign up for our newsletter
+                        h6 Any queries?
                         p.mb-1 Keep up with the latest new in industry
+                        .form-group.d-flex.flex-row
+                            .input-group
+                                input.form-control(type='text', placeholder='Type your query here...')
                         .form-group.d-flex.flex-row
                             .input-group
                                 .input-group-prepend
@@ -37,11 +40,11 @@ link(rel='stylesheet', type='text/css', href='/stylesheets/footer.css')
                                 .input-group-append.d-md-none
                                     button.input-group-text
                                         i.fa.fa-paper-plane
-                            input.btn.btn-primary.d-none.d-md-block.ml-4(type='submit', value='SUBSCRIBE')
+                            input.btn.btn-primary.d-none.d-md-block.ml-4(type='submit', value='SEND')
                 .col-lg-3.d-none.d-lg-block
-                    .social-footer.d-flex.justify-content-around.h-100.align-items-center
-                        a.social-icon(href='#') #[i.fa.fa-facebook]
-                        a.social-icon(href='https://www.linkedin.com/in/deleep-kumar-504813141/', target='_blank') #[i.fa.fa-linkedin]
+                    .social-footer.d-flex.justify-content-center.h-100.align-items-center
+                        a.social-icon.mr-2(href='#') #[i.fa.fa-facebook]
+                        a.social-icon.ml-2(href='https://www.linkedin.com/in/deleep-kumar-504813141/', target='_blank') #[i.fa.fa-linkedin]
                         //- a.social-icon #[i.fa.fa-google-plus]
                         //- a.social-icon #[i.fa.fa-pinterest]
                 ul.col-12.col-md-4.col-lg-3.p-2

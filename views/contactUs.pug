@@ -38,6 +38,30 @@ block content
                     span 3/1224-6, Sattur Road,
                     br
                     span Virudhunagar - 626002, TN
+    .container-fluid
+        .row
+            .col-12.col-md-8.offet-md-2.col-lg-6.offset-lg-3.pt-4.pb-5
+                form.newsletter.px-5.w-100.py-2(style='background:whitesmoke')
+                    h2.mb-3 Enquiry / Feedback Form
+                    .form-group
+                        label(for='contact-name') Name&#42;
+                        input#contact-name.form-control(type='text', placeholder='John Doe')
+                    .form-group
+                        label(for='contact-address') Address&#42;
+                        textarea#contact-address.form-control(rows='3')
+                    .form-group
+                        label(for='contact-phone') Telephone
+                        input#contact-phone.form-control(type='text', placeholder='+91 90000 00000')
+                    .form-group
+                        label(for='contact-email') E-mail ID&#42;
+                        input#contact-email.form-control(type='email', placeholder='johndoe@example.com')
+                    .form-group
+                        label(for='contact-comments') Comments
+                        textarea#contact-comments.form-control(rows='4')
+                        small.form-text &#42;Marked fields are mandatory
+                    .btn-group
+                        button.btn.btn-success(type='submit', value='Submit') Submit
+                        button.btn.btn-primary(type='reset', value='Reset') Reset
     //- .container-fluid
         .row.about-head.d-flex.flex-column.align-items-center
             h2 LET'S WORK TOGETHER
