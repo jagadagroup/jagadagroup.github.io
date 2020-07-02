@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var glob = require('glob');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -16,6 +17,7 @@ module.exports = {
         publicPath: '/'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin()
     ]
 }
