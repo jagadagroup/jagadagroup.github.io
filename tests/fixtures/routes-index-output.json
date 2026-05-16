@@ -1,0 +1,21 @@
+[
+  { "templatePath": "index.pug", "outputPath": "/", "context": { "menu": true, "products": true, "comments": true } },
+  { "templatePath": "index.pug", "outputPath": "/home", "context": { "menu": true, "products": true, "comments": true } },
+  { "templatePath": "productum.pug", "outputPath": "/products", "context": { "menu": true, "products": true } },
+  { "templatePath": "productum.pug", "outputPath": "/magnalium", "context": { "menu": true, "products": "magnalium-only" } },
+  { "templatePath": "productum.pug", "outputPath": "/magnesium", "context": { "menu": true, "products": "magnesium-only" } },
+  { "templatePath": "product.pug", "outputPath": "/product", "context": { "menu": true, "products": true, "productId": 1 } },
+  { "templatePath": "aboutUs.pug", "outputPath": "/about-us", "context": { "menu": true, "products": true } },
+  { "templatePath": "customers.pug", "outputPath": "/customers", "context": { "menu": true, "products": true } },
+  { "templatePath": "press.pug", "outputPath": "/press", "context": { "menu": true, "products": true } },
+  { "templatePath": "jobs.pug", "outputPath": "/jobs", "context": { "menu": true, "products": true } },
+  { "templatePath": "resourceCenter.pug", "outputPath": "/resource-center", "context": { "menu": true, "products": true } },
+  { "templatePath": "blogs.pug", "outputPath": "/blogs", "context": { "menu": true, "products": true } },
+  { "templatePath": "helpCenter.pug", "outputPath": "/help-center", "context": { "menu": true, "products": true } },
+  { "templatePath": "productStatus.pug", "outputPath": "/product-status", "context": { "menu": true, "products": true } },
+  { "templatePath": "support.pug", "outputPath": "/support", "context": { "menu": true, "products": true } },
+  { "templatePath": "productionTechnology.pug", "outputPath": "/production-technology", "context": { "menu": true, "products": true } },
+  { "templatePath": "productionQuality.pug", "outputPath": "/production-quality", "context": { "menu": true, "products": true } },
+  { "templatePath": "researchDev.pug", "outputPath": "/research-and-development", "context": { "menu": true, "products": true } },
+  { "templatePath": "contactUs.pug", "outputPath": "/contact-us", "context": { "menu": true, "products": true } }
+]
