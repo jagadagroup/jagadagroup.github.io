@@ -60,3 +60,9 @@ typings/
 
 # next.js build output
 .next
+# test results
+test-results/
+# playwright traces
+playwright-report/
+# next.js static export (built by CI, not committed)
+nextjs/out/

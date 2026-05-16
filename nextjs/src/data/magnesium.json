@@ -1,0 +1,88 @@
+[{
+    "url": "/images/Grade_1_Magnesium.jpg",
+    "text": "Grade 1 Magnesium Powder",
+    "id": 8,
+    "data": [{
+        "class": "bug",
+        "value": "40-80",
+        "unit": "Mesh",
+        "head": "Paticle size",
+        "color": "#D34E24"
+    }, {
+        "class": "microchip",
+        "value": "420-230",
+        "unit": "&mu;",
+        "head": "Particle size",
+        "color": "teal"
+    }, {
+        "class": "space-shuttle",
+        "value": "1742",
+        "unit": "gm/l",
+        "head": "Real Density",
+        "color": "steelblue"
+    }, {
+        "class": "area-chart",
+        "value": "Mg-99.8% (IS 2307)",
+        "unit": "%",
+        "head": "Composition",
+        "color": "#F28123"
+    }]
+}, {
+    "url": "/images/Grade_1_Magnesium.jpg",
+    "text": "Grade 1 Magnesium Powder (Coated)",
+    "id": 9,
+    "data": [{
+        "class": "bug",
+        "value": "40-80",
+        "unit": "Mesh",
+        "head": "Paticle size",
+        "color": "#D34E24"
+    }, {
+        "class": "microchip",
+        "value": "420-230",
+        "unit": "&mu;",
+        "head": "Particle size",
+        "color": "teal"
+    }, {
+        "class": "space-shuttle",
+        "value": "1742",
+        "unit": "gm/l",
+        "head": "Real Density",
+        "color": "steelblue"
+    }, {
+        "class": "area-chart",
+        "value": "Mg-99.8% (IS 2307)",
+        "unit": "%",
+        "head": "Composition",
+        "color": "#F28123"
+    }]
+}, {
+    "url": "/images/Grade_2_Magnesium.jpg",
+    "text": "Grade 2 Magnesium Powder",
+    "id": 10,
+    "data": [{
+        "class": "bug",
+        "value": "40-80",
+        "unit": "Mesh",
+        "head": "Paticle size",
+        "color": "#D34E24"
+    }, {
+        "class": "microchip",
+        "value": "420-230",
+        "unit": "&mu;",
+        "head": "Particle size",
+        "color": "teal"
+    }, {
+        "class": "space-shuttle",
+        "value": "1742",
+        "unit": "gm/l",
+        "head": "Real Density",
+        "color": "steelblue"
+    }, {
+        "class": "area-chart",
+        "value": "Mg-90%, Al-9.8%",
+        "unit": "%",
+        "head": "Composition",
+        "color": "#F28123"
+    }]
+}]

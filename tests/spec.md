@@ -2,6 +2,12 @@
 
 > **Purpose:** Capture the current site's behavior as a contract. The migrated Next.js site must pass all the same tests. This spec defines WHAT the site does, not HOW (Pug/Express).
 
+## Phase 0: Testing — COMPLETE (2026-05-16)
+
+- **100 tests passing** — 85 Playwright E2E (desktop + mobile) + 15 Jest data integrity
+- Express dev server fixed for testing (removed broken node-sass, reordered middleware)
+- All tests verify the production site's current behavior as a baseline for migration parity
+
 ---
 
 ## 1. URL Routes & Pages

@@ -1,0 +1,104 @@
+{
+  "site": {
+    "tagline": "Pioneros en Polvos Pirotécnicos y Metales No Ferrosos",
+    "footer": {
+      "products": "PRODUCTOS",
+      "company": "EMPRESA",
+      "resources": "RECURSOS",
+      "support": "SOPORTE",
+      "connect": "CONÉCTESE CON NOSOTROS",
+      "anyQueries": "¿Alguna consulta?",
+      "keepUp": "Manténgase al día con las últimas novedades de la industria",
+      "send": "ENVIAR",
+      "aboutUs": "Sobre Nosotros",
+      "customers": "Clientes",
+      "press": "Prensa",
+      "jobs": "Empleos",
+      "resourceCenter": "Centro de Recursos",
+      "blogs": "Blogs",
+      "helpCenter": "Centro de Ayuda",
+      "productStatus": "Estado del Producto",
+      "supportLink": "Soporte"
+    },
+    "menu": {
+      "home": "inicio",
+      "aboutUs": "sobre nosotros",
+      "products": "productos",
+      "magnaliumPowder": "Polvo de Magnalium",
+      "magnesiumPowder": "Polvo de Magnesio",
+      "titaniumPowder": "Polvo de Titanio",
+      "productionTechnology": "tecnología de producción",
+      "researchDev": "investigación y desarrollo",
+      "productionQuality": "Calidad de Producción",
+      "contactUs": "contáctenos"
+    }
+  },
+  "home": {
+    "heroHeading": "jagada industries",
+    "heroTagline": "Pioneros en Polvos Pirotécnicos y Metales No Ferrosos",
+    "globalLeaders": "Líderes Globales en la Industria",
+    "qualityStandards": "Estándares de calidad",
+    "whyUs": "¿Por Qué Nosotros?",
+    "advancedInstrumentation": "Instrumentación Avanzada",
+    "beginJourney": "Comience su viaje de Productos de Calidad con nosotros",
+    "beginJourneySub": "Algunas cosas no son demasiado buenas para ser verdad. Experimente la calidad con nosotros.",
+    "experience": "Experiencia, Conocimiento",
+    "trust": "Confianza, Seguridad",
+    "rawMaterials": "Materias primas, Calidad",
+    "letsWork": "TRABAJEMOS JUNTOS",
+    "letsWorkSub": "Con alta calidad y precisión en todo lo que hacemos, contribuimos al éxito de nuestros clientes."
+  },
+  "about": {
+    "heading": "TRABAJEMOS JUNTOS",
+    "subheading": "Aquí en JagadaGroup, tenemos pasión por la innovación, las ideas brillantes y la ejecución que las reúne en una experiencia hermosa.",
+    "deleep": "DELEEPKUMAR",
+    "engineer": "Ingeniero en Metalurgia",
+    "salesPerson": "PERSONA DE VENTAS",
+    "viewBrochure": "VER FOLLETO AQUÍ",
+    "download": "DESCARGAR"
+  },
+  "contact": {
+    "header": "CONOZCA NUESTRA EXPERIENCIA EN ACCIÓN",
+    "headerSub": "Trabajamos estrechamente con nuestros clientes para garantizar el cumplimiento antes del lanzamiento. Una vez que todo está listo, ¡su producto estará en el mercado!",
+    "emailUs": "ENVÍENOS UN CORREO",
+    "phoneNumber": "NÚMERO DE TELÉFONO",
+    "website": "SITIO WEB",
+    "address": "DIRECCIÓN",
+    "enquiryForm": "Formulario de Consulta / Comentarios",
+    "name": "Nombre*",
+    "addressLabel": "Dirección*",
+    "telephone": "Teléfono",
+    "emailId": "Correo electrónico*",
+    "comments": "Comentarios",
+    "mandatory": "*Los campos marcados son obligatorios",
+    "submit": "Enviar",
+    "reset": "Restablecer"
+  },
+  "products": {
+    "catalog": "CATÁLOGO DE PRODUCTOS",
+    "tagline": "Donde la calidad se encuentra con el cliente"
+  },
+  "quality": {
+    "heading": "COMPROMISO DE CALIDAD",
+    "subheading": "Aquí en JagadaGroup, tenemos pasión por la innovación, las ideas brillantes y la ejecución que las reúne en una experiencia hermosa.",
+    "uncoated": "Métodos de prueba de Magnalium sin recubrimiento",
+    "coated": "Métodos de prueba de Magnalium recubierto"
+  },
+  "research": {
+    "heading": "DANDO VIDA A UNA GENERACIÓN DE MATERIALES PARA PRODUCTOS ÚNICOS E INNOVADORES",
+    "subheading": "Tenemos pasión por la innovación, las ideas brillantes y la ejecución que las reúne en una experiencia hermosa.",
+    "testingMethods": "Métodos de prueba",
+    "powderRange": "Gama de Polvos",
+    "powderLab": "Laboratorio de Polvos",
+    "globalMarket": "Nuestro lugar en el mercado global",
+    "videoText": "Un breve video comparando la calidad y luminancia del Magnalium chino y nuestro producto Magnalium",
+    "learnMore": "MÁS INFORMACIÓN",
+    "exploreMore": "EXPLORAR MÁS"
+  },
+  "underConstruction": {
+    "heading": "TRABAJEMOS JUNTOS",
+    "pageUnderConstruction": "PÁGINA EN CONSTRUCCIÓN",
+    "keepInTouch": "MANTÉNGASE EN CONTACTO",
+    "contactUs": "CONTÁCTENOS"
+  }
+}

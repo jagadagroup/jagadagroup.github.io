@@ -1,0 +1,104 @@
+{
+  "site": {
+    "tagline": "Pioneers in Pyrotechnic & Non Ferrous Metal Powders",
+    "footer": {
+      "products": "PRODUCTS",
+      "company": "COMPANY",
+      "resources": "RESOURCES",
+      "support": "SUPPORT",
+      "connect": "CONNECT WITH US",
+      "anyQueries": "Any queries?",
+      "keepUp": "Keep up with the latest news in industry",
+      "send": "SEND",
+      "aboutUs": "About Us",
+      "customers": "Customers",
+      "press": "Press",
+      "jobs": "Jobs",
+      "resourceCenter": "Resource Center",
+      "blogs": "Blogs",
+      "helpCenter": "Help Center",
+      "productStatus": "Product Status",
+      "supportLink": "Support"
+    },
+    "menu": {
+      "home": "home",
+      "aboutUs": "about us",
+      "products": "products",
+      "magnaliumPowder": "Magnalium Powder",
+      "magnesiumPowder": "Magnesium Powder",
+      "titaniumPowder": "Titanium Powder",
+      "productionTechnology": "production technology",
+      "researchDev": "research & Development",
+      "productionQuality": "Production Quality",
+      "contactUs": "contact us"
+    }
+  },
+  "home": {
+    "heroHeading": "jagada industries",
+    "heroTagline": "Pioneers in Pyrotechnic & Non Ferrous Metal Powders",
+    "globalLeaders": "Global Leaders in Industry",
+    "qualityStandards": "Quality standards",
+    "whyUs": "Why Us?",
+    "advancedInstrumentation": "Advanced Instrumentation",
+    "beginJourney": "Begin your journey of Quality Products with us",
+    "beginJourneySub": "Somethings aren't too good to be true. Experience the quality with us.",
+    "experience": "Experience, Knowledge",
+    "trust": "Trust, Assurance",
+    "rawMaterials": "Raw materials, Quality",
+    "letsWork": "LET'S WORK TOGETHER",
+    "letsWorkSub": "With high quality and accuracy in everything we do, we contribute to our customers' success."
+  },
+  "about": {
+    "heading": "LET'S WORK TOGETHER",
+    "subheading": "Here at JagadaGroup, we hold a passion for innovation, brilliant ideas and the execution that brings them all together in one beautiful experience.",
+    "deleep": "DELEEPKUMAR",
+    "engineer": "Engineer in Metallurgy",
+    "salesPerson": "SALES PERSON",
+    "viewBrochure": "VIEW BROCHURE HERE",
+    "download": "DOWNLOAD"
+  },
+  "contact": {
+    "header": "MEET OUR EXPERTISE AT WORK",
+    "headerSub": "We work closely with our customers to ensure compliance ahead of launch. Once everything is a go, your product will be on the market!",
+    "emailUs": "E-MAIL US",
+    "phoneNumber": "PHONE NUMBER",
+    "website": "WEBSITE",
+    "address": "ADDRESS",
+    "enquiryForm": "Enquiry / Feedback Form",
+    "name": "Name*",
+    "addressLabel": "Address*",
+    "telephone": "Telephone",
+    "emailId": "E-mail ID*",
+    "comments": "Comments",
+    "mandatory": "*Marked fields are mandatory",
+    "submit": "Submit",
+    "reset": "Reset"
+  },
+  "products": {
+    "catalog": "PRODUCT CATALOG",
+    "tagline": "Where quality meets customer"
+  },
+  "quality": {
+    "heading": "PLEDGE OF QUALITY",
+    "subheading": "Here at JagadaGroup, we hold a passion for innovation, brilliant ideas and the execution that brings them all together in one beautiful experience.",
+    "uncoated": "Magnalium Uncoated Test methods",
+    "coated": "Magnalium Coated Test methods"
+  },
+  "research": {
+    "heading": "BRINGING-TO-LIFE A GENERATION OF MATERIALS FOR UNIQUE AND INNOVATIVE PRODUCTS",
+    "subheading": "We hold a passion for innovation, brilliant ideas and the execution that brings them all together in one beautiful experience.",
+    "testingMethods": "Testing methods",
+    "powderRange": "Powder Range",
+    "powderLab": "Powder Lab",
+    "globalMarket": "Our place in global market",
+    "videoText": "A short video comparing the quality and luminance of Chinese Magnalium and our Magnalium product",
+    "learnMore": "LEARN MORE",
+    "exploreMore": "EXPLORE MORE"
+  },
+  "underConstruction": {
+    "heading": "LET'S WORK TOGETHER",
+    "pageUnderConstruction": "PAGE UNDER CONSTRUCTION",
+    "keepInTouch": "KEEP IN TOUCH",
+    "contactUs": "CONTACT US"
+  }
+}

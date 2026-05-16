@@ -1,0 +1,33 @@
+[{
+  "name": "home",
+  "href": "/home"
+}, {
+  "name": "about us",
+  "href": "/about-us"
+}, {
+  "name": "products",
+  "href": "/products",
+  "sub": [{
+    "name": "Magnalium Powder",
+    "href": "/magnalium"
+  }, {
+    "name": "Magnesium Powder",
+    "href": "/magnesium"
+  }, {
+    "name": "Titanium Powder",
+    "href": "/product?id=6"
+  }]
+}, {
+  "name": "production technology",
+  "href": "/production-technology",
+  "sub": [{
+    "name": "research & Development",
+    "href": "/research-and-development"
+  }]
+}, {
+  "name": "Production Quality",
+  "href": "/production-quality"
+}, {
+  "name": "contact us",
+  "href": "/contact-us"
+}]

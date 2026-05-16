@@ -1,0 +1,208 @@
+[{
+    "url": "/images/1.18MeshMagnaliumPowder.jpg",
+    "text": "18 Mesh Magnalium Powder",
+    "id": 1,
+    "data": [{
+        "class": "bug",
+        "value": "18",
+        "unit": "Mesh",
+        "head": "Paticle size",
+        "color": "#D34E24"
+    }, {
+        "class": "microchip",
+        "value": "1000",
+        "unit": "&mu;",
+        "head": "Particle size",
+        "color": "teal"
+    }, {
+        "class": "space-shuttle",
+        "value": "1907",
+        "unit": "gm/l",
+        "head": "Real Density",
+        "color": "steelblue"
+    }, {
+        "class": "area-chart",
+        "value": "Al-50%, Mg-50%",
+        "unit": "%",
+        "head": "Composition",
+        "color": "#F28123"
+    }],
+    "desc": "the composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product through powder metallurgical processes",
+    "alt": "The Bulk density is maintained for Fireworks and Defence application"
+}, {
+    "url": "/images/2.40MeshMagnaliumPowder.jpg",
+    "text": "40 Mesh Magnalium Powder",
+    "id": 2,
+    "data": [{
+        "class": "bug",
+        "value": "40",
+        "unit": "Mesh",
+        "head": "Paticle size",
+        "color": "#D34E24"
+    }, {
+        "class": "microchip",
+        "value": "420",
+        "unit": "&mu;",
+        "head": "Particle size",
+        "color": "teal"
+    }, {
+        "class": "space-shuttle",
+        "value": "1907",
+        "unit": "gm/l",
+        "head": "Real Density",
+        "color": "steelblue"
+    }, {
+        "class": "area-chart",
+        "value": "Al-50%, Mg-50%",
+        "unit": "%",
+        "head": "Composition",
+        "color": "#F28123"
+    }],
+    "desc": "The composition of the produced aluminium powder is checked using atomic emission spectroscopy and the particle size distribution is uniform throughout the product through powder metallurgical processes.",
+    "alt": "TThe Bulk density is maintained for light weight concrete blocks and pesticides application"
+}, {
+    "url": "/images/4.80MeshMagnaliumPowder.jpg",
+    "text": "80 Mesh Magnalium Powder",
+    "id": 3,
+    "data": [{
+        "class": "bug",
+        "value": "80",
+        "unit": "Mesh",
+        "head": "Paticle size",
+        "color": "#D34E24"
+    }, {
+        "class": "microchip",
+        "value": "230",
+        "unit": "&mu;",
+        "head": "Particle size",
+        "color": "teal"
+    }, {
+        "class": "space-shuttle",
+        "value": "1907",
+        "unit": "gm/l",
+        "head": "Real Density",
+        "color": "steelblue"
+    }, {
+        "class": "area-chart",
+        "value": "Al-50%, Mg-50%",
+        "unit": "%",
+        "head": "Composition",
+        "color": "#F28123"
+    }]
+}, {
+    "url": "/images/5.100MeshMagnaliumPowder.jpg",
+    "text": "100 Mesh Magnalium Powder",
+    "id": 4,
+    "data": [{
+        "class": "bug",
+        "value": "100",
+        "unit": "Mesh",
+        "head": "Paticle size",
+        "color": "#D34E24"
+    }, {
+        "class": "microchip",
+        "value": "150",
+        "unit": "&mu;",
+        "head": "Particle size",
+        "color": "teal"
+    }, {
+        "class": "space-shuttle",
+        "value": "1907",
+        "unit": "gm/l",
+        "head": "Real Density",
+        "color": "steelblue"
+    }, {
+        "class": "area-chart",
+        "value": "Al-50%, Mg-50%",
+        "unit": "%",
+        "head": "Composition",
+        "color": "#F28123"
+    }]
+}, {
+    "url": "/images/150mesh.jpg",
+    "text": "150 Mesh Magnalium Powder",
+    "id": 5,
+    "data": [{
+        "class": "bug",
+        "value": "150",
+        "unit": "Mesh",
+        "head": "Paticle size",
+        "color": "#D34E24"
+    }, {
+        "class": "microchip",
+        "value": "98",
+        "unit": "&mu;",
+        "head": "Particle size",
+        "color": "teal"
+    }, {
+        "class": "space-shuttle",
+        "value": "1907",
+        "unit": "gm/l",
+        "head": "Real Density",
+        "color": "steelblue"
+    }, {
+        "class": "area-chart",
+        "value": "Al-50%, Mg-50%",
+        "unit": "%",
+        "head": "Composition",
+        "color": "#F28123"
+    }]
+}, {
+    "url": "/images/200mesh.jpg",
+    "text": "200 Mesh Magnalium Powder",
+    "id": 6,
+    "data": [{
+        "class": "bug",
+        "value": "200",
+        "unit": "Mesh",
+        "head": "Paticle size",
+        "color": "#D34E24"
+    }, {
+        "class": "microchip",
+        "value": "74",
+        "unit": "&mu;",
+        "head": "Particle size",
+        "color": "teal"
+    }, {
+        "class": "space-shuttle",
+        "value": "1907",
+        "unit": "gm/l",
+        "head": "Real Density",
+        "color": "steelblue"
+    }, {
+        "class": "area-chart",
+        "value": "Al-50%, Mg-50%",
+        "unit": "%",
+        "head": "Composition",
+        "color": "#F28123"
+    }]
+}, {
+    "url": "/images/325mesh.jpg",
+    "text": "325 Mesh Magnalium Powder",
+    "id": 7,
+    "data": [{
+        "class": "bug",
+        "value": "325",
+        "unit": "Mesh",
+        "head": "Paticle size",
+        "color": "#D34E24"
+    }, {
+        "class": "microchip",
+        "value": "44",
+        "unit": "&mu;",
+        "head": "Particle size",
+        "color": "teal"
+    }, {
+        "class": "space-shuttle",
+        "value": "1907",
+        "unit": "gm/l",
+        "head": "Real Density",
+        "color": "steelblue"
+    }, {
+        "class": "area-chart",
+        "value": "Al-50%, Mg-50%",
+        "unit": "%",
+        "head": "Composition",
+        "color": "#F28123"
+    }]
+}]
