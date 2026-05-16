@@ -3,138 +3,104 @@ import { products } from '@/data';
 
 export default function Footer() {
   return (
-    <footer className="bg-stone-900 text-white mt-auto">
-      <div className="overlap container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {/* PRODUCTS */}
-          <div>
-            <h3 className="text-amber-400 font-bold mb-2 uppercase text-sm tracking-wider">
-              PRODUCTS
-            </h3>
-            <ul className="space-y-1 text-sm">
-              {products.map((product, idx) => (
-                <li key={idx}>
-                  {product.href ? (
-                    <Link href={product.href} className="hover:text-amber-400 transition-colors">
-                      {product.text}
-                    </Link>
-                  ) : (
-                    <span>{product.text}</span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* COMPANY */}
-          <div>
-            <h3 className="text-amber-400 font-bold mb-2 uppercase text-sm tracking-wider">
-              COMPANY
-            </h3>
-            <ul className="space-y-1 text-sm">
-              <li><Link href="/about-us" className="hover:text-amber-400 transition-colors">About Us</Link></li>
-              <li><Link href="/customers" className="hover:text-amber-400 transition-colors">Customers</Link></li>
-              <li><Link href="/press" className="hover:text-amber-400 transition-colors">Press</Link></li>
-              <li><Link href="/jobs" className="hover:text-amber-400 transition-colors">Jobs</Link></li>
-            </ul>
-          </div>
-
-          {/* RESOURCES */}
-          <div>
-            <h3 className="text-amber-400 font-bold mb-2 uppercase text-sm tracking-wider">
-              RESOURCES
-            </h3>
-            <ul className="space-y-1 text-sm">
-              <li><Link href="/resource-center" className="hover:text-amber-400 transition-colors">Resource Center</Link></li>
-              <li><Link href="/blogs" className="hover:text-amber-400 transition-colors">Blogs</Link></li>
-            </ul>
-          </div>
-
-          {/* SUPPORT */}
-          <div>
-            <h3 className="text-amber-400 font-bold mb-2 uppercase text-sm tracking-wider">
-              SUPPORT
-            </h3>
-            <ul className="space-y-1 text-sm">
-              <li><Link href="/help-center" className="hover:text-amber-400 transition-colors">Help Center</Link></li>
-              <li><Link href="/product-status" className="hover:text-amber-400 transition-colors">Product Status</Link></li>
-              <li><Link href="/support" className="hover:text-amber-400 transition-colors">Support</Link></li>
-            </ul>
-          </div>
-
-          {/* NEWSLETTER + SOCIAL + CONNECT */}
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-amber-400 font-bold mb-2 uppercase text-sm tracking-wider">
-                CONNECT WITH US
-              </h3>
-              <div className="text-sm space-y-2">
-                <div className="flex items-start gap-2">
-                  <span className="mt-0.5">📞</span>
-                  <div className="flex flex-col">
-                    <a href="tel:+919443144719" className="hover:text-amber-400 transition-colors">+91 9443144719</a>
-                    <a href="tel:+919585544719" className="hover:text-amber-400 transition-colors">+91 9585544719</a>
+    <footer>
+      <div className="footer">
+        <div className="overlap">
+          <div className="container-fluid">
+            <div className="row"></div>
+            <div className="row py-3 footer-row d-flex justify-content-between">
+              <ul className="col-7 col-md-4 col-lg-2 p-2 list-unstyled">
+                <li className="gold font-weight-bold" style={{ color: '#daa520' }}>PRODUCTS</li>
+                {products.map((product, idx) => (
+                  <li key={idx}>
+                    {product.href ? (
+                      <Link href={product.href} style={{ color: '#ccc' }}>{product.text}</Link>
+                    ) : (
+                      <span style={{ color: '#ccc' }}>{product.text}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+              <ul className="col-5 col-md-3 col-lg-2 p-2 list-unstyled">
+                <li className="gold font-weight-bold" style={{ color: '#daa520' }}>COMPANY</li>
+                <li><Link href="/about-us" style={{ color: '#ccc' }}>About Us</Link></li>
+                <li><Link href="/customers" style={{ color: '#ccc' }}>Customers</Link></li>
+                <li><Link href="/press" style={{ color: '#ccc' }}>Press</Link></li>
+                <li><Link href="/jobs" style={{ color: '#ccc' }}>Jobs</Link></li>
+              </ul>
+              <ul className="col-6 col-md-3 col-lg-2 p-2 list-unstyled">
+                <li className="gold font-weight-bold" style={{ color: '#daa520' }}>RESOURCES</li>
+                <li><Link href="/resource-center" style={{ color: '#ccc' }}>Resource Center</Link></li>
+                <li><Link href="/blogs" style={{ color: '#ccc' }}>Blogs</Link></li>
+              </ul>
+              <ul className="col-6 col-md-2 col-lg-2 p-2 list-unstyled">
+                <li className="gold font-weight-bold" style={{ color: '#daa520' }}>SUPPORT</li>
+                <li><Link href="/help-center" style={{ color: '#ccc' }}>Help Center</Link></li>
+                <li><Link href="/product-status" style={{ color: '#ccc' }}>Product Status</Link></li>
+                <li><Link href="/support" style={{ color: '#ccc' }}>Support</Link></li>
+              </ul>
+              <div className="col-12 col-md-7 col-lg-5 mt-3 p-0">
+                <form className="newsletter py-2 px-3 w-100">
+                  <h6 style={{ color: '#ccc' }}>Any queries?</h6>
+                  <p className="mb-1" style={{ color: '#999' }}>Keep up with the latest new in industry</p>
+                  <div className="form-group d-flex flex-row">
+                    <div className="input-group">
+                      <input className="form-control" type="text" placeholder="Type your query here..." />
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="mt-0.5">📍</span>
-                  <address className="not-italic">
-                    Jagada Industries<br />
-                    3/1224-6, Sattur Road,<br />
-                    Virudhunagar - 626002, TN
-                  </address>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>✉️</span>
-                  <a href="mailto:info@jagadagroup.com" className="lowercase hover:text-amber-400 transition-colors">
-                    info@jagadagroup.com
+                  <div className="form-group d-flex flex-row">
+                    <div className="input-group">
+                      <div className="input-group-prepend">
+                        <span className="input-group-text">@</span>
+                      </div>
+                      <input className="form-control" type="email" placeholder="ben@example.com" />
+                      <div className="input-group-append d-md-none">
+                        <button className="input-group-text"><i className="fa fa-paper-plane"></i></button>
+                      </div>
+                    </div>
+                    <input className="btn btn-primary d-none d-md-block ml-4" type="submit" value="SEND" />
+                  </div>
+                </form>
+              </div>
+              <div className="col-lg-3 d-none d-lg-block">
+                <div className="social-footer d-flex justify-content-center h-100 align-items-center">
+                  <a className="social-icon mr-2" href="#" aria-label="Facebook">
+                    <i className="fa fa-facebook"></i>
+                  </a>
+                  <a className="social-icon ml-2" href="https://www.linkedin.com/in/deleep-kumar-504813141/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i className="fa fa-linkedin"></i>
                   </a>
                 </div>
               </div>
-            </div>
-
-            {/* Query form */}
-            <form className="bg-white/5 p-3 rounded space-y-2">
-              <p className="text-xs font-semibold">Any queries?</p>
-              <p className="text-xs text-gray-400">Keep up with the latest news in industry</p>
-              <input
-                type="text"
-                placeholder="Type your query here..."
-                className="w-full px-2 py-1 text-sm bg-stone-800 border border-stone-700 rounded text-white placeholder-gray-500"
-              />
-              <div className="flex gap-2">
-                <div className="flex-1 flex">
-                  <span className="bg-stone-700 px-2 py-1 text-sm rounded-l border border-stone-600">@</span>
-                  <input
-                    type="email"
-                    placeholder="ben@example.com"
-                    className="flex-1 px-2 py-1 text-sm bg-stone-800 border-y border-r border-stone-600 rounded-r text-white placeholder-gray-500"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="px-4 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded transition-colors"
-                >
-                  SEND
-                </button>
-              </div>
-            </form>
-
-            {/* Social */}
-            <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-              </a>
-              <a href="https://www.linkedin.com/in/deleep-kumar-504813141/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              </a>
+              <ul className="col-12 col-md-4 col-lg-3 p-2 list-unstyled">
+                <li className="gold mb-1 font-weight-bold" style={{ color: '#daa520' }}>CONNECT WITH US</li>
+                <li className="mb-2 d-flex align-items-center" itemProp="telephone">
+                  <i className="fa fa-phone mr-3" style={{ color: '#ccc' }}></i>
+                  <div className="d-flex flex-column">
+                    <a href="tel:+919443144719" style={{ color: '#ccc' }}>+91 9443144719</a>
+                    <a href="tel:+919585544719" style={{ color: '#ccc' }}>+91 9585544719</a>
+                  </div>
+                </li>
+                <li className="mb-2 d-flex flex-row align-items-center">
+                  <i className="fa fa-address-card mr-3" style={{ color: '#ccc' }}></i>
+                  <address style={{ color: '#ccc', margin: 0 }}>
+                    Jagada Industries <br />
+                    3/1224-6, Sattur Road, <br />
+                    Virudhunagar - 626002, TN
+                  </address>
+                </li>
+                <li>
+                  <i className="fa fa-envelope mr-3" style={{ color: '#ccc' }}></i>
+                  <a href="mailto:info@jagadagroup.com" style={{ color: '#ccc', textTransform: 'lowercase' }}>info@jagadagroup.com</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-
-        {/* Google Translate */}
-        <div className="mt-6 border-t border-stone-700 pt-4">
-          <div id="google_translate_element" />
+          <div className="container-fluid">
+            <div className="row mb-3">
+              <div id="google_translate_element" className="col-12"></div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

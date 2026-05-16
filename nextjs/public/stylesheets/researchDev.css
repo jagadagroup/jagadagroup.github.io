@@ -1,0 +1,328 @@
+@font-face {
+  font-family: 'Adam cg Pro';
+  src: url("../fonts/ADAM.CG_PRO.otf"); }
+
+@font-face {
+  font-family: 'Pier Sans';
+  src: url("../fonts/PierSans-Regular.otf"); }
+
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Medium"), url("../fonts/HelveticaNeueMedium.woff") format("woff"); }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.page {
+  position: absolute;
+  top: 0;
+  transition: all .3s; }
+
+.page.active {
+  transform-origin: top left; }
+
+.decorator {
+  background-image: url(../images/crafted_splash.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.fa-bars {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: steelblue; }
+
+#menu-button {
+  position: fixed;
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  border-radius: 3px;
+  transform: none;
+  transition: all .5s ease-out;
+  transition-delay: .3s; }
+  #menu-button > span {
+    transition: all .3s ease-out;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background: #FFF; }
+  #menu-button > span:nth-child(2) {
+    transform: translateX(5px); }
+  #menu-button.active {
+    transform: rotateY(180deg);
+    transition: all 0.5s ease-in;
+    transition-delay: .3s; }
+    #menu-button.active span {
+      transition: all 0.3s ease-in; }
+    #menu-button.active span:first-child {
+      transform: translateX(-8px) translateY(14px) rotateZ(45deg);
+      width: 17px; }
+    #menu-button.active span:nth-child(2) {
+      transform: none; }
+    #menu-button.active span:last-child {
+      transform: translateX(-8px) translateY(-14px) rotateZ(-45deg);
+      width: 17px; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.p-0 {
+  padding: 0; }
+
+.imgc {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0; }
+
+.overlap {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: .3s all;
+  overflow-y: hidden; }
+
+a.link-button {
+  color: #FFF;
+  font: 15px/150% "Helvetica Neue Medium", sans-serif;
+  border: solid 2px #FFF;
+  transition: all .3s; }
+  a.link-button:hover {
+    text-decoration: none;
+    background: white;
+    color: #133C55; }
+
+@font-face {
+  font-family: 'Adam cg Pro';
+  src: url("../fonts/ADAM.CG_PRO.otf"); }
+
+@font-face {
+  font-family: 'Pier Sans';
+  src: url("../fonts/PierSans-Regular.otf"); }
+
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Medium"), url("../fonts/HelveticaNeueMedium.woff") format("woff"); }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.page {
+  position: absolute;
+  top: 0;
+  transition: all .3s; }
+
+.page.active {
+  transform-origin: top left; }
+
+.decorator {
+  background-image: url(../images/crafted_splash.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.fa-bars {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: steelblue; }
+
+#menu-button {
+  position: fixed;
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  border-radius: 3px;
+  transform: none;
+  transition: all .5s ease-out;
+  transition-delay: .3s; }
+  #menu-button > span {
+    transition: all .3s ease-out;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background: #FFF; }
+  #menu-button > span:nth-child(2) {
+    transform: translateX(5px); }
+  #menu-button.active {
+    transform: rotateY(180deg);
+    transition: all 0.5s ease-in;
+    transition-delay: .3s; }
+    #menu-button.active span {
+      transition: all 0.3s ease-in; }
+    #menu-button.active span:first-child {
+      transform: translateX(-8px) translateY(14px) rotateZ(45deg);
+      width: 17px; }
+    #menu-button.active span:nth-child(2) {
+      transform: none; }
+    #menu-button.active span:last-child {
+      transform: translateX(-8px) translateY(-14px) rotateZ(-45deg);
+      width: 17px; }
+
+.about-head {
+  background: transparent; }
+  .about-head h2 {
+    font: 15px/150% "Adam cg Pro", "Pier Sans", sans-serif;
+    color: #FFF;
+    text-align: center; }
+  .about-head h3 {
+    font: 13px/150% "Adam cg Pro", "Pier Sans", sans-serif;
+    color: #FFF;
+    text-align: center; }
+
+@media (max-width: 767.98px) {
+  .about-head {
+    padding: 7rem 0.25rem; } }
+
+@media (min-width: 768px) {
+  .about-head {
+    padding: 10rem; } }
+
+@media (min-width: 992px) {
+  .about-head {
+    padding: 15rem; } }
+
+img.col-6 {
+  width: 5rem;
+  height: 5rem; }
+
+.overlap {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: .3s all;
+  overflow-y: hidden; }
+  .overlap .learn-more {
+    position: relative;
+    transition: all .3s; }
+  .overlap:hover {
+    background-color: rgba(0, 0, 0, 0.55); }
+
+.overlap-inner {
+  border-radius: 5px; }
+  .overlap-inner p {
+    text-indent: 1.5rem; }
+
+#c1 {
+  background-image: url(/images/tubitos.jpg); }
+  #c1 .bg-div {
+    background: rgba(0, 0, 0, 0.55);
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 2px; }
+  #c1 h2, #c1 li,
+  #c1 p {
+    color: #FFF; }
+  #c1 ul {
+    margin-left: 1rem; }
+
+#c4 {
+  background-image: url(/images/f_7f6fec49c82b6f7583d11e5b0dd7740f.jpg); }
+  #c4 .overlap-inner {
+    background: rgba(255, 255, 255, 0.65); }
+
+#c7 {
+  background-image: url(/images/abundance-bookcase-books-775998.jpg); }
+  #c7 .overlap-inner {
+    background: rgba(0, 0, 0, 0.6); }
+  #c7 h2,
+  #c7 p {
+    color: #FFF; }
+
+#c5 {
+  background-image: url(/images/architecture-berlin-building-164313.jpg); }
+  #c5 .overlap-inner {
+    background: rgba(0, 0, 0, 0.75); }
+  #c5 h2,
+  #c5 p {
+    color: #FFF; }
+
+#c8 {
+  background-image: url(/images/blank-page-blur-close-up-949218.jpg); }
+
+#c9 {
+  transition: all .3s; }
+  #c9:hover {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+#c10 {
+  background-image: url(/images/busy-glassware-job-266141.jpg); }
+  #c10 .overlap-inner {
+    background: rgba(0, 0, 0, 0.4); }
+  #c10 h2,
+  #c10 p {
+    color: #FFF; }
+
+#r5 {
+  padding: 1rem 0; }
+  #r5 div {
+    flex: 0 0 50%;
+    width: 7rem;
+    min-height: 7rem; }
+    #r5 div span {
+      background: rgba(0, 0, 0, 0.1);
+      width: 7rem;
+      height: 7rem;
+      border-radius: 3.5rem;
+      padding: 1.25rem; }
+  #r5 img {
+    width: 4.5rem;
+    height: 4.5rem; }
+
+#r6 div {
+  height: 30vw; }
+
+#r6 p {
+  font-size: 18px;
+  color: #fff;
+  text-align: center; }
+
+#c1,
+#c2 {
+  min-height: 30vw; }
+
+#c2 {
+  background: whitesmoke; }
+
+#c4,
+#c5 {
+  min-height: 50vw; }
+
+#c7,
+#c8 {
+  min-height: 40vw; }
+
+#c9,
+#c10 {
+  min-height: 30vw; }
+
+.video {
+  color: #FFF; }
+
+.fa-play-circle {
+  cursor: pointer;
+  font-size: 50px; }
+
+/*# sourceMappingURL=researchDev.css.map */

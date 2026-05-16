@@ -60,24 +60,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed"
-        />
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/global.css" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/layout.css" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/menu.css" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/footer.css" />
       </head>
-      <body className="min-h-screen flex flex-col bg-white">
+      <body>
         <OrganizationJsonLd />
-        <Menu />
-        <div className="flex-1">{children}</div>
-        <Footer />
         <Script
           id="google-translate-init"
           strategy="afterInteractive"
@@ -92,22 +84,19 @@ export default function RootLayout({
             `,
           }}
         />
-        <Script
-          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="https://code.jquery.com/jquery-3.3.1.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-          strategy="afterInteractive"
-        />
+        <Script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" strategy="afterInteractive" />
+        <div className="container-fluid position-fixed">
+          <div className="row decorator"></div>
+        </div>
+        <Menu />
+        <div className="page w-100">
+          <header></header>
+          {children}
+          <Footer />
+          <Script src="https://code.jquery.com/jquery-3.3.1.js" strategy="afterInteractive" />
+          <Script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" strategy="afterInteractive" />
+          <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" strategy="afterInteractive" />
+        </div>
       </body>
     </html>
   );

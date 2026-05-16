@@ -1,0 +1,70 @@
+; Domain: jagadagroup.com
+; Exported (y-m-d hh:mm:ss): 2026-05-16 09:52:54
+;
+; This file is intended for use for informational and archival
+; purposes ONLY and MUST be edited before use on a production
+; DNS server.
+;
+; In particular, you must update the SOA record with the correct
+; authoritative name server and contact e-mail address information,
+; and add the correct NS records for the name servers which will
+; be authoritative for this domain.
+;
+; For further information, please consult the BIND documentation
+; located on the following website:
+;
+; http://www.isc.org/
+;
+; And RFC 1035:
+;
+; http://www.ietf.org/rfc/rfc1035.txt
+;
+; Please note that we do NOT offer technical support for any use
+; of this zone data, the BIND name server, or any other third-
+; party DNS software.
+;
+; Use at your own risk.
+
+
+$ORIGIN jagadagroup.com.
+
+; SOA Record
+@	3600	 IN 	SOA	ns71.domaincontrol.com.	dns.jomax.net. (
+					2026040701
+					28800
+					7200
+					604800
+					3600
+					) 
+
+; A Record
+@	3600	 IN 	A	15.197.225.128
+@	3600	 IN 	A	3.33.251.168
+
+; TXT Record
+@	3600	 IN 	TXT	"google-gws-recovery-domain-verification=51041452"
+@	3600	 IN 	TXT	"google-site-verification=3bE8BnsX5VqASC50tAfpbStQQ5SpYKzNSfUBuckVli8"
+@	3600	 IN 	TXT	"NETORGFT9988988.onmicrosoft.com"
+@	3600	 IN 	TXT	"v=spf1 include:dc-aa8e722993._spfm.jagadagroup.com ~all"
+@	3600	 IN 	TXT	"v=spf1 include:_spf.google.com ~all"
+default._bimi	3600	 IN 	TXT	"v=BIMI1;l=https://catalog.wlimg.com/1/405929/other-images/936476.jpg"
+google._domainkey	3600	 IN 	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsVO//F9QLuMiqHEU+V7WEqAOkqxLlblcjlij6K4Lvj7wflt7Rxvevo1w4CBFLIk656MFIHFuCkEgwM/o52Rh6WlpooalOlYga3aJ3lhJo9YjeF/dKvglrFheOP1Wmc4h+oiLDVc46JmnNocICRzJ95URXCXZi+UwcLBCG5uIQJYX+q+PNdz+PnfoEcQXzzUKk"	"y6m/MEVR4cPixN5+7ab4Su0hSXUX0qLp70MwvVZ+SoYUmwMGGGWx6aahpO+yCAvPHr5tLo65+XpjfTo+RUlWl6HFgoV4UmPJ5km6ooVp62cjC4ghBpD2VZEQaaqzUM+WQHXgUSzDhyLmTYvOOt2FQIDAQAB"
+info	3600	 IN 	TXT	"v=DKIM1;t=s;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCw+ZHPAK0VN34dd1U9JROGfuzopcdjVAzHAtLPh+isrFeVcNny2UnJf0PfSHu2csiApR2XbRSBjPyhWXOAfac1ueiB16zpQfSNAitk1u9dHgWdM5ZvPcEM/IApuxkIicIIAtsdEJ6RaUcZjxTELAtMbkQzt20+WPFVw7j0Yx5XJwIDAQAB"
+zmail._domainkey	3600	 IN 	TXT	"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOy2xG1TMjqjDT2iN7Bx29y/GOEfON7vGFxARomR3ss+8ZbaxTFkJrGD1SEQTaTLyHkrOppnXFDZl9VdsGsDO1zQTbaKT2F/vdt61qqCfsrV0ebdVwvcaPU8celIx2fRPT6zUuDBNimndyQ4P16mm5E0VW3nMODkhzEDHPMcdPdwIDAQAB"
+_dmarc	3600	 IN 	TXT	"v=DMARC1; p=none; rua=mailto:postmaster@jagadagroup.com, mailto:dmarc@jagadagroup.com; pct=100; adkim=s; aspf=s"
+
+; CNAME Record
+www	600	 IN 	CNAME	jagadagroup.github.io.
+_domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
+
+; NS Record
+@	3600	 IN 	NS	ns71.domaincontrol.com.
+@	3600	 IN 	NS	ns72.domaincontrol.com.
+
+; MX Record
+@	3600	 IN 	MX	1	aspmx.l.google.com.
+@	3600	 IN 	MX	10	alt3.aspmx.l.google.com.
+@	3600	 IN 	MX	10	alt4.aspmx.l.google.com.
+@	3600	 IN 	MX	5	alt1.aspmx.l.google.com.
+@	3600	 IN 	MX	5	alt2.aspmx.l.google.com.
+

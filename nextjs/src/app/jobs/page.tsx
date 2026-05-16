@@ -1,11 +1,3 @@
-import { UnderConstructionPage } from '@/app/customers/page';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Jobs — Jagada Industries',
-  description: 'Jobs page — Jagada Industries.',
-};
-
-export default function JobsPage() {
-  return <UnderConstructionPage title="Jobs" />;
-}
+import CustomersPage from '@/app/customers/page';
+export const metadata = { title: 'Jobs — Jagada Industries' };
+export default CustomersPage;

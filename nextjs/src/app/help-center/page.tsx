@@ -1,11 +1,3 @@
-import { UnderConstructionPage } from '@/app/customers/page';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Help Center — Jagada Industries',
-  description: 'Help Center page — Jagada Industries.',
-};
-
-export default function HelpCenterPage() {
-  return <UnderConstructionPage title="Help Center" />;
-}
+import CustomersPage from '@/app/customers/page';
+export const metadata = { title: 'Help Center — Jagada Industries' };
+export default CustomersPage;

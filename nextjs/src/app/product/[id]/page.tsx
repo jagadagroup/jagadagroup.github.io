@@ -4,9 +4,7 @@ import { products } from '@/data';
 import { ProductJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd';
 
 export async function generateStaticParams() {
-  return products.map((product) => ({
-    id: String(product.id),
-  }));
+  return products.map((product) => ({ id: String(product.id) }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
@@ -30,58 +28,40 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
   const product = products.find((p) => p.id === productId);
 
   if (!product || productId < 1 || productId > products.length) {
-    return (
-      <div className="container py-5 text-center">
-        <h1 className="text-2xl">Product not found</h1>
-        <Link href="/products" className="text-blue-600 hover:underline mt-4 inline-block">
-          Back to products
-        </Link>
-      </div>
-    );
+    return <div className="container py-5 text-center"><h1>Product not found</h1><Link href="/products">Back to products</Link></div>;
   }
 
   return (
     <>
       <ProductJsonLd product={product} />
-      <BreadcrumbJsonLd
-        items={[
-          { name: 'Home', url: '/' },
-          { name: 'Products', url: '/products' },
-          { name: product.text, url: `/product/${product.id}` },
-        ]}
-      />
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', url: '/' },
+        { name: 'Products', url: '/products' },
+        { name: product.text, url: `/product/${product.id}` },
+      ]} />
+      <link rel="stylesheet" type="text/css" href="/stylesheets/product.css" />
 
-      <Link
-        href="/products"
-        id="tech-back"
-        className="fixed top-16 left-4 z-30 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow"
-      >
-        <i className="fa fa-arrow-left text-xl" />
+      <Link id="tech-back" className="d-flex justify-content-center align-items-center" href="/products">
+        <i className="fa fa-arrow-left"></i>
       </Link>
 
       <section className="product-holder">
-        <div
-          className="parallelogram w-full h-96 bg-cover bg-center"
-          style={{ backgroundImage: `url(${product.url})` }}
-        />
+        <div className="parallelogram" style={{ backgroundImage: `url(${product.url})` }}></div>
       </section>
 
-      <section id="tech-data" className="row w-full py-4 px-2">
+      <section id="tech-data" className="row w-100 active">
         {product.data.map((datum, idx) => (
           <div key={idx} className="col-lg-3 col-md-6 col-12 mb-3">
-            <div className="d-flex align-items-center justify-content-around p-3 mx-3 border rounded-lg bg-white shadow-sm">
-              <div
-                className="tech-logo d-flex justify-content-center align-items-center rounded-full w-12 h-12 text-white text-xl"
-                style={{ background: datum.color }}
-              >
-                <i className={`fa fa-${datum.class}`} />
+            <div className="d-flex align-items-center justify-content-around p-3 mx-3">
+              <div className="tech-logo d-flex justify-content-center align-items-center" style={{ background: datum.color }}>
+                <i className={`fa fa-${datum.class}`}></i>
               </div>
-              <div className="tech-datum d-flex flex-column ml-3">
-                <span className="tech-value d-flex justify-content-start text-xl font-bold">
+              <div className="tech-datum d-flex flex-column">
+                <span className="tech-value d-flex justify-content-start">
                   <span>{datum.value}</span>
-                  <span className="ml-1 text-sm text-gray-500">{datum.unit}</span>
+                  <span className="mr-1">{datum.unit}</span>
                 </span>
-                <span className="tech-head text-xs text-gray-500 uppercase">{datum.head}</span>
+                <span className="tech-head">{datum.head}</span>
               </div>
             </div>
           </div>

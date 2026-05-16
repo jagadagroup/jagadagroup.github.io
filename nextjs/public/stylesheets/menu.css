@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Adam cg Pro';
+  src: url("../fonts/ADAM.CG_PRO.otf"); }
+
+@font-face {
+  font-family: 'Pier Sans';
+  src: url("../fonts/PierSans-Regular.otf"); }
+
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Medium"), url("../fonts/HelveticaNeueMedium.woff") format("woff"); }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.page {
+  position: absolute;
+  top: 0;
+  transition: all .3s; }
+
+.page.active {
+  transform-origin: top left; }
+
+.decorator {
+  background-image: url(../images/crafted_splash.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.fa-bars {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: steelblue; }
+
+#menu-button {
+  position: fixed;
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  border-radius: 3px;
+  transform: none;
+  transition: all .5s ease-out;
+  transition-delay: .3s; }
+  #menu-button > span {
+    transition: all .3s ease-out;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background: #FFF; }
+  #menu-button > span:nth-child(2) {
+    transform: translateX(5px); }
+  #menu-button.active {
+    transform: rotateY(180deg);
+    transition: all 0.5s ease-in;
+    transition-delay: .3s; }
+    #menu-button.active span {
+      transition: all 0.3s ease-in; }
+    #menu-button.active span:first-child {
+      transform: translateX(-8px) translateY(14px) rotateZ(45deg);
+      width: 17px; }
+    #menu-button.active span:nth-child(2) {
+      transform: none; }
+    #menu-button.active span:last-child {
+      transform: translateX(-8px) translateY(-14px) rotateZ(-45deg);
+      width: 17px; }
+
+nav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed; }
+  nav > .d-flex {
+    background: rgba(23, 23, 23, 0.3); }
+
+ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0 3rem 0 2rem; }
+
+@media (max-width: 767.98px) {
+  ul.menu {
+    padding: 0 !important;
+    cursor: pointer; } }
+
+.menu > li {
+  text-transform: uppercase;
+  text-align: center;
+  transition: all .3s;
+  border-bottom: solid 1px #CCC; }
+  .menu > li a:hover, .menu > li .menu-rollout:hover {
+    color: gold !important;
+    cursor: pointer; }
+  .menu > li:last-child {
+    border-bottom: none; }
+
+.menu-child {
+  text-transform: capitalize; }
+
+#menu-holder {
+  transform: translateX(100%);
+  transition: all .4s;
+  background-color: #000; }
+  #menu-holder.active {
+    transform: translateX(0); }
+
+/*# sourceMappingURL=menu.css.map */

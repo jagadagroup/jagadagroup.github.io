@@ -1,1 +1,48 @@
-@import 'tailwindcss';
+/* Bootstrap overrides and custom styles */
+/* No Tailwind — we use Bootstrap 4 utility classes exclusively */
+
+/* Global resets (matching old global.css) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  /* This matches the old Pug layout — no Tailwind classes */
+}
+
+.page {
+  transition: transform .2s ease-in;
+}
+
+/* Decorator bar at top */
+.decorator {
+  background-color: #1a1a1a;
+  height: 4px;
+}
+
+/* Link button */
+.link-button {
+  color: #fff;
+  background: #0ca3d2;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Image container */
+.imgc {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlap overlay */
+.overlap {
+  position: relative;
+}
