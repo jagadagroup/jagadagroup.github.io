@@ -1,22 +1,14 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { products } from '@/data';
 import { getDictionary } from '@/lib/i18n';
-import { siteConfig } from '@/lib/site-config';
-import { getAlternates } from '@/lib/alternates';
+import Link from 'next/link';
+import { magnalium as magnaliumProducts } from '@/data';
 
-export const metadata: Metadata = {
-  title: 'Productos — Jagada Industries',
-  description: 'Explore nuestro catálogo completo de materias primas pirotécnicas.',
-  metadataBase: new URL(siteConfig.url),
-  alternates: {
-    canonical: '/es-ES/products/',
-    languages: getAlternates('/es-ES/products/', 'es-ES'),
-  },
+export const metadata = {
+  title: 'Productos Magnalium — Jagada Industries',
+  description: 'Polvos de Magnalium de primera calidad.',
   openGraph: { locale: 'es_ES' },
 };
 
-export default function EsProductsPage() {
+export default function EsMagnaliumPage() {
   const t = getDictionary('es-ES');
   return (
     <>
@@ -29,7 +21,7 @@ export default function EsProductsPage() {
       </div>
       <div>
         <div className="row no-gutters">
-          {products.map((product, index) => (
+          {magnaliumProducts.map((product, index) => (
             <div key={product.id} className="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center parallel-home">
               <Link className="parallel-base d-flex flex-column" href={`/es-ES/product/${index + 1}`}>
                 <img className="w-100" src={product.url} alt={product.text} />

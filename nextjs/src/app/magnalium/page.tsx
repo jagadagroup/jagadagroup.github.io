@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { magnalium as magnaliumProducts } from '@/data';
+import { getProductSlug } from '@/lib/slugs';
 
 export const metadata: Metadata = {
   title: 'Magnalium Products — Jagada Industries',
@@ -19,9 +20,9 @@ export default function MagnaliumPage() {
       </div>
       <div>
         <div className="row no-gutters">
-          {magnaliumProducts.map((product, index) => (
+          {magnaliumProducts.map((product) => (
             <div key={product.id} className="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center parallel-home">
-              <Link className="parallel-base d-flex flex-column" href={`/product?id=${index + 1}`}>
+              <Link className="parallel-base d-flex flex-column" href={`/product/${getProductSlug(product.text)}`}>
                 <img className="w-100" src={product.url} alt={product.text} />
                 <div className="parallel-text w-100">{product.text}</div>
               </Link>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { products } from '@/data';
+import { getProductSlug } from '@/lib/slugs';
 
 export const metadata: Metadata = {
   title: 'Jagada Industries',
@@ -25,7 +26,11 @@ export default function HomePage() {
             </div>
             <h1 className="display-4 pl-3 pl-md-0">jagada industries</h1>
             <h2 className="lead english">Pioneers in Pyrotechnic &amp; Non Ferrous Metal Powders</h2>
-            <div className="xtra d-flex flex-column align-items-center"></div>
+            <div className="xtra d-flex flex-column align-items-center">
+              <p style={{ fontSize: '0.8rem', color: '#888' }}>
+                <time dateTime="1992">Est. 1992</time>
+              </p>
+            </div>
           </div>
         </div>
 
@@ -116,9 +121,9 @@ export default function HomePage() {
           </div>
         </div>
         <div className="row no-gutters">
-          {products.map((product, index) => (
+          {products.map((product) => (
             <div key={product.id} className="col-12 col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center parallel-home">
-              <Link className="parallel-base d-flex flex-column" href={`/product?id=${index + 1}`}>
+              <Link className="parallel-base d-flex flex-column" href={`/product/${getProductSlug(product.text)}`}>
                 <img className="w-100" src={product.url} alt={product.text} />
                 <div className="parallel-text w-100">{product.text}</div>
               </Link>

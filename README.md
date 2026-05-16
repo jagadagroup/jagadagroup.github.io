@@ -1,40 +1,86 @@
 # Jagada Group Website
 
-This repository contains the source code and the generated static site for Jagada Industries website.
+This repository contains the source for the Jagada Industries website, served at [www.jagadagroup.com](https://www.jagadagroup.com).
+
+## Architecture
+
+| Component | Technology |
+|-----------|-----------|
+| **Production site** | Next.js 16 — [Static Site Generation (SSG)](./nextjs/) |
+| **Legacy site** | Express / Pug (kept for reference) |
+| **Deployment** | GitHub Actions → GitHub Pages |
+| **i18n** | React-based locale switcher + static translated pages (en, es-ES) |
+| **SEO** | Per-page titles, Open Graph, Twitter Cards, JSON-LD, hreflang, sitemap |
 
 ## Project Structure
 
-The project is built using:
-- **Express / Pug:** Used as a templating engine during development.
-- **Node Sass:** Used to compile SCSS to CSS.
-- **Webpack:** Used for hot-reloading and client-side processing during development.
-- **Static Generation:** The dynamic Pug templates are compiled into static `index.html` files inside their respective directories (which GitHub Pages serves) using the `pug.js` script.
+```
+├── nextjs/                   # Production site source (Next.js)
+│   ├── src/
+│   │   ├── app/              # Page routes (App Router)
+│   │   ├── components/       # Shared React components
+│   │   ├── data/             # JSON data (products, menu)
+│   │   ├── i18n/             # Locale translation files
+│   │   └── lib/              # Utilities, types, config
+│   ├── public/               # Static assets (images, CSS, fonts)
+│   ├── scripts/              # Build helpers (sitemap generation)
+│   ├── tests/                # Playwright E2E tests for migrated site
+│   └── out/                  # Static export output (gitignored)
+├── views/                    # Legacy Pug templates (reference only)
+├── data/                     # Legacy JSON data (reference only)
+├── tests/                    # Legacy site tests + migration spec
+└── .github/workflows/        # CI/CD deployment pipeline
+```
 
 ## Setup & Running Locally
 
+### Prerequisites
+- Node.js 20+
+- npm
+
 ### 1. Install Dependencies
 ```bash
-npm install
+cd nextjs && npm install
 ```
 
-### 2. Run Development Server
-To start the local development server (which renders the Pug templates on the fly):
+### 2. Development Server
 ```bash
-npm start
+npm run dev
 ```
-Or run directly with Node:
+Opens `http://localhost:3000` with hot reload.
+
+### 3. Production Build
 ```bash
-node ./bin/www
+npm run build
 ```
-This will start the server on `http://localhost:3000`.
+Generates static HTML into `nextjs/out/` (not committed — built by CI).
 
-### 3. Generate Static Files
-When changes are made to `pug` files, JSON data, or SCSS files, you need to generate the static `.html` files in order for them to be picked up by GitHub Pages.
-
-Run the build script:
+### 4. Preview Static Build
 ```bash
-node pug.js
+npx serve -p 3000 -s out
 ```
-This will compile all `.pug` files into `.html` files and output them inside directories (`/about-us/index.html`, `/contact-us/index.html`, etc.).
 
-Remember to commit the updated `index.html` files so they can be published on GitHub Pages.
+## Deployment
+
+On every push to `master`, GitHub Actions runs:
+
+1. `npm ci` (install dependencies)
+2. `npm run build` (Next.js static export + sitemap generation)
+3. Uploads `nextjs/out/` to GitHub Pages
+
+No manual build step needed. No generated files committed to the repo.
+
+## Testing
+
+### Legacy site tests (Pug/Express)
+```bash
+npm test                    # Jest data integrity (15 tests)
+npm run test:e2e            # Playwright E2E (85 tests)
+```
+
+### Migrated site tests (Next.js)
+```bash
+cd nextjs && npx playwright test --project=desktop
+```
+
+See `tests/spec.md` for the full migration parity specification.

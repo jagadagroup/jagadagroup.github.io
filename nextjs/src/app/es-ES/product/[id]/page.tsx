@@ -10,38 +10,30 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
   const product = products.find((p) => p.id === Number(id));
-  if (!product) return { title: 'Product — Jagada Industries' };
+  if (!product) return { title: 'Producto — Jagada Industries' };
   return {
     title: `${product.text} — Jagada Industries`,
-    description: product.desc || `Technical specifications for ${product.text}`,
-    openGraph: {
-      title: `${product.text} — Jagada Industries`,
-      description: product.desc || `Technical specifications for ${product.text}`,
-      images: [product.url],
-    },
+    description: product.desc || `Especificaciones técnicas para ${product.text}`,
+    openGraph: { title: `${product.text} — Jagada Industries`, description: product.desc || `Especificaciones técnicas para ${product.text}`, images: [product.url], locale: 'es_ES' },
   };
 }
 
-export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function EsProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const productId = Number(id);
   const product = products.find((p) => p.id === productId);
 
   if (!product || productId < 1 || productId > products.length) {
-    return <div className="container py-5 text-center"><h1>Product not found</h1><Link href="/products">Back to products</Link></div>;
+    return <div className="container py-5 text-center"><h1>Producto no encontrado</h1><Link href="/es-ES/products/">Volver a productos</Link></div>;
   }
 
   return (
     <>
       <ProductJsonLd product={product} />
-      <BreadcrumbJsonLd items={[
-        { name: 'Home', url: '/' },
-        { name: 'Products', url: '/products' },
-        { name: product.text, url: `/product/${product.id}` },
-      ]} />
+      <BreadcrumbJsonLd items={[{ name: 'Home', url: '/es-ES/' }, { name: 'Productos', url: '/es-ES/products/' }, { name: product.text, url: `/es-ES/product/${product.id}` }]} />
       <link rel="stylesheet" type="text/css" href="/stylesheets/product.css" />
 
-      <Link id="tech-back" className="d-flex justify-content-center align-items-center" href="/products">
+      <Link id="tech-back" className="d-flex justify-content-center align-items-center" href="/es-ES/products/">
         <i className="fa fa-arrow-left"></i>
       </Link>
 

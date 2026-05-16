@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { products } from '@/data';
+import LocaleSwitcher from '@/components/LocaleSwitcher';
 
 export default function Footer() {
   return (
@@ -98,7 +99,9 @@ export default function Footer() {
           </div>
           <div className="container-fluid">
             <div className="row mb-3">
-              <div id="google_translate_element" className="col-12"></div>
+              <div className="col-12">
+                <LocaleSwitcher />
+              </div>
             </div>
           </div>
         </div>

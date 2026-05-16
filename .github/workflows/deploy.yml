@@ -29,7 +29,6 @@ jobs:
           cache-dependency-path: ./nextjs/package-lock.json
       - run: npm ci
       - run: npm run build
-      - run: touch out/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./nextjs/out

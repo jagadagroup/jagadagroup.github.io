@@ -24,10 +24,26 @@ const pages = [
   { path: 'support', priority: '0.64', changefreq: 'monthly' },
 ];
 
-// Product detail pages
-for (let i = 1; i <= 11; i++) {
+// Other locale pages (fr-FR, de-DE, it-IT — SEO landing pages)
+['fr-FR', 'de-DE', 'it-IT'].forEach((loc) => {
+  pages.push(
+    { path: loc, priority: '0.64', changefreq: 'monthly' },
+    { path: `${loc}/about-us`, priority: '0.64', changefreq: 'monthly' },
+    { path: `${loc}/contact-us`, priority: '0.64', changefreq: 'monthly' },
+    { path: `${loc}/products`, priority: '0.64', changefreq: 'monthly' },
+  );
+});
+
+// Product detail pages — SEO-friendly slugs
+const products = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'src', 'data', 'products.json'), 'utf8'));
+
+function slugify(text) {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+for (const product of products) {
   pages.push({
-    path: `product/${i}`,
+    path: `product/${slugify(product.text)}`,
     priority: '0.80',
     changefreq: 'monthly',
   });
@@ -36,9 +52,23 @@ for (let i = 1; i <= 11; i++) {
 // Spanish locale pages
 const esPages = [
   { path: 'es-ES', priority: '0.80', changefreq: 'weekly' },
+  { path: 'es-ES/home', priority: '0.64', changefreq: 'weekly' },
   { path: 'es-ES/about-us', priority: '0.64', changefreq: 'monthly' },
   { path: 'es-ES/contact-us', priority: '0.64', changefreq: 'monthly' },
   { path: 'es-ES/products', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/magnalium', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/magnesium', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/production-technology', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/production-quality', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/research-and-development', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/customers', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/blogs', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/jobs', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/press', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/resource-center', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/help-center', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/product-status', priority: '0.64', changefreq: 'monthly' },
+  { path: 'es-ES/support', priority: '0.64', changefreq: 'monthly' },
 ];
 pages.push(...esPages);
 

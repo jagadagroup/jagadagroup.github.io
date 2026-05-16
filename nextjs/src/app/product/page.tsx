@@ -1,6 +1,7 @@
-import { redirect } from 'next/navigation';
+import { permanentRedirect } from 'next/navigation';
 import { products } from '@/data';
+import { getProductSlug } from '@/lib/slugs';
 
 export default function ProductIndexPage() {
-  redirect(`/product/${products[0].id}`);
+  permanentRedirect(`/product/${getProductSlug(products[0].text)}`);
 }

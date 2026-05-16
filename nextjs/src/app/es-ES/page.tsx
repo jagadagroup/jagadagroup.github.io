@@ -1,43 +1,139 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
+import Link from 'next/link';
+import { products } from '@/data';
 import { getDictionary } from '@/lib/i18n';
 import { siteConfig } from '@/lib/site-config';
+import { getAlternates } from '@/lib/alternates';
 
 export const metadata: Metadata = {
   title: 'Jagada Industries',
   description: 'Pioneros en Polvos Pirotécnicos y Metales No Ferrosos',
-  metadataBase: new URL(`${siteConfig.url}/es-ES/`),
+  metadataBase: new URL(siteConfig.url),
   alternates: {
     canonical: '/es-ES/',
-    languages: {
-      'en': '/',
-      'es-ES': '/es-ES/',
-    },
+    languages: getAlternates('/es-ES/', 'es-ES'),
   },
-  openGraph: {
-    title: 'Jagada Industries',
-    description: 'Pioneros en Polvos Pirotécnicos y Metales No Ferrosos',
-    locale: 'es_ES',
-  },
+  openGraph: { title: 'Jagada Industries', description: 'Pioneros en Polvos Pirotécnicos y Metales No Ferrosos', locale: 'es_ES' },
 };
 
 export default function EsHomePage() {
-  const dict = getDictionary('es-ES');
+  const t = getDictionary('es-ES');
   return (
-    <article className="px-3">
-      <div className="jumbotron jumbotron-fluid mb-0">
-        <div className="container-fluid language d-flex flex-column align-items-center p-4">
-          <Image src="/images/ISO-9001-2008.png" alt="Certificación ISO 9001 2008" width={120} height={120} className="mb-2" unoptimized />
-          <Image src="/images/ISO-14001.png" alt="Certificación ISO 14001" width={120} height={120} className="mb-2" unoptimized />
-          <div className="estd d-flex justify-content-center align-items-center w-100 mt-3">
-            <p className="mb-0 text-gray-600" style={{ transform: 'translateX(2rem)' }}>estd</p>
-            <div id="logo" className="mx-4" />
-            <p className="mb-0 text-gray-600" style={{ transform: 'translateX(-2rem)' }}>1992</p>
+    <>
+      <link rel="stylesheet" type="text/css" href="/stylesheets/index.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trykker" />
+
+      <article className="px-3">
+        <div className="jumbotron jumbotron-fluid">
+          <div className="container-fluid language d-flex flex-column align-items-center p-4 carousel">
+            <img className="iso m-2" src="/images/ISO-9001-2008.png" alt="Certificación ISO 9001 2008" />
+            <img className="iso m-2" src="/images/ISO-14001.png" alt="Certificación ISO 14001" />
+            <div className="estd d-flex justify-content-center align-items-center w-100">
+              <p style={{ transform: 'translateX(2rem)' }}>estd</p>
+              <div id="logo"></div>
+              <p style={{ transform: 'translateX(-2rem)' }}>1992</p>
+            </div>
+            <h1 className="display-4 pl-3 pl-md-0">{t.home.heroHeading}</h1>
+            <h2 className="lead english">{t.home.heroTagline}</h2>
+            <div className="xtra d-flex flex-column align-items-center"></div>
           </div>
-          <h1 className="display-4 text-center text-2xl md:text-4xl mt-3">{dict.home.heroHeading}</h1>
-          <h2 className="lead text-center text-xl text-gray-700 mt-2">{dict.home.heroTagline}</h2>
         </div>
-      </div>
-    </article>
+
+        <div className="container-fluid px-5 d-none d-md-block">
+          <div id="head-points" className="row p-4">
+            <div className="head-point fade-stagger col-md-6 col-lg-3">
+              <div className="head-inside">
+                <h4><span>{t.home.globalLeaders.split(' ').slice(0, -1).join(' ')}&nbsp;</span><span className="salmon">{t.home.globalLeaders.split(' ').slice(-1)[0]}</span></h4>
+                <p>We produce non metal powders and products through Metallurgical processes and Metallurgical standards</p>
+              </div>
+            </div>
+            <div className="head-point fade-stagger col-md-6 col-lg-3">
+              <div className="head-inside">
+                <h4 className="salmon">{t.home.qualityStandards}</h4>
+                <p>Particle size of every powdered products are maintained throughout every process in every mesh sizes</p>
+              </div>
+            </div>
+            <div className="head-point fade-stagger col-md-6 col-lg-3">
+              <div className="head-inside">
+                <h4>{t.home.whyUs}</h4>
+                <p>We guarantee for the best quality in the market with an affordable price along with a prompt delivery nationally or overseas</p>
+              </div>
+            </div>
+            <div className="head-point fade-stagger col-md-6 col-lg-3">
+              <div className="head-inside">
+                <h4><span>{t.home.advancedInstrumentation.split(' ').slice(0, -1).join(' ')}&nbsp;</span><span className="salmon">{t.home.advancedInstrumentation.split(' ').slice(-1)[0]}</span></h4>
+                <p>Metal compositions are checked before and after alloying through OES (Optical Emission Spectroscopy)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="xtra d-flex flex-column align-items-center my-3"><p></p></div>
+      </article>
+
+      <section className="info container-fluid">
+        <div className="row d-flex flex-column align-items-center mb-4">
+          <h2 className="text-center">{t.home.beginJourney}</h2>
+          <p className="text-center">{t.home.beginJourneySub}</p>
+        </div>
+        <div className="row d-flex justify-content-center p-4">
+          <div className="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center mb-3 mb-lg-0">
+            <h4>{t.home.experience}</h4>
+            <p className="text-center">We have extensive knowledge and long experience of manufacturing metal powders, and we can tailor our products to our customers&rsquo; requirements.</p>
+          </div>
+          <div className="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center mb-3 mb-lg-0">
+            <h4>{t.home.trust}</h4>
+            <p className="text-center">Our customers must be able to rest assured that the right product, of the right quality, is delivered to the right place at exactly the agreed time. That&rsquo;s pure precision.</p>
+          </div>
+          <div className="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center mb-3 mb-lg-0">
+            <h4>{t.home.rawMaterials}</h4>
+            <p className="text-center">Production of best product requires the use of best raw materials. We use the best of the breed to serve our customers by procuring hight quality materials. Then, we refine it in our ultra-modern production plant.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="inspired" className="container-fluid p-5">
+        <div className="row d-flex">
+          <div className="emulate col-12 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+            <div className="em-circle"><span>1</span><span>9</span><span>9</span><span>2</span></div>
+            <div className="em-head mt-3">since</div>
+            <div className="em-para">Established since</div>
+          </div>
+          <div className="emulate col-12 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+            <div className="em-circle"><span>5</span><span>0</span><p className="d-inline">+</p></div>
+            <div className="em-head mt-3">since</div>
+            <div className="em-para">and counting Nationally and Internationally satisfied customers owing to our concern in Pyrotechnics Quality.</div>
+          </div>
+          <div className="emulate col-12 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+            <div className="em-circle d-none d-md-block"><span>1</span><span>0</span><p className="d-inline">+</p></div>
+            <div className="em-head d-none d-md-block mt-3">since</div>
+            <div className="em-para d-none d-md-block">No of successful products in market</div>
+          </div>
+          <div className="emulate col-12 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+            <div className="em-circle d-none d-lg-block"><p className="d-inline">#</p><span>1</span></div>
+            <div className="em-head d-none d-lg-block mt-3">since</div>
+            <div className="em-para d-none d-lg-block">Position in market. Leader in our segment.</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container-fluid" style={{ background: 'steelblue' }}>
+          <div className="row about-head d-flex flex-column align-items-center">
+            <h2 style={{ color: '#fff' }}>{t.home.letsWork}</h2>
+            <h3 style={{ color: '#fff' }}>{t.home.letsWorkSub}</h3>
+          </div>
+        </div>
+        <div className="row no-gutters">
+          {products.map((product, index) => (
+            <div key={product.id} className="col-12 col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center parallel-home">
+              <Link className="parallel-base d-flex flex-column" href={`/es-ES/product/${index + 1}`}>
+                <img className="w-100" src={product.url} alt={product.text} />
+                <div className="parallel-text w-100">{product.text}</div>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
