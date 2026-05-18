@@ -27,6 +27,14 @@ export const organizationSchema: OrganizationSchema = {
   },
 };
 
-export const locales = ['en', 'es-ES', 'fr-FR', 'de-DE', 'it-IT'] as const;
+export const locales = ['en', 'es-ES', 'pt-PT', 'fr-FR', 'vi-VN'] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = 'en';
+
+export const localeInfo: Record<string, { name: string; flag: string }> = {
+  'en':     { name: 'English',   flag: '🇬🇧' },
+  'es-ES':  { name: 'Español',   flag: '🇪🇸' },
+  'pt-PT':  { name: 'Português', flag: '🇵🇹' },
+  'fr-FR':  { name: 'Français',  flag: '🇫🇷' },
+  'vi-VN':  { name: 'Tiếng Việt',flag: '🇻🇳' },
+};

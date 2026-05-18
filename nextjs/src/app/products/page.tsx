@@ -4,8 +4,8 @@ import { products } from '@/data';
 import { getProductSlug } from '@/lib/slugs';
 
 export const metadata: Metadata = {
-  title: 'Products — Jagada Industries',
-  description: 'Browse our complete catalog of pyrotechnic raw materials including Magnalium, Magnesium, and Titanium powders.',
+  title: 'Metal Powder Catalog — Magnalium, Magnesium & Titanium — Jagada Industries',
+  description: 'Browse our complete metal powder catalog: Magnalium powder, Magnesium powder, and Titanium powder for pyrotechnics, fireworks, and defense applications.',
 };
 
 export default function ProductsPage() {

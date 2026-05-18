@@ -3,21 +3,11 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-interface LocaleInfo {
-  code: string;
-  label: string;
-  flag: string;
-}
+import { localeInfo } from '@/lib/site-config';
 
-const locales: LocaleInfo[] = [
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'es-ES', label: 'Español', flag: '🇪🇸' },
-  { code: 'fr-FR', label: 'Français', flag: '🇫🇷' },
-  { code: 'de-DE', label: 'Deutsch', flag: '🇩🇪' },
-  { code: 'it-IT', label: 'Italiano', flag: '🇮🇹' },
-];
+const locales = Object.entries(localeInfo).map(([code, info]) => ({ code, ...info }));
 
-const localePattern = /^\/(es-ES|fr-FR|de-DE|it-IT)/;
+const localePattern = /^\/(es-ES|pt-PT|fr-FR|vi-VN)/;
 
 function getCurrentLocale(pathname: string): string {
   const match = pathname.match(localePattern);
@@ -55,9 +45,9 @@ export default function LocaleSwitcher() {
               textDecoration: 'none',
               opacity: isActive ? 1 : 0.7,
             }}
-            title={loc.label}
+            title={loc.name}
           >
-            {loc.flag} {loc.label}
+            {loc.flag} {loc.name}
           </Link>
         );
       })}

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { products } from '@/data';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
+import FooterForm from '@/components/FooterForm';
 
 export default function Footer() {
   return (
@@ -41,27 +42,7 @@ export default function Footer() {
                 <li><Link href="/support" style={{ color: '#ccc' }}>Support</Link></li>
               </ul>
               <div className="col-12 col-md-7 col-lg-5 mt-3 p-0">
-                <form className="newsletter py-2 px-3 w-100">
-                  <h6 style={{ color: '#ccc' }}>Any queries?</h6>
-                  <p className="mb-1" style={{ color: '#999' }}>Keep up with the latest new in industry</p>
-                  <div className="form-group d-flex flex-row">
-                    <div className="input-group">
-                      <input className="form-control" type="text" placeholder="Type your query here..." />
-                    </div>
-                  </div>
-                  <div className="form-group d-flex flex-row">
-                    <div className="input-group">
-                      <div className="input-group-prepend">
-                        <span className="input-group-text">@</span>
-                      </div>
-                      <input className="form-control" type="email" placeholder="ben@example.com" />
-                      <div className="input-group-append d-md-none">
-                        <button className="input-group-text"><i className="fa fa-paper-plane"></i></button>
-                      </div>
-                    </div>
-                    <input className="btn btn-primary d-none d-md-block ml-4" type="submit" value="SEND" />
-                  </div>
-                </form>
+                <FooterForm />
               </div>
               <div className="col-lg-3 d-none d-lg-block">
                 <div className="social-footer d-flex justify-content-center h-100 align-items-center">

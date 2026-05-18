@@ -4,8 +4,8 @@ import { products } from '@/data';
 import { getProductSlug } from '@/lib/slugs';
 
 export const metadata: Metadata = {
-  title: 'Jagada Industries',
-  description: 'Pioneers in Pyrotechnic & Non Ferrous Metal Powders',
+  title: 'Magnalium & Magnesium Powder Manufacturer India — Jagada Industries',
+  description: 'Leading manufacturer of Magnalium powder, Magnesium powder, and Al-Mg alloy powders for pyrotechnics, fireworks, and industrial use. ISO 9001:2008 certified. Est. 1992.',
 };
 
 export default function HomePage() {

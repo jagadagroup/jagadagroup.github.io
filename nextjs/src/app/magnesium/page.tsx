@@ -4,8 +4,8 @@ import { magnesium as magnesiumProducts } from '@/data';
 import { getProductSlug } from '@/lib/slugs';
 
 export const metadata: Metadata = {
-  title: 'Magnesium Products — Jagada Industries',
-  description: 'High-purity Magnesium powders in various grades for fireworks, industrial, and pyrotechnic applications.',
+  title: 'Magnesium Powder Manufacturer & Exporter India — Grade 1 & 2 — Jagada Industries',
+  description: 'High-purity Magnesium powder (99.8% IS 2307) in Grade 1, Grade 1 Coated, and Grade 2. Exported worldwide for fireworks and industrial applications.',
 };
 
 export default function MagnesiumPage() {

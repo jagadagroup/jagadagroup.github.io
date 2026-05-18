@@ -14,13 +14,13 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const product = products.find((p) => getProductSlug(p.text) === slug);
-  if (!product) return { title: 'Product — Jagada Industries' };
+  if (!product) return { title: 'Metal Powder — Jagada Industries' };
   return {
     title: `${product.text} — Jagada Industries`,
-    description: product.desc || `Technical specifications for ${product.text}`,
+    description: product.desc || `${product.text} — Aluminium-Magnesium alloy for pyrotechnics and fireworks. Manufacturer & exporter from India.`,
     openGraph: {
       title: `${product.text} — Jagada Industries`,
-      description: product.desc || `Technical specifications for ${product.text}`,
+      description: product.desc || `${product.text} — Aluminium-Magnesium alloy for pyrotechnics and fireworks. Manufacturer & exporter from India.`,
       images: [product.url],
     },
   };

@@ -8,8 +8,8 @@ import './globals.css';
 export const viewport: Viewport = { width: 'device-width', initialScale: 1 };
 
 export const metadata: Metadata = {
-  title: { template: '%s', default: 'Jagada Industries — Pyrotechnic & Non Ferrous Metal Powders' },
-  description: siteConfig.description,
+  title: { template: '%s', default: 'Magnalium & Magnesium Powder Manufacturer India — Jagada Industries' },
+  description: 'Leading manufacturer of Magnalium powder, Magnesium powder, and Al-Mg alloy powders for pyrotechnics, fireworks, and industrial use. ISO 9001:2008 certified. Est. 1992.',
   robots: 'index,follow',
   metadataBase: new URL(siteConfig.url),
   alternates: {
@@ -17,9 +17,10 @@ export const metadata: Metadata = {
     languages: {
       'en': '/',
       'es-ES': '/es-ES/',
+      'pt-PT': '/pt-PT/',
       'fr-FR': '/fr-FR/',
-      'de-DE': '/de-DE/',
-      'it-IT': '/it-IT/',
+      'vi-VN': '/vi-VN/',
+      'x-default': '/',
     },
   },
   openGraph: {
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: { card: 'summary_large_image', title: siteConfig.name, description: siteConfig.description },
   verification: { google: '0FXslA1jM76Ttnn9hSorquOcbioj5ebg2V3_HN6VXBc' },
-  keywords: 'Pyrotechnic raw materials, Matières premières pyrotechniques, Materie prime pirotecniche, Materias primas pirotécnicas, Pyrotechnische Rohstoffe, Pyrotechnic powders, Poudre pyrotechnique, Polvere pirotecnica, Polvo pirotécnico, Pyrotechnisches Pulver, Magnalium, Magnalio, Polveri pirotecniche',
+  keywords: 'Magnalium powder, Magnesium powder, Aluminium powder, Magnalium, Magnesium, Aluminium, Aluminium Magnesium Alloy, Al-Mg alloy powder, Mg-Al alloy powder, Magnesium alloy powder, Magnesium granules, Magnesium ribbon, Magnesium fine powder, Magnesium exporters, largest manufacturer of Magnesium powders, Magnalium powder manufacturer India, Magnesium powder supplier, pyrotechnic raw materials, metal powder, non-ferrous metal powder',
   other: { 'google-site-verification': '0FXslA1jM76Ttnn9hSorquOcbioj5ebg2V3_HN6VXBc' },
 };
 
@@ -51,6 +52,8 @@ export default function RootLayout({
         <link rel="stylesheet" type="text/css" href="/stylesheets/layout.css" />
         <link rel="stylesheet" type="text/css" href="/stylesheets/menu.css" />
         <link rel="stylesheet" type="text/css" href="/stylesheets/footer.css" />
+        {/* x-default hreflang — Next.js Metadata API doesn't support this, added manually */}
+        <link rel="alternate" hrefLang="x-default" href="https://www.jagadagroup.com/" />
       </head>
       <body>
         <OrganizationJsonLd />

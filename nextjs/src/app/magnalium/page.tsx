@@ -4,8 +4,8 @@ import { magnalium as magnaliumProducts } from '@/data';
 import { getProductSlug } from '@/lib/slugs';
 
 export const metadata: Metadata = {
-  title: 'Magnalium Products — Jagada Industries',
-  description: 'Premium Magnalium powders in various mesh sizes for fireworks, pyrotechnics, and industrial applications.',
+  title: 'Magnalium Powder — Al-Mg Alloy 18 to 325 Mesh for Pyrotechnics — Jagada Industries',
+  description: 'Premium Magnalium (Aluminium-Magnesium alloy) powder in 18, 40, 80, 100, 150, 200, 325 mesh. Made from virgin metals. Manufacturer & exporter since 1992.',
 };
 
 export default function MagnaliumPage() {

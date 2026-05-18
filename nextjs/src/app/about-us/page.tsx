@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Us — Jagada Industries',
-  description: 'Jagada Industries is a pioneer in pyrotechnic raw materials with over 30 years of experience in metallurgy and metal powder manufacturing.',
+  title: 'About Jagada Industries — Metal Powder Manufacturer Since 1992',
+  description: 'Jagada Industries, established 1992, is India\'s leading manufacturer of Magnalium, Magnesium, and non-ferrous metal powders. ISO 9001:2008 & ISO 14001 certified.',
 };
 
 export default function AboutUsPage() {

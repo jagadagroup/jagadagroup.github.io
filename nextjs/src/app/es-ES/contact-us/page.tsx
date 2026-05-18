@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getDictionary } from '@/lib/i18n';
 import { siteConfig } from '@/lib/site-config';
 import { getAlternates } from '@/lib/alternates';
+import ContactFormComponent from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contacto — Jagada Industries',
@@ -67,20 +68,20 @@ export default function EsContactPage() {
 
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 pt-4 pb-5">
-            <form className="newsletter px-5 w-100 py-2" style={{ background: 'whitesmoke' }}>
-              <h2 className="mb-3">{t.contact.enquiryForm}</h2>
-              <div className="form-group"><label htmlFor="es-contact-name">{t.contact.name}</label><input id="es-contact-name" className="form-control" type="text" placeholder="John Doe" /></div>
-              <div className="form-group"><label htmlFor="es-contact-address">{t.contact.addressLabel}</label><textarea id="es-contact-address" className="form-control" rows={3}></textarea></div>
-              <div className="form-group"><label htmlFor="es-contact-phone">{t.contact.telephone}</label><input id="es-contact-phone" className="form-control" type="text" placeholder="+91 90000 00000" /></div>
-              <div className="form-group"><label htmlFor="es-contact-email">{t.contact.emailId}</label><input id="es-contact-email" className="form-control" type="email" placeholder="ejemplo@correo.com" /></div>
-              <div className="form-group"><label htmlFor="es-contact-comments">{t.contact.comments}</label><textarea id="es-contact-comments" className="form-control" rows={4}></textarea><small className="form-text">{t.contact.mandatory}</small></div>
-              <div className="btn-group">
-                <button className="btn btn-success" type="submit">{t.contact.submit}</button>
-                <button className="btn btn-primary" type="reset">{t.contact.reset}</button>
-              </div>
-            </form>
-          </div>
+          <ContactFormComponent
+            labels={{
+              title: t.contact.enquiryForm,
+              name: t.contact.name,
+              address: t.contact.addressLabel,
+              telephone: t.contact.telephone,
+              email: t.contact.emailId,
+              comments: t.contact.comments,
+              mandatory: t.contact.mandatory,
+              submit: t.contact.submit,
+              reset: t.contact.reset,
+              success: '¡Gracias por su consulta!',
+            }}
+          />
         </div>
       </div>
     </>
