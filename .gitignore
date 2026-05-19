@@ -31,5 +31,5 @@ playwright-report/
 # next.js (also covered by nextjs/.gitignore)
 .next
 
-# Pug/Express legacy dev artifacts
-public/
+# Pug/Express legacy dev artifacts (root-level public/ only, not nextjs/public/)
+/public

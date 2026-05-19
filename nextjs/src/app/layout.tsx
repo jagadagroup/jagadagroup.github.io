@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import Menu from '@/components/Menu';
+import Menu from '@/components/Menu'; {/* Header + hamburger menu */}
 import Footer from '@/components/Footer';
 import { OrganizationJsonLd } from '@/components/JsonLd';
 import { siteConfig } from '@/lib/site-config';

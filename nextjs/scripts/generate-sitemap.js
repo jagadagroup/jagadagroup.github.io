@@ -26,11 +26,9 @@ const pages = [
 
 // Other locale pages (pt-PT, fr-FR, vi-VN — SEO landing pages)
 ['pt-PT', 'fr-FR', 'vi-VN'].forEach((loc) => {
-  pages.push(
-    { path: loc, priority: '0.64', changefreq: 'monthly' },
-    { path: `${loc}/about-us`, priority: '0.64', changefreq: 'monthly' },
-    { path: `${loc}/contact-us`, priority: '0.64', changefreq: 'monthly' },
-    { path: `${loc}/products`, priority: '0.64', changefreq: 'monthly' },
+pages.push(
+    { path: 'blogs', priority: '0.80', changefreq: 'weekly' },
+    { path: 'blog/magnalium-vs-magnesium-vs-aluminum', priority: '0.80', changefreq: 'monthly' },
   );
 });
 
