@@ -8,28 +8,12 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
-    slug: '/blogs/why-indian-magnalium-powder-outperforms-chinese',
+    slug: '/blog/why-indian-magnalium-powder-outperforms-chinese-alternatives',
     title: 'Why Indian Magnalium Powder Outperforms Chinese Alternatives',
     excerpt: 'Discover why Indian manufacturers excel in consistent quality and compliance for magnalium powder compared to Chinese alternatives.',
     date: 'May 2026',
     readTime: '11 min read',
     tags: ['Magnalium', 'Indian Manufacturer', 'Pyrotechnics'],
-  },
-  {
-    slug: '/blogs/understanding-al-mg-alloy-ratios-in-magnalium-powder',
-    title: 'Understanding Al-Mg Alloy Ratios in Magnalium Powder: 50:50 vs Other Ratios',
-    excerpt: 'Comprehensive insights into 50:50 Al-Mg alloy ratios and competing alternatives in pyrotechnics and aerospace.',
-    date: 'May 2026',
-    readTime: '10 min read',
-    tags: ['Magnalium', 'Alloys', '50:50 Ratio', 'Pyrotechnics'],
-  },
-  {
-    slug: '/blogs/exporting-pyrotechnic-metal-powders-from-india',
-    title: 'Exporting Pyrotechnic Metal Powders from India: What Buyers Need to Know',
-    excerpt: 'Explore India’s pyrotechnic metal powder export market, focusing on magnalium and magnesium powder for industrial applications.',
-    date: 'May 2026',
-    readTime: '12 min read',
-    tags: ['Exporting', 'Pyrotechnics', 'Metal Powder', 'India'],
   },
   {
     slug: '/blog/grade-1-vs-grade-2-magnesium-powder',
