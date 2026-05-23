@@ -1,9 +1,12 @@
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import Menu from '@/components/Menu'; {/* Header + hamburger menu */}
 import Footer from '@/components/Footer';
 import { OrganizationJsonLd } from '@/components/JsonLd';
 import { siteConfig } from '@/lib/site-config';
 import './globals.css';
+
+const GA_ID = 'G-61B30Q6NSG';
 
 export const viewport: Viewport = { width: 'device-width', initialScale: 1 };
 
@@ -56,6 +59,13 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="x-default" href="https://www.jagadagroup.com/" />
       </head>
       <body>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
+        </Script>
         <OrganizationJsonLd />
         <div className="container-fluid position-fixed">
           <div className="row decorator"></div>

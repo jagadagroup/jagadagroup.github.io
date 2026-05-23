@@ -4,7 +4,6 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Magnalium vs Magnesium vs Aluminum Powder — Which Metal Fuel for Fireworks? — Jagada Industries',
   description: 'Compare Magnalium, Magnesium, and Aluminum powder for pyrotechnics. Learn the differences in brightness, burn rate, mesh size recommendations, and when to use each metal fuel.',
-  robots: 'noindex, nofollow',
   openGraph: {
     title: 'Magnalium vs Magnesium vs Aluminum Powder — Complete Comparison Guide',
     description: 'Which metal powder is best for your fireworks effect? Detailed comparison from a manufacturer with 30+ years of experience.',
