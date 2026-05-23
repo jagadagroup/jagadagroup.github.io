@@ -135,73 +135,53 @@ Each product category × buyer intent × modifier generates long-tail keywords:
 
 ---
 
-## 4. Meta Tags Update
+## 4. Meta Tags — Status
 
-### Current `<meta name="keywords">`
-```
-Pyrotechnic raw materials, Matières premières pyrotechniques, ...
-```
+### `<meta name="keywords">` ✅ DONE
+Product-first keywords live in `layout.tsx`.
 
-### Proposed Product-First `<meta name="keywords">`
-```
-Magnalium powder, Magnesium powder, Aluminium powder, Magnalium, Magnesium, Aluminium,
-Aluminium Magnesium Alloy, Al-Mg alloy powder, Mg-Al alloy powder, Magnesium alloy powder,
-Magnesium granules, Magnesium ribbon, Magnesium fine powder, Magnesium exporters,
-largest manufacturer of Magnesium powders, Magnalium powder manufacturer India,
-Magnesium powder supplier, pyrotechnic raw materials, metal powder, non-ferrous metal powder,
-Matières premières pyrotechniques, Materie prime pirotecniche, Materias primas pirotécnicas,
-Pyrotechnische Rohstoffe, Poudre pyrotechnique, Polvere pirotecnica, Polvo pirotécnico
-```
-
-### Per-Page Titles (Product-First)
-
-| Page | Current Title | Proposed Title |
-|------|--------------|----------------|
-| `/` | Jagada Industries | Magnalium & Magnesium Powder Manufacturer India — Jagada Industries |
-| `/magnalium/` | Magnalium Products — Jagada Industries | Magnalium Powder — Al-Mg Alloy 18 to 325 Mesh for Pyrotechnics |
-| `/magnesium/` | Magnesium Products — Jagada Industries | Magnesium Powder Manufacturer & Exporter — Grade 1 & 2 |
-| `/products/` | Products — Jagada Industries | Metal Powder Catalog — Magnalium, Magnesium & Titanium |
-| `/about-us/` | About Us — Jagada Industries | About Jagada Industries — Leading Metal Powder Manufacturer Since 1992 |
-| `/contact-us/` | Contact Us — Jagada Industries | Contact Jagada Industries — Enquire About Metal Powders |
-| `/product/18-mesh.../` | 18 Mesh Magnalium Powder — Jagada Industries | 18 Mesh Magnalium Powder — Al-Mg 50:50 Alloy for Fireworks |
+### Per-Page Titles ✅ DONE
+All core pages updated to product-first titles in layout.tsx and individual page.tsx files.
 
 ---
 
-## 5. Product Schema Keyword Optimization
+## 5. Product Schema Keyword Optimization ✅ DONE
 
-Each product JSON-LD should include:
-- `name` — Full product name with keywords: "18 Mesh Magnalium Powder — Al-Mg 50:50 Alloy"
-- `description` — Keyword-rich: "High-quality 18 mesh Magnalium powder for pyrotechnics and fireworks. Aluminium-Magnesium 50:50 alloy with uniform particle distribution. ISO 9001:2008 certified manufacturer in India."
-- `category` — "Metal Powder" / "Pyrotechnic Raw Material"
-- `material` — "Aluminium Magnesium Alloy"
-- `manufacturer.name` — "Jagada Industries"
+ProductJsonLd and BreadcrumbJsonLd components exist in `JsonLd.tsx` and are used on product pages.
+
+**Still TODO:**
+- Add `offers` block to ProductJsonLd (availability, priceCurrency, priceValidUntil) to unlock Product rich results in SERP
+- Add `category` and `material` fields to ProductJsonLd
+- Add `WebSite` + `SearchAction` schema for Sitelinks Searchbox
 
 ---
 
 ## 6. Content Strategy (Product-First)
 
-### 6.1 Product Pages — Individual (Done ✅)
-Each product detail page already has:
-- Full product name in title
-- Technical specifications (mesh, microns, density, composition)
-- Product image
-- JSON-LD Product schema
+### 6.1 Product Pages ✅ DONE
+Individual product pages have title, specs, image, and JSON-LD.
 
-### 6.2 Category Pages — /magnalium/ & /magnesium/ (Partial)
-Add descriptive intro paragraphs:
-> *"Jagada Industries is a leading Magnalium powder manufacturer in India, producing 18 to 325 mesh Al-Mg alloy powders for fireworks, pyrotechnics, and industrial applications. Our Magnalium powder is made from virgin Aluminium and Magnesium metals with ISO 9001:2008 certified processes."*
+### 6.2 Category Pages — /magnalium/ & /magnesium/
+**TODO:** Add keyword-rich intro paragraph to both category pages.
 
-### 6.3 FAQ Page (To Create)
-- 6-8 product-focused questions with FAQPage schema
-- Example: "What is the difference between Magnalium and Magnesium powder?"
-- Example: "What mesh size of Magnalium powder is best for fireworks?"
-- Example: "Do you export Magnesium powder to [country]?"
+### 6.3 FAQ Page — /faq/
+**TODO (create from scratch):**
+- 6-8 product-focused Q&A with FAQPage JSON-LD schema
+- Unlocks FAQ rich results in Google SERP
+- Suggested questions:
+  - "What is the difference between Magnalium and Magnesium powder?"
+  - "What mesh size of Magnalium powder is best for fireworks?"
+  - "Do you export Magnesium powder to [country]?"
+  - "What is the purity of your Grade 1 Magnesium powder?"
+  - "What certifications does Jagada Industries hold?"
 
-### 6.4 Blog Posts (Future)
-- "Magnalium vs Magnesium Powder: Which One for Fireworks?" (comparison)
-- "How to Choose the Right Mesh Size for Pyrotechnic Powders" (guide)
-- "Understanding Al-Mg Alloy Ratios in Magnalium Powder" (technical)
-- "Why Indian Magnalium Powder Outperforms Chinese Alternatives" (competitive)
+### 6.4 Blog Posts
+**Live:** 1 post — Magnalium vs Magnesium vs Aluminum (May 2026)
+**TODO (use PHMSA-Report-Summary-for-Blog.md as research source):**
+- "How to Choose the Right Mesh Size for Pyrotechnic Powders" — targets all 7 mesh-size keywords
+- "Understanding Al-Mg Alloy Ratios in Magnalium Powder" — targets Al-Mg 50:50 keywords
+- "Why Indian Magnalium Powder Outperforms Chinese Alternatives" — competitive keyword
+- "Grade 1 vs Grade 2 Magnesium Powder: Which Grade for Your Application?" — grade keywords
 
 ---
 

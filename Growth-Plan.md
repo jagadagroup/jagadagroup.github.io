@@ -12,47 +12,32 @@
 - JSON-LD Organization schema present but incomplete (no `LocalBusiness`, no `sameAs`)
 - Product JSON-LD present on product pages — eligible for **Product rich results**
 
-### What Rich Cards Are Available
+### Rich Cards Status
 
-| Rich Result Type | What It Shows | Can We Qualify? |
-|-----------------|---------------|------------------|
-| **Product** | Price, availability, image, rating in search results | ⚠️ Need to add `offers` to Product schema with price range |
-| **Local Business** | Address, phone, hours, map pin | ✅ Add `LocalBusiness` + `GeoCoordinates` JSON-LD |
-| **Organization** | Logo, social profiles, corporate info | ✅ Already present, needs `sameAs` links |
-| **FAQ** | Expandable Q&A directly in search results | ✅ Add `FAQPage` schema with 6-8 questions |
-| **Breadcrumb** | Navigation path in search snippet | ✅ Already on product pages, add to all pages |
-| **Sitelinks Searchbox** | Search box for your site in Google results | ✅ Add `WebSite` + `SearchAction` schema |
+| Rich Result Type | Status |
+|-----------------|--------|
+| **Organization** | ✅ DONE — `sameAs`, address, contactPoint in `site-config.ts` |
+| **Breadcrumb** | ✅ DONE — `BreadcrumbJsonLd` component exists, used on product pages |
+| **Product** | ⚠️ PARTIAL — JSON-LD exists but missing `offers` block (needed for rich results) |
+| **FAQ** | ❌ TODO — `/faq/` page doesn't exist yet |
+| **Local Business** | ❌ TODO — `LocalBusiness` schema not added |
+| **Sitelinks Searchbox** | ❌ TODO — `WebSite` + `SearchAction` schema not added |
 
-### Action: Enable Product Rich Results
-
-Add `offers` to each product's JSON-LD:
+### TODO: Add `offers` to ProductJsonLd in `JsonLd.tsx`
 ```json
-{
-  "@type": "Product",
-  "name": "18 Mesh Magnalium Powder",
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "itemCondition": "https://schema.org/NewCondition",
-    "price": "0.00",
-    "priceCurrency": "INR",
-    "priceValidUntil": "2027-12-31",
-    "description": "Contact us for pricing"
-  }
+"offers": {
+  "@type": "Offer",
+  "availability": "https://schema.org/InStock",
+  "itemCondition": "https://schema.org/NewCondition",
+  "price": "0.00",
+  "priceCurrency": "INR",
+  "priceValidUntil": "2027-12-31",
+  "description": "Contact us for pricing"
 }
 ```
 
-### Action: Enable FAQ Rich Results
-
-Create `/faq/` page with FAQPage schema:
-```
-Q: What is Magnalium Powder used for?
-A: Magnalium powder (Al-Mg alloy) is primarily used in fireworks, pyrotechnics,
-   and defense applications due to its high flammability and brightness.
-Q: What mesh sizes are available?
-A: We produce Magnalium powder in 18, 40, 80, 100, 150, 200, and 325 mesh sizes.
-...
-```
+### TODO: Create `/faq/` page with FAQPage schema
+See SEO-AEO-Gap-Analysis.md §6.3 for question list.
 
 ---
 
@@ -60,19 +45,17 @@ A: We produce Magnalium powder in 18, 40, 80, 100, 150, 200, and 325 mesh sizes.
 
 ### Google Search Console
 
-**Action:**
-1. Go to https://search.google.com/search-console
-2. Add property: `www.jagadagroup.com` (DNS verification already done — `google-site-verification` meta tag present)
-3. Submit sitemap: `https://www.jagadagroup.com/sitemap.xml`
-4. Check Coverage report for indexing errors
-5. Use "URL Inspection" tool on key pages to verify they're indexed
-6. Set up International Targeting → target India (or global) in Legacy tools
+**Status:** `google-site-verification` meta tag is live in `layout.tsx` ✅
+**TODO:** 
+1. Go to https://search.google.com/search-console and confirm property is verified
+2. Submit sitemap: `https://www.jagadagroup.com/sitemap.xml`
+3. Check Coverage report for indexing errors
+4. Use "URL Inspection" on key pages to verify indexed
 
 **Ongoing:**
-- Monitor Core Web Vitals in Search Console
-- Check "Performance" report monthly for clicks, impressions, CTR
-- Review "Queries" to discover what keywords people use to find you
-- Check "Enhanced items" for Product/FAQ schema validation errors
+- Monitor Core Web Vitals
+- Check "Performance" monthly for clicks, impressions, CTR
+- Check "Enhanced items" once FAQ + offers schema are added
 
 ### Bing Webmaster Tools
 
@@ -158,20 +141,8 @@ A: We produce Magnalium powder in 18, 40, 80, 100, 150, 200, and 325 mesh sizes.
 - No call-to-action beyond "Contact Us"
 - No way to collect leads automatically
 
-### Phase 1: Form Backend (Minimal Effort)
-
-**Option A: Formspree (free tier — 50 submissions/month)**
-1. Sign up at https://formspree.io
-2. Add `action="https://formspree.io/f/your-id"` to contact form
-3. No backend code needed
-
-**Option B: Google Forms embed**
-1. Create a Google Form
-2. Embed it → responses go to Google Sheets
-3. No backend needed, free
-
-**Option C: Netlify Forms** (if we ever move to Netlify)
-- Built-in form handling, free tier
+### Phase 1: Form Backend ✅ DONE
+Formspree integrated in `FooterForm.tsx` (form ID: `xaqkyrwa`). Live and working.
 
 ### Phase 2: Lead Magnets
 
@@ -285,68 +256,38 @@ Organic Search / Direct / Referral
 
 ## 7. Implementation Priority
 
-| Priority | Action | Effort | Impact |
-|----------|--------|--------|--------|
-| 🔴 P0 | Register Google Search Console + submit sitemap | 10 min | Critical |
-| 🔴 P0 | Register Bing Webmaster Tools | 10 min | Critical |
-| 🔴 P0 | Add GA4 analytics | 20 min | Critical |
-| 🔴 P0 | Add WhatsApp Business chat link | 10 min | High |
-| 🔴 P0 | Fix contact form to work (Formspree/Google Forms) | 30 min | Critical |
-| 🟡 P1 | Google Business Profile | 30 min | High |
-| 🟡 P1 | Microsoft Clarity (heatmaps) | 10 min | High |
-| 🟡 P1 | IndiaMART product listing | 2 hrs | High |
-| 🟡 P1 | FAQ page with FAQPage schema | 1 hr | High |
-| 🟡 P1 | Product offers in JSON-LD | 30 min | Medium |
-| 🟡 P1 | "Request Quote" CTAs on product pages | 30 min | High |
-| 🟢 P2 | Blog content (2-3 posts) | 4 hrs | Medium |
-| 🟢 P2 | Downloadable lead magnets | 4 hrs | Medium |
-| 🟢 P2 | LinkedIn content strategy | Ongoing | Medium |
-| 🟢 P2 | YouTube product comparison videos | 4 hrs | Medium |
-| 🔵 P3 | TradeIndia / Alibaba profiles | 4 hrs | Low-Medium |
-| 🔵 P3 | Backlink outreach | Ongoing | Medium |
-| 🔵 P3 | Quora answers | Ongoing | Low |
+| Priority | Action | Status | Effort | Impact |
+|----------|--------|--------|--------|--------|
+| ✅ DONE | Contact form (Formspree) | Live | — | Critical |
+| ✅ DONE | Top header nav + Blog link | Live | — | High |
+| ✅ DONE | Product-first meta titles/descriptions | Live | — | Critical |
+| ✅ DONE | Organization/Product/Breadcrumb JSON-LD | Live | — | High |
+| ✅ DONE | google-site-verification meta tag | Live | — | Critical |
+| 🔴 P0 | Verify Google Search Console + submit sitemap | TODO | 10 min | Critical |
+| 🔴 P0 | Add GA4 analytics | TODO | 20 min | Critical |
+| 🔴 P0 | Add WhatsApp Business chat link | TODO | 10 min | High |
+| 🔴 P0 | Register Bing Webmaster Tools | TODO | 10 min | Medium |
+| 🟡 P1 | FAQ page `/faq/` with FAQPage schema | TODO | 1 hr | High |
+| 🟡 P1 | Add `offers` to ProductJsonLd (rich results) | TODO | 30 min | High |
+| 🟡 P1 | "Request Quote" CTAs on product pages | TODO | 30 min | High |
+| 🟡 P1 | Google Business Profile | TODO | 30 min | High |
+| 🟡 P1 | Microsoft Clarity (heatmaps) | TODO | 10 min | High |
+| 🟡 P1 | IndiaMART product listing | TODO | 2 hrs | High |
+| 🟡 P1 | Category page intro paragraphs (/magnalium/, /magnesium/) | TODO | 30 min | Medium |
+| 🟢 P2 | Blog posts 2–4 (use PHMSA research doc) | TODO | 4 hrs | Medium |
+| 🟢 P2 | Downloadable lead magnets (spec sheet PDF) | TODO | 4 hrs | Medium |
+| 🟢 P2 | LinkedIn content strategy | TODO | Ongoing | Medium |
+| 🔵 P3 | TradeIndia / Alibaba profiles | TODO | 4 hrs | Low-Medium |
+| 🔵 P3 | Backlink outreach | TODO | Ongoing | Medium |
+| 🔵 P3 | Quora answers | TODO | Ongoing | Low |
 
 ---
 
-## 8. Navigation & Header Strategy
+## 8. Navigation & Header ✅ DONE
 
-### Current State
-- Hamburger-only menu (off-canvas slide from right)
-- All navigation hidden behind icon
-- No visible primary navigation on desktop or mobile
-- Users must click to discover navigation
-
-### Target State: Top Header Bar
-
-**Layout:**
-```
-┌──────────────────────────────────────────────────────────────┐
-│ [Logo]  HOME  ABOUT  PRODUCTS  PROD. TECH  QUALITY  CONTACT │
-│                                          🌐 EN ES PT FR VI  │
-└──────────────────────────────────────────────────────────────┘
-```
-
-**Breakpoints:**
-| Viewport | Display |
-|----------|---------|
-| ≥ 768px (tablet+) | Full horizontal nav bar with abbreviated labels |
-| < 768px (mobile) | Hamburger icon (current behavior) |
-
-**Abbreviated labels** (fits 768px+):
-`Home` | `About` | `Products ▾` | `Prod. Tech` | `Quality` | `Contact`
-
-**Products submenu** (dropdown on hover/click):
-- Magnalium Powder
-- Magnesium Powder  
-- Titanium Powder
-
-**Blog Link:** Yes — add to header nav. Links to `/blogs/` (currently under construction, future blog content). This signals content strategy to search engines and visitors.
-
-**Why This Matters:**
-1. **SEO** — Crawlable visible links in `<nav>` with higher priority than hidden hamburger
-2. **User Experience** — 85% of users scan top nav first; hamburger hides discovery
-3. **Conversion** — "Contact" always visible = faster enquiries
-4. **Trust** — Visible navigation signals a legitimate business website
+Top header bar with logo, nav links (Home/About/Products▾/Prod.Tech/Quality/Contact/Blog)
+implemented in `Menu.tsx`. Desktop ≥768px shows full bar; mobile shows hamburger.
+Blog link added to both desktop header and mobile menu.
 
 ---
 
