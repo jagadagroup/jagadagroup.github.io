@@ -30,7 +30,7 @@ export default function FooterForm() {
       <p className="mb-1" style={{ color: '#999' }}>Keep up with the latest new in industry</p>
       <div className="form-group d-flex flex-row">
         <div className="input-group">
-          <input className="form-control" type="text" name="query" placeholder="Type your query here..." />
+          <input className="form-control" type="text" name="query" placeholder="Type your query here..." style={{ color: '#333' }} />
         </div>
       </div>
       <div className="form-group d-flex flex-row">
@@ -38,7 +38,7 @@ export default function FooterForm() {
           <div className="input-group-prepend">
             <span className="input-group-text">@</span>
           </div>
-          <input className="form-control" type="email" name="email" placeholder="ben@example.com" required />
+          <input className="form-control" type="email" name="email" placeholder="ben@example.com" required style={{ color: '#333' }} />
           <div className="input-group-append d-md-none">
             <button className="input-group-text" type="submit" disabled={state.submitting}>
               <i className="fa fa-paper-plane"></i>

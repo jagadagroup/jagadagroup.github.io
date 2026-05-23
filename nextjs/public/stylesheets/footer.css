@@ -83,7 +83,8 @@ address {
 .footer {
   background-image: url(../images/171109_06_49_10_5DSR4201.0.jpg);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
   .footer * {
     color: #FFF;
     font-size: 14px; }

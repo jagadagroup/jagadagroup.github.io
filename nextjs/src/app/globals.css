@@ -19,6 +19,9 @@ body {
 
 .page {
   transition: transform .2s ease-in;
+  /* Opaque white background blocks the fixed dark splash image on all pages.
+     index.css already sets this for the homepage; this covers all other routes. */
+  background: #fff;
 }
 
 /* Decorator bar at top */
@@ -45,4 +48,39 @@ body {
 /* Overlap overlay */
 .overlap {
   position: relative;
+}
+
+/* ---- Header nav link hover polish ---- */
+header nav a {
+  transition: color 0.18s;
+}
+header nav a:hover {
+  color: #daa520 !important;
+}
+
+/* ---- Dropdown item hover ---- */
+header nav a[style*="cccccc"]:hover {
+  color: #daa520 !important;
+}
+
+/* ---- Subtle header bottom shadow ---- */
+header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* ---- Smooth page transitions ---- */
+.page {
+  transition: transform 0.3s ease;
+}
+
+/* ---- Blog & content link color ---- */
+.blog-body a,
+article a:not(.btn):not(.blog-back):not(.blog-card-title):not(.blog-read-more) {
+  color: #1a6fa8;
+  text-decoration: none;
+}
+.blog-body a:hover,
+article a:not(.btn):not(.blog-back):not(.blog-card-title):not(.blog-read-more):hover {
+  color: #daa520;
+  text-decoration: underline;
 }
