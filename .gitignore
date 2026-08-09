@@ -28,6 +28,9 @@ playwright-report/
 .env
 .env.*
 
+# Google Search Console report exports — local analysis only, never committed
+*.zip
+
 # next.js (also covered by nextjs/.gitignore)
 .next
 

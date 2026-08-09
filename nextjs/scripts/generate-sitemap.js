@@ -3,9 +3,10 @@ const path = require('path');
 
 const baseUrl = 'https://www.jagadagroup.com';
 
+// Only canonical, indexable URLs belong here — noindex'd stub pages and
+// duplicate routes (e.g. /home/, which canonicalizes to /) are deliberately excluded.
 const pages = [
   { path: '', priority: '1.00', changefreq: 'weekly' },
-  { path: 'home', priority: '0.80', changefreq: 'weekly' },
   { path: 'about-us', priority: '0.80', changefreq: 'monthly' },
   { path: 'contact-us', priority: '0.80', changefreq: 'monthly' },
   { path: 'products', priority: '0.80', changefreq: 'weekly' },
@@ -14,21 +15,22 @@ const pages = [
   { path: 'production-technology', priority: '0.64', changefreq: 'monthly' },
   { path: 'production-quality', priority: '0.64', changefreq: 'monthly' },
   { path: 'research-and-development', priority: '0.64', changefreq: 'monthly' },
-  { path: 'customers', priority: '0.64', changefreq: 'monthly' },
   { path: 'blogs', priority: '0.64', changefreq: 'monthly' },
-  { path: 'jobs', priority: '0.64', changefreq: 'monthly' },
-  { path: 'press', priority: '0.64', changefreq: 'monthly' },
-  { path: 'resource-center', priority: '0.64', changefreq: 'monthly' },
-  { path: 'help-center', priority: '0.64', changefreq: 'monthly' },
-  { path: 'product-status', priority: '0.64', changefreq: 'monthly' },
-  { path: 'support', priority: '0.64', changefreq: 'monthly' },
+  { path: 'blog/magnalium-vs-magnesium-vs-aluminum', priority: '0.70', changefreq: 'monthly' },
+  { path: 'blog/grade-1-vs-grade-2-magnesium-powder', priority: '0.70', changefreq: 'monthly' },
+  { path: 'blog/how-to-choose-mesh-size-magnalium-powder', priority: '0.70', changefreq: 'monthly' },
+  { path: 'blog/why-indian-magnalium-powder-outperforms-chinese-alternatives', priority: '0.70', changefreq: 'monthly' },
 ];
 
-// Other locale pages (pt-PT, fr-FR, vi-VN — SEO landing pages)
+// Other locale pages (pt-PT, fr-FR, vi-VN — SEO landing pages).
+// These routes actually exist (src/app/<locale>/{about-us,contact-us,products}); the
+// previous 'blogs' / 'blog/...' entries here 404'd because no such locale routes exist.
 ['pt-PT', 'fr-FR', 'vi-VN'].forEach((loc) => {
-pages.push(
-    { path: 'blogs', priority: '0.80', changefreq: 'weekly' },
-    { path: 'blog/magnalium-vs-magnesium-vs-aluminum', priority: '0.80', changefreq: 'monthly' },
+  pages.push(
+    { path: loc, priority: '0.60', changefreq: 'weekly' },
+    { path: `${loc}/about-us`, priority: '0.50', changefreq: 'monthly' },
+    { path: `${loc}/contact-us`, priority: '0.50', changefreq: 'monthly' },
+    { path: `${loc}/products`, priority: '0.50', changefreq: 'monthly' },
   );
 });
 
@@ -47,10 +49,10 @@ for (const product of products) {
   });
 }
 
-// Spanish locale pages
+// Spanish locale pages — only routes with real translated content;
+// the 8 "under construction" stub routes are noindex'd and excluded here.
 const esPages = [
   { path: 'es-ES', priority: '0.80', changefreq: 'weekly' },
-  { path: 'es-ES/home', priority: '0.64', changefreq: 'weekly' },
   { path: 'es-ES/about-us', priority: '0.64', changefreq: 'monthly' },
   { path: 'es-ES/contact-us', priority: '0.64', changefreq: 'monthly' },
   { path: 'es-ES/products', priority: '0.64', changefreq: 'monthly' },
@@ -59,14 +61,6 @@ const esPages = [
   { path: 'es-ES/production-technology', priority: '0.64', changefreq: 'monthly' },
   { path: 'es-ES/production-quality', priority: '0.64', changefreq: 'monthly' },
   { path: 'es-ES/research-and-development', priority: '0.64', changefreq: 'monthly' },
-  { path: 'es-ES/customers', priority: '0.64', changefreq: 'monthly' },
-  { path: 'es-ES/blogs', priority: '0.64', changefreq: 'monthly' },
-  { path: 'es-ES/jobs', priority: '0.64', changefreq: 'monthly' },
-  { path: 'es-ES/press', priority: '0.64', changefreq: 'monthly' },
-  { path: 'es-ES/resource-center', priority: '0.64', changefreq: 'monthly' },
-  { path: 'es-ES/help-center', priority: '0.64', changefreq: 'monthly' },
-  { path: 'es-ES/product-status', priority: '0.64', changefreq: 'monthly' },
-  { path: 'es-ES/support', priority: '0.64', changefreq: 'monthly' },
 ];
 pages.push(...esPages);
 
@@ -78,7 +72,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 ${pages
   .map(
     (p) => `  <url>
-    <loc>${baseUrl}/${p.path}</loc>
+    <loc>${baseUrl}/${p.path}${p.path ? '/' : ''}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${p.changefreq}</changefreq>
     <priority>${p.priority}</priority>

@@ -5,6 +5,8 @@ import { magnalium as magnaliumProducts } from '@/data';
 export const metadata = {
   title: 'Productos Magnalium — Jagada Industries',
   description: 'Polvos de Magnalium de primera calidad.',
+  // Only en + es-ES exist for this page — no pt-PT/fr-FR/vi-VN translation.
+  alternates: { canonical: '/es-ES/magnalium/', languages: { en: '/magnalium/', 'es-ES': '/es-ES/magnalium/', 'x-default': '/magnalium/' } },
   openGraph: { locale: 'es_ES' },
 };
 

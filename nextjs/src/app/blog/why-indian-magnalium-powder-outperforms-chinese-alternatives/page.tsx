@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Why Indian Magnalium Powder Outperforms Chinese Alternatives',
   description: 'Discover why Indian magnalium, with superior morphology and ISO-certified quality, is the trusted choice over inconsistent Chinese alternatives for pyrotechnics and beyond.',
+  alternates: { canonical: '/blog/why-indian-magnalium-powder-outperforms-chinese-alternatives/', languages: { en: '/blog/why-indian-magnalium-powder-outperforms-chinese-alternatives/', 'x-default': '/blog/why-indian-magnalium-powder-outperforms-chinese-alternatives/' } },
 };
 
 const TABLE_CLASS = 'table table-bordered table-sm mb-4';

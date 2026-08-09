@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'How to Choose the Right Mesh Size for Magnalium Powder in Pyrotechnics',
   description: 'Learn how mesh size impacts fireworks effects. Find expert advice for selecting between 18, 40, and 325 mesh magnalium for pyrotechnic compositions.',
+  alternates: { canonical: '/blog/how-to-choose-mesh-size-magnalium-powder/', languages: { en: '/blog/how-to-choose-mesh-size-magnalium-powder/', 'x-default': '/blog/how-to-choose-mesh-size-magnalium-powder/' } },
 };
 
 const TABLE_CLASS = 'table table-bordered table-sm mb-4';

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Production Technology — Jagada Industries',
   description: 'Advanced production technology and metallurgical processes at Jagada Industries.',
+  alternates: { canonical: '/production-technology/', languages: { en: '/production-technology/', 'es-ES': '/es-ES/production-technology/', 'x-default': '/production-technology/' } },
 };
 
 export default function ProductionTechnologyPage() {

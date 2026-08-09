@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import ContactFormComponent from '@/components/ContactForm';
+import { getAlternates } from '@/lib/alternates';
 
 export const metadata: Metadata = {
   title: 'Get Quote — Contact Jagada Industries for Metal Powders',
   description: 'Contact Jagada Industries for Magnalium powder, Magnesium powder, and Al-Mg alloy powder pricing. Phone, email, and enquiry form available.',
+  alternates: { canonical: '/contact-us/', languages: getAlternates('/contact-us/', 'en') },
 };
 
 export default function ContactUsPage() {

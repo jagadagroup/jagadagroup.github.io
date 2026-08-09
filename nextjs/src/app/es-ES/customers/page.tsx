@@ -5,6 +5,8 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Clientes — Jagada Industries',
   description: 'Página de clientes — Jagada Industries.',
+  alternates: { canonical: '/es-ES/customers/', languages: { 'es-ES': '/es-ES/customers/', 'x-default': '/es-ES/customers/' } },
+  robots: 'noindex,follow',
   openGraph: { locale: 'es_ES' },
 };
 

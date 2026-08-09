@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
+import { getAlternates } from '@/lib/alternates';
 
 export const metadata: Metadata = {
   title: 'About Jagada Industries — Metal Powder Manufacturer Since 1992',
   description: 'Jagada Industries, established 1992, is India\'s leading manufacturer of Magnalium, Magnesium, and non-ferrous metal powders. ISO 9001:2008 & ISO 14001 certified.',
+  alternates: { canonical: '/about-us/', languages: getAlternates('/about-us/', 'en') },
 };
 
 export default function AboutUsPage() {

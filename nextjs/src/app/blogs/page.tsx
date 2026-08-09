@@ -4,6 +4,8 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Blog — Metal Powder Guides & Pyrotechnic Resources — Jagada Industries',
   description: 'Expert guides on Magnalium powder, Magnesium powder, metal powders for fireworks, pyrotechnic raw materials, and industrial applications from a leading manufacturer.',
+  // No translated blog exists (the es-ES/blogs stub is noindexed), so no cross-locale hreflang.
+  alternates: { canonical: '/blogs/', languages: { en: '/blogs/', 'x-default': '/blogs/' } },
 };
 
 const POSTS = [

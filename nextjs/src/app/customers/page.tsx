@@ -4,6 +4,8 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Customers — Jagada Industries',
   description: 'Customers page — Jagada Industries.',
+  alternates: { canonical: '/customers/', languages: { en: '/customers/', 'x-default': '/customers/' } },
+  robots: 'noindex,follow',
 };
 
 export default function CustomersPage() {

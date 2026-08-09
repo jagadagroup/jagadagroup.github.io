@@ -3,10 +3,12 @@ import Link from 'next/link';
 import { products } from '@/data';
 import { getProductSlug } from '@/lib/slugs';
 import { getOptimizedImageUrl } from '@/lib/images';
+import { getAlternates } from '@/lib/alternates';
 
 export const metadata: Metadata = {
   title: 'Metal Powder Catalog — Magnalium, Magnesium & Titanium — Jagada Industries',
   description: 'Browse our complete metal powder catalog: Magnalium powder, Magnesium powder, and Titanium powder for pyrotechnics, fireworks, and defense applications.',
+  alternates: { canonical: '/products/', languages: getAlternates('/products/', 'en') },
 };
 
 export default function ProductsPage() {

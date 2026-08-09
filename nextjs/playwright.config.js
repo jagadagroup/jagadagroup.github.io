@@ -17,7 +17,7 @@ module.exports = defineConfig({
     },
   ],
   webServer: {
-    command: 'npx serve -p 3000 -s out',
+    command: 'npx serve -p 3000 out',
     cwd: '.',
     port: 3000,
     timeout: 10 * 1000,

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Research & Development — Jagada Industries',
   description: 'Advanced R&D in metal powder atomisation and bespoke materials for aerospace, biomedical, and automotive industries.',
+  alternates: { canonical: '/research-and-development/', languages: { en: '/research-and-development/', 'es-ES': '/es-ES/research-and-development/', 'x-default': '/research-and-development/' } },
 };
 
 export default function ResearchDevPage() {

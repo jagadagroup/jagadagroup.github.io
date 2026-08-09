@@ -3,10 +3,12 @@ import Link from 'next/link';
 import { products } from '@/data';
 import { getProductSlug } from '@/lib/slugs';
 import { getOptimizedImageUrl } from '@/lib/images';
+import { getAlternates } from '@/lib/alternates';
 
 export const metadata: Metadata = {
   title: 'Magnalium & Magnesium Powder Manufacturer India — Jagada Industries',
   description: 'Leading manufacturer of Magnalium powder, Magnesium powder, and Al-Mg alloy powders for pyrotechnics, fireworks, and industrial use. ISO 9001:2008 certified. Est. 1992.',
+  alternates: { canonical: '/', languages: getAlternates('/', 'en') },
 };
 
 export default function HomePage() {

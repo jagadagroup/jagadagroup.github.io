@@ -4,6 +4,7 @@ import { getDictionary } from '@/lib/i18n';
 export const metadata: Metadata = {
   title: 'Tecnología de Producción — Jagada Industries',
   description: 'Tecnología avanzada de producción en Jagada Industries.',
+  alternates: { canonical: '/es-ES/production-technology/', languages: { en: '/production-technology/', 'es-ES': '/es-ES/production-technology/', 'x-default': '/production-technology/' } },
   openGraph: { locale: 'es_ES' },
 };
 

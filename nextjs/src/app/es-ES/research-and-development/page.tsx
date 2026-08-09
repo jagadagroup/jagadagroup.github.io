@@ -4,6 +4,7 @@ import { getDictionary } from '@/lib/i18n';
 export const metadata: Metadata = {
   title: 'Investigación y Desarrollo — Jagada Industries',
   description: 'I+D avanzado en atomización de polvos metálicos.',
+  alternates: { canonical: '/es-ES/research-and-development/', languages: { en: '/research-and-development/', 'es-ES': '/es-ES/research-and-development/', 'x-default': '/research-and-development/' } },
   openGraph: { locale: 'es_ES' },
 };
 

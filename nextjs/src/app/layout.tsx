@@ -55,8 +55,6 @@ export default function RootLayout({
         <link rel="stylesheet" type="text/css" href="/stylesheets/layout.css" />
         <link rel="stylesheet" type="text/css" href="/stylesheets/menu.css" />
         <link rel="stylesheet" type="text/css" href="/stylesheets/footer.css" />
-        {/* x-default hreflang — Next.js Metadata API doesn't support this, added manually */}
-        <link rel="alternate" hrefLang="x-default" href="https://www.jagadagroup.com/" />
       </head>
       <body>
         <Script

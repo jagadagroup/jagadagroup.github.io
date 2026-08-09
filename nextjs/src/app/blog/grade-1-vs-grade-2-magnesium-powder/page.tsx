@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Grade 1 vs. Grade 2 Magnesium Powder: Which Grade Is Right for Your Application?',
   description: 'Learn the key differences between Grade 1 and Grade 2 magnesium powder — purity, applications, and performance factors for fireworks, industrial, and pyrotechnics use.',
+  alternates: { canonical: '/blog/grade-1-vs-grade-2-magnesium-powder/', languages: { en: '/blog/grade-1-vs-grade-2-magnesium-powder/', 'x-default': '/blog/grade-1-vs-grade-2-magnesium-powder/' } },
 };
 
 const TABLE_CLASS = 'table table-bordered table-sm mb-4';

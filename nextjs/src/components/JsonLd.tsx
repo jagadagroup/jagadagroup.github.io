@@ -17,6 +17,7 @@ export function OrganizationJsonLd() {
 }
 
 export function ProductJsonLd({ product }: { product: Product }) {
+  const composition = product.data?.find((d) => d.head.toLowerCase().includes('composition'));
   return (
     <script
       type="application/ld+json"
@@ -27,10 +28,22 @@ export function ProductJsonLd({ product }: { product: Product }) {
           name: product.text,
           image: `${siteConfig.url}${product.url}`,
           description: product.desc || product.text,
+          sku: String(product.id),
+          category: 'Pyrotechnic & Non-Ferrous Metal Powders',
+          ...(composition ? { material: composition.value } : {}),
+          additionalProperty: (product.data || []).map((d) => ({
+            '@type': 'PropertyValue',
+            name: d.head,
+            value: d.value,
+            unitText: d.unit,
+          })),
           manufacturer: {
             '@type': 'Organization',
             name: siteConfig.name,
           },
+          // No `offers`/price: this is quote-based B2B pricing, not a published
+          // price. Fabricating a price here would violate Google's structured
+          // data guidelines — offers should only be added once real pricing exists.
         }),
       }}
     />

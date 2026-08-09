@@ -4,6 +4,7 @@ import { getDictionary } from '@/lib/i18n';
 export const metadata: Metadata = {
   title: 'Calidad de Producción — Jagada Industries',
   description: 'Nuestro compromiso con la calidad.',
+  alternates: { canonical: '/es-ES/production-quality/', languages: { en: '/production-quality/', 'es-ES': '/es-ES/production-quality/', 'x-default': '/production-quality/' } },
   openGraph: { locale: 'es_ES' },
 };
 

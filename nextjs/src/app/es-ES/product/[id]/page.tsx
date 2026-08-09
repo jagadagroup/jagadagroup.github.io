@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { products } from '@/data';
 import { ProductJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd';
+import { getProductSlug } from '@/lib/slugs';
 
 export async function generateStaticParams() {
   return products.map((product) => ({ id: String(product.id) }));
@@ -14,6 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return {
     title: `${product.text} — Jagada Industries`,
     description: product.desc || `Especificaciones técnicas para ${product.text}`,
+    alternates: { canonical: `/es-ES/product/${id}/`, languages: { en: `/product/${getProductSlug(product.text)}/`, 'es-ES': `/es-ES/product/${id}/`, 'x-default': `/product/${getProductSlug(product.text)}/` } },
     openGraph: { title: `${product.text} — Jagada Industries`, description: product.desc || `Especificaciones técnicas para ${product.text}`, images: [product.url], locale: 'es_ES' },
   };
 }
@@ -30,7 +32,7 @@ export default async function EsProductPage({ params }: { params: Promise<{ id: 
   return (
     <>
       <ProductJsonLd product={product} />
-      <BreadcrumbJsonLd items={[{ name: 'Home', url: '/es-ES/' }, { name: 'Productos', url: '/es-ES/products/' }, { name: product.text, url: `/es-ES/product/${product.id}` }]} />
+      <BreadcrumbJsonLd items={[{ name: 'Home', url: '/es-ES/' }, { name: 'Productos', url: '/es-ES/products/' }, { name: product.text, url: `/es-ES/product/${product.id}/` }]} />
       <link rel="stylesheet" type="text/css" href="/stylesheets/product.css" />
 
       <Link id="tech-back" className="d-flex justify-content-center align-items-center" href="/es-ES/products/">

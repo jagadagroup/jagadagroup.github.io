@@ -4,6 +4,8 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Estado del Producto — Jagada Industries',
   description: 'Estado del producto.',
+  alternates: { canonical: '/es-ES/product-status/', languages: { 'es-ES': '/es-ES/product-status/', 'x-default': '/es-ES/product-status/' } },
+  robots: 'noindex,follow',
   openGraph: { locale: 'es_ES' },
 };
 

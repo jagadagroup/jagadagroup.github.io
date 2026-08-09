@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${product.text} — Jagada Industries`,
     description: product.desc || `${product.text} — Aluminium-Magnesium alloy for pyrotechnics and fireworks. Manufacturer & exporter from India.`,
+    alternates: { canonical: `/product/${slug}/`, languages: { en: `/product/${slug}/`, 'es-ES': `/es-ES/product/${product.id}/`, 'x-default': `/product/${slug}/` } },
     openGraph: {
       title: `${product.text} — Jagada Industries`,
       description: product.desc || `${product.text} — Aluminium-Magnesium alloy for pyrotechnics and fireworks. Manufacturer & exporter from India.`,
@@ -38,8 +39,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Products', url: '/products' },
-          { name: product.text, url: `/product/${slug}` },
+          { name: 'Products', url: '/products/' },
+          { name: product.text, url: `/product/${slug}/` },
         ]}
       />
 

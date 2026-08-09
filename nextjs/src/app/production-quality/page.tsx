@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Production Quality — Jagada Industries',
   description: 'Our pledge of quality. Magnalium Uncoated and Coated test methods for pyrotechnic metal powder manufacturing.',
+  alternates: { canonical: '/production-quality/', languages: { en: '/production-quality/', 'es-ES': '/es-ES/production-quality/', 'x-default': '/production-quality/' } },
 };
 
 export default function ProductionQualityPage() {

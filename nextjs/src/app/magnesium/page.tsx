@@ -7,6 +7,7 @@ import { getOptimizedImageUrl } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Magnesium Powder Manufacturer & Exporter India — Grade 1 & 2 — Jagada Industries',
   description: 'High-purity Magnesium powder (99.8% IS 2307) in Grade 1, Grade 1 Coated, and Grade 2. Exported worldwide for fireworks and industrial applications.',
+  alternates: { canonical: '/magnesium/', languages: { en: '/magnesium/', 'es-ES': '/es-ES/magnesium/', 'x-default': '/magnesium/' } },
 };
 
 export default function MagnesiumPage() {
