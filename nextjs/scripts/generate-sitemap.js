@@ -36,6 +36,13 @@ const pages = [
   );
 });
 
+// vi-VN has the strongest demand-to-content ratio of any locale (see
+// Content-Strategy-2026-08.md P4) — the only locale with dedicated category pages so far.
+pages.push(
+  { path: 'vi-VN/magnalium', priority: '0.60', changefreq: 'monthly' },
+  { path: 'vi-VN/magnesium', priority: '0.60', changefreq: 'monthly' },
+);
+
 // Product detail pages — SEO-friendly slugs
 const products = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'src', 'data', 'products.json'), 'utf8'));
 

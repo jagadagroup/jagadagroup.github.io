@@ -7,7 +7,7 @@ import { getOptimizedImageUrl } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Magnesium Powder for Fireworks — Grade 1 & 2, 99.8% Purity — Jagada Industries',
   description: 'Magnesium powder for fireworks and pyrotechnics — Grade 1 (99.8% purity, IS 2307), Grade 1 Coated, and Grade 2. Manufactured and exported by Jagada Industries since 1992.',
-  alternates: { canonical: '/magnesium/', languages: { en: '/magnesium/', 'es-ES': '/es-ES/magnesium/', 'x-default': '/magnesium/' } },
+  alternates: { canonical: '/magnesium/', languages: { en: '/magnesium/', 'es-ES': '/es-ES/magnesium/', 'vi-VN': '/vi-VN/magnesium/', 'x-default': '/magnesium/' } },
 };
 
 export default function MagnesiumPage() {

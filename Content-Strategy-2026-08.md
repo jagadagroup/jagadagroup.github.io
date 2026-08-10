@@ -97,22 +97,41 @@ Several pages already rank well but convert none of that into clicks:
    listing. This is the cheapest fix on this list relative to impact: the address/phone data
    already lives in `site-config.ts`.
 
-### P3 — Blog pipeline
+### P3 — Blog pipeline ✅ DONE (10 Aug 2026)
 
-6. **Ship the next 3 blog posts already scoped in `SEO-AEO-Gap-Analysis.md` §6.4** — mesh-size
-   guide, Al-Mg alloy ratio guide, Chinese-vs-Indian comparison. All 4 originally-planned posts are
-   now live and correctly canonicalized (as of 9 Aug 2026), and one of them is proven to outperform
-   every other page on the site. Do not deviate from that comparison/buyer-decision format — it's
-   the only content type on the site with confirmed pull.
+6. ~~Ship the next 3 blog posts already scoped in `SEO-AEO-Gap-Analysis.md` §6.4~~ — checking
+   the repo before writing anything found 3 of the 4 originally-scoped posts (mesh-size guide,
+   Chinese-vs-Indian comparison, Grade 1 vs 2 magnesium) were already live. Only the Al-Mg alloy
+   ratio guide was missing; it's now published at
+   `/blog/understanding-al-mg-alloy-ratios-in-magnalium-powder/`. All 5 posts are live and
+   correctly canonicalized, and the comparison/buyer-decision format remains the only content
+   type on the site with confirmed pull (`/blog/magnalium-vs-magnesium-vs-aluminum/` still
+   drives ~41% of all clicks).
 
-### P4 — Locale content (pt-PT / fr-FR / vi-VN)
+### P4 — Locale content (pt-PT / fr-FR / vi-VN) ✅ Research done (10 Aug 2026)
 
-7. **These three locales get real impressions with almost no supporting content** — each has only
-   4 pages (home, about, contact, products), no category or blog content, so there's nothing for
-   long-tail queries in those markets to match against. Before investing in full translation,
-   confirm actual demand: `Countries.csv` shows meaningful impression volume from markets these
-   locales don't map to 1:1 (UK, Canada, Germany, etc. show impressions with no dedicated locale),
-   so prioritize by matching Country data to locale before commissioning translation work.
+7. Matched `Countries.csv` impression/click volume against each locale's actual target country:
+
+   | Locale | Target-country demand | Content built |
+   |---|---|---|
+   | **vi-VN** (Vietnam) | **88 impr., 2 clicks** — best demand/content-gap ratio of any locale | 4 pages |
+   | es-ES (Spain + LatAm) | 119 impr., 0 clicks | 9 real pages + all 11 product pages |
+   | fr-FR (France + Francophone) | 75 impr., 0 clicks | 4 pages |
+   | pt-PT (Portugal only) | 4 impr., 1 click | 4 pages |
+   | *(unmapped)* Brazil | 40 impr., 0 clicks — 10x Portugal's own volume | none |
+   | *(unmapped)* UK / Canada | 147 / 97 impr. | served fine by default `en` — English, not a locale gap |
+   | *(unmapped)* Germany / Gulf / Thailand / Poland | 37 / 51 / 31 / 28 impr. | real but modest — monitor, not yet worth a full locale |
+
+   **Conclusions:**
+   - `pt-PT` was misconfigured, not under-built: real Portuguese demand is Brazilian, but the
+     `pt-PT` hreflang tag doesn't target Brazil. Fixed 10 Aug 2026 — `getAlternates()` now also
+     emits a `pt-BR` hreflang pointing at the same (region-neutral) content, at no content cost.
+   - `vi-VN` has the strongest demand-to-content mismatch on the site and is worth real
+     investment: category pages (`/vi-VN/magnalium/`, `/vi-VN/magnesium/`) at minimum, ideally a
+     translated version of the top-performing comparison blog post. Not yet built — needs a call
+     on translation approach/quality bar before starting.
+   - No other market (Germany, Gulf, Thailand, Poland) has enough volume yet to justify a new
+     locale from scratch; revisit if any of them cross ~vi-VN's volume over the next few months.
 
 ---
 

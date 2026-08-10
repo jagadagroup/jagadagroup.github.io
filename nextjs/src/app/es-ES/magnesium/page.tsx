@@ -5,7 +5,7 @@ import { magnesium as magnesiumProducts } from '@/data';
 export const metadata = {
   title: 'Productos de Magnesio — Jagada Industries',
   description: 'Polvos de Magnesio de alta pureza.',
-  alternates: { canonical: '/es-ES/magnesium/', languages: { en: '/magnesium/', 'es-ES': '/es-ES/magnesium/', 'x-default': '/magnesium/' } },
+  alternates: { canonical: '/es-ES/magnesium/', languages: { en: '/magnesium/', 'es-ES': '/es-ES/magnesium/', 'vi-VN': '/vi-VN/magnesium/', 'x-default': '/magnesium/' } },
   openGraph: { locale: 'es_ES' },
 };
 

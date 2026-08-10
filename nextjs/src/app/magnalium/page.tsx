@@ -7,8 +7,8 @@ import { getOptimizedImageUrl } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Magnalium Powder — Al-Mg Alloy 18 to 325 Mesh for Pyrotechnics — Jagada Industries',
   description: 'Premium Magnalium (Aluminium-Magnesium alloy) powder in 18, 40, 80, 100, 150, 200, 325 mesh. Made from virgin metals. Manufacturer & exporter since 1992. Find exact uses for fountains, bursts, strobe compositions — made from virgin ISO-certified alloys.',
-  // Only en + es-ES exist for this page — no pt-PT/fr-FR/vi-VN translation, unlike the getAlternates() default set.
-  alternates: { canonical: '/magnalium/', languages: { en: '/magnalium/', 'es-ES': '/es-ES/magnalium/', 'x-default': '/magnalium/' } },
+  // Only en + es-ES + vi-VN exist for this page — no pt-PT/fr-FR translation, unlike the getAlternates() default set.
+  alternates: { canonical: '/magnalium/', languages: { en: '/magnalium/', 'es-ES': '/es-ES/magnalium/', 'vi-VN': '/vi-VN/magnalium/', 'x-default': '/magnalium/' } },
 };
 
 export default function MagnaliumPage() {
