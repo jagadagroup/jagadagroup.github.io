@@ -10,6 +10,14 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: '/blog/understanding-al-mg-alloy-ratios-in-magnalium-powder',
+    title: 'Understanding Al-Mg Alloy Ratios in Magnalium Powder',
+    excerpt: 'Why 50:50 Aluminium-Magnesium is the industry-standard Magnalium ratio for pyrotechnics — what the ratio means, why it matters, and how it’s verified batch to batch.',
+    date: 'August 2026',
+    readTime: '6 min read',
+    tags: ['Magnalium', 'Alloys', '50:50 Ratio', 'Pyrotechnics'],
+  },
+  {
     slug: '/blog/why-indian-magnalium-powder-outperforms-chinese-alternatives',
     title: 'Why Indian Magnalium Powder Outperforms Chinese Alternatives',
     excerpt: 'Discover why Indian manufacturers excel in consistent quality and compliance for magnalium powder compared to Chinese alternatives.',

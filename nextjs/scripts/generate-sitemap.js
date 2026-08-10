@@ -21,6 +21,7 @@ const pages = [
   { path: 'blog/grade-1-vs-grade-2-magnesium-powder', priority: '0.70', changefreq: 'monthly' },
   { path: 'blog/how-to-choose-mesh-size-magnalium-powder', priority: '0.70', changefreq: 'monthly' },
   { path: 'blog/why-indian-magnalium-powder-outperforms-chinese-alternatives', priority: '0.70', changefreq: 'monthly' },
+  { path: 'blog/understanding-al-mg-alloy-ratios-in-magnalium-powder', priority: '0.70', changefreq: 'monthly' },
 ];
 
 // Other locale pages (pt-PT, fr-FR, vi-VN — SEO landing pages).
