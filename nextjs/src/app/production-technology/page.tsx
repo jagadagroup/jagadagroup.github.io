@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Production Technology — Jagada Industries',
-  description: 'Advanced production technology and metallurgical processes at Jagada Industries.',
+  title: 'Production Technology — Metal Powder Atomisation & OES Testing — Jagada Industries',
+  description: 'How Jagada Industries manufactures Magnalium and Magnesium powder: metal atomisation and OES (Optical Emission Spectroscopy) compositional testing on every batch, since 1992.',
   alternates: { canonical: '/production-technology/', languages: { en: '/production-technology/', 'es-ES': '/es-ES/production-technology/', 'x-default': '/production-technology/' } },
 };
 
@@ -22,13 +22,13 @@ export default function ProductionTechnologyPage() {
             <img className="mb-2 contact" src="/svgs/018-physics.svg" alt="sales contact" />
             <h4>SALES PERSON</h4>
             <a href="tel:+919000060000">+91-900-006-0000</a>
-            <a href="mailto:sales@lpwtechnology.com">sales@lpwtechnology.com</a>
+            <a href="mailto:info@jagadagroup.com">info@jagadagroup.com</a>
           </div>
           <div className="col-12 col-md-6 d-flex flex-column align-items-center">
             <img className="mb-2 contact" src="/svgs/029-compass.svg" alt="business contact" />
             <h4>SALES PERSON</h4>
             <a href="tel:+919000060000">+91-900-006-0000</a>
-            <a href="mailto:sales@lpwtechnology.com">sales@lpwtechnology.com</a>
+            <a href="mailto:info@jagadagroup.com">info@jagadagroup.com</a>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ export default function ProductionTechnologyPage() {
         <img className="d-none d-md-block mr-4" src="/svgs/018-clipboard.svg" alt="" />
         <div className="d-flex flex-column align-items-center justify-content-center">
           <h3>VIEW BROCHURE HERE</h3>
-          <a className="py-2 px-4" href="#">DOWNLOAD</a>
+          <a className="py-2 px-4" href="/docs/magnaliumLabReport.pdf" target="_blank" rel="noopener noreferrer">DOWNLOAD</a>
         </div>
       </div>
     </>

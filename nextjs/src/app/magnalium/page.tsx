@@ -21,6 +21,18 @@ export default function MagnaliumPage() {
           <h3>Where quality meets customer</h3>
         </div>
       </div>
+      <div className="container-fluid py-4 px-3 px-md-5">
+        <p className="mx-auto text-center" style={{ maxWidth: '48rem' }}>
+          Magnalium powder is a 50% Aluminium / 50% Magnesium alloy — made from virgin (not
+          recycled) metals, melted and atomized together rather than blended as separate powders.
+          Jagada Industries has manufactured Magnalium powder since 1992 at our ISO 9001:2008
+          &amp; ISO 14001 certified facility in Virudhunagar, Tamil Nadu, with metal composition
+          verified by OES (Optical Emission Spectroscopy) on every batch. We supply Magnalium
+          powder in 7 mesh sizes — 18, 40, 80, 100, 150, 200, and 325 mesh — for fountains,
+          crackling stars, flash powder, and strobe compositions in pyrotechnics and fireworks
+          manufacturing.
+        </p>
+      </div>
       <div>
         <div className="row no-gutters">
           {magnaliumProducts.map((product) => (

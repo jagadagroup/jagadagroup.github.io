@@ -12,6 +12,7 @@ const pages = [
   { path: 'products', priority: '0.80', changefreq: 'weekly' },
   { path: 'magnalium', priority: '0.80', changefreq: 'weekly' },
   { path: 'magnesium', priority: '0.80', changefreq: 'weekly' },
+  { path: 'faq', priority: '0.70', changefreq: 'monthly' },
   { path: 'production-technology', priority: '0.64', changefreq: 'monthly' },
   { path: 'production-quality', priority: '0.64', changefreq: 'monthly' },
   { path: 'research-and-development', priority: '0.64', changefreq: 'monthly' },

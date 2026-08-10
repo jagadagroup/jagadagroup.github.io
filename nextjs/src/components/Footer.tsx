@@ -34,6 +34,7 @@ export default function Footer() {
                 <li className="gold font-weight-bold" style={{ color: '#daa520' }}>RESOURCES</li>
                 <li><Link href="/resource-center" style={{ color: '#ccc' }}>Resource Center</Link></li>
                 <li><Link href="/blogs" style={{ color: '#ccc' }}>Blogs</Link></li>
+                <li><Link href="/faq" style={{ color: '#ccc' }}>FAQ</Link></li>
               </ul>
               <ul className="col-6 col-md-2 col-lg-2 p-2 list-unstyled">
                 <li className="gold font-weight-bold" style={{ color: '#daa520' }}>SUPPORT</li>

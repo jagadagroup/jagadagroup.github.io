@@ -74,6 +74,12 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </div>
         ))}
       </section>
+
+      {product.desc && (
+        <section className="container-fluid py-4 px-3 px-md-5">
+          <p className="mx-auto text-center" style={{ maxWidth: '48rem' }}>{product.desc}</p>
+        </section>
+      )}
     </>
   );
 }

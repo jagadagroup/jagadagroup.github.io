@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Research & Development — Jagada Industries',
-  description: 'Advanced R&D in metal powder atomisation and bespoke materials for aerospace, biomedical, and automotive industries.',
+  title: 'Research & Development — Magnalium & Magnesium Powder Testing — Jagada Industries',
+  description: 'Metal powder R&D at Jagada Industries: uncoated and coated Magnalium test methods, bespoke particle-size development, and quality benchmarking against international alternatives.',
   alternates: { canonical: '/research-and-development/', languages: { en: '/research-and-development/', 'es-ES': '/es-ES/research-and-development/', 'x-default': '/research-and-development/' } },
 };
 
@@ -46,7 +46,7 @@ export default function ResearchDevPage() {
                       <h2>Powder Range</h2>
                       <p>PowderRange is a comprehensive range of premium quality off-the-shelf powders and bespoke materials made to your specification based on pure metals, alloys, machine type, application and research needs.</p>
                     </div>
-                    <span className="py-3 px-5"><a className="learn-more link-button py-3 px-5" href="#">LEARN MORE</a></span>
+                    <span className="py-3 px-5"><a className="learn-more link-button py-3 px-5" href="/products/">LEARN MORE</a></span>
                   </div>
                 </div>
                 <div id="c5" className="col-12 imgc">
@@ -55,7 +55,7 @@ export default function ResearchDevPage() {
                       <h2>Powder Lab</h2>
                       <p>Jagada Industries offers an extensive range of powder testing services including testing and analysis of solid samples.</p>
                     </div>
-                    <span className="py-3 px-5"><a className="learn-more link-button py-3 px-5" href="#">LEARN MORE</a></span>
+                    <span className="py-3 px-5"><a className="learn-more link-button py-3 px-5" href="/production-quality/">LEARN MORE</a></span>
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function ResearchDevPage() {
                 <div id="c9" className="col-12 imgc d-flex flex-column justify-content-center align-items-center p-md-5" style={{ color: '#fff' }}>
                   <h2>Our place in global market</h2>
                   <p>Our Magnalium &amp; Magnesium powders have better flammability and brightness while compared to Chinese Magnalium or Magnesium.</p>
-                  <a className="link-button py-3 px-5" href="#">EXPLORE MORE</a>
+                  <a className="link-button py-3 px-5" href="/blog/why-indian-magnalium-powder-outperforms-chinese-alternatives/">EXPLORE MORE</a>
                 </div>
                 <div id="c10" className="col-12 imgc"><div className="overlap"></div></div>
               </div>

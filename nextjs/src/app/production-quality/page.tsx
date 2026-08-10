@@ -30,7 +30,7 @@ export default function ProductionQualityPage() {
         <img className="d-none d-md-block mr-4" src="/svgs/018-clipboard.svg" alt="" />
         <div className="d-flex flex-column align-items-center justify-content-center">
           <h3>VIEW BROCHURE HERE</h3>
-          <a className="py-2 px-4" href="#">DOWNLOAD</a>
+          <a className="py-2 px-4" href="/docs/magnaliumLabReport.pdf" target="_blank" rel="noopener noreferrer">DOWNLOAD</a>
         </div>
       </div>
     </>
