@@ -8,7 +8,12 @@ export function OrganizationJsonLd() {
       dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           '@context': 'https://schema.org',
-          '@type': 'Organization',
+          // Both types on one entity, not two separate nodes — Jagada is a
+          // manufacturer with a single physical facility, so Organization and
+          // LocalBusiness describe the same real-world thing. No `openingHours`
+          // or `geo`: neither has been confirmed, and guessing either risks
+          // sending customers/couriers to the wrong hours or location.
+          '@type': ['Organization', 'LocalBusiness'],
           ...organizationSchema,
         }),
       }}

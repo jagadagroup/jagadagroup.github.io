@@ -7,7 +7,8 @@ test.describe('SEO', () => {
     await expect(jsonLd).toHaveCount(1, { timeout: 5000 });
     const raw = await jsonLd.textContent();
     const parsed = JSON.parse(raw);
-    expect(parsed['@type']).toBe('Organization');
+    expect(parsed['@type']).toContain('Organization');
+    expect(parsed['@type']).toContain('LocalBusiness');
     expect(parsed.name).toBe('Jagada Industries');
   });
 

@@ -10,6 +10,10 @@ export const organizationSchema: OrganizationSchema = {
   name: 'Jagada Industries',
   url: siteConfig.url,
   logo: `${siteConfig.url}/images/ISO-9001-2008.png`,
+  // LocalBusiness requires `image` distinct from `logo` by convention; reuses the same
+  // asset since no dedicated facility/premises photo exists yet — swap in a real one
+  // when available (see Content-Strategy-2026-08.md).
+  image: `${siteConfig.url}/images/ISO-9001-2008.png`,
   sameAs: [
     'https://www.linkedin.com/in/deleep-kumar-504813141/',
   ],

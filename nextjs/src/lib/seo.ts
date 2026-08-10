@@ -11,6 +11,7 @@ export interface OrganizationSchema {
   name: string;
   url: string;
   logo: string;
+  image: string;
   sameAs: string[];
   contactPoint: {
     telephone: string;
