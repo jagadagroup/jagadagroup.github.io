@@ -2,12 +2,20 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Magnalium vs Magnesium vs Aluminum Powder — Which Metal Fuel for Fireworks? — Jagada Industries',
-  description: 'Compare Magnalium, Magnesium, and Aluminum powder for pyrotechnics. Learn the differences in brightness, burn rate, mesh size recommendations, and when to use each metal fuel.',
-  alternates: { canonical: '/blog/magnalium-vs-magnesium-vs-aluminum/', languages: { en: '/blog/magnalium-vs-magnesium-vs-aluminum/', 'x-default': '/blog/magnalium-vs-magnesium-vs-aluminum/' } },
+  title: 'Magnalium vs Magnesium vs Aluminum Powder: Which Should You Use? | Jagada',
+  description:
+    'Clear comparison of Magnalium, Magnesium & Aluminum powder for fireworks — brightness, burn rate, mesh picks, and when each metal fuel wins. From a manufacturer since 1992.',
+  alternates: {
+    canonical: '/blog/magnalium-vs-magnesium-vs-aluminum/',
+    languages: {
+      en: '/blog/magnalium-vs-magnesium-vs-aluminum/',
+      'x-default': '/blog/magnalium-vs-magnesium-vs-aluminum/',
+    },
+  },
   openGraph: {
-    title: 'Magnalium vs Magnesium vs Aluminum Powder — Complete Comparison Guide',
-    description: 'Which metal powder is best for your fireworks effect? Detailed comparison from a manufacturer with 30+ years of experience.',
+    title: 'Magnalium vs Magnesium vs Aluminum — Pick the Right Metal Fuel',
+    description:
+      'Brightness, burn rate, and mesh recommendations for fireworks & pyrotechnics — manufacturer comparison, not a generic blog.',
     type: 'article',
     publishedTime: '2026-05-18',
   },

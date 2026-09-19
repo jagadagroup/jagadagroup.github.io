@@ -3,16 +3,35 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Blog — Metal Powder Guides & Pyrotechnic Resources — Jagada Industries',
-  description: 'Expert guides on Magnalium powder, Magnesium powder, metal powders for fireworks, pyrotechnic raw materials, and industrial applications from a leading manufacturer.',
-  // No translated blog exists (the es-ES/blogs stub is noindexed), so no cross-locale hreflang.
+  description:
+    'Expert guides on Magnalium powder, Magnesium powder, metal powders for fireworks, pyrotechnic raw materials, and industrial applications from a leading manufacturer.',
   alternates: { canonical: '/blogs/', languages: { en: '/blogs/', 'x-default': '/blogs/' } },
 };
 
 const POSTS = [
   {
+    slug: '/blog/magnesium-powder-quality-control',
+    title: 'Magnesium Powder Quality Control — How We Verify Every Batch Before It Ships',
+    excerpt:
+      'OES assay, sieve analysis, fail-lot rules, and the certificates that should arrive with every Grade 1 magnesium powder shipment.',
+    date: 'September 2026',
+    readTime: '8 min read',
+    tags: ['Magnesium', 'Quality', 'IS 2307', 'COA', 'Manufacturing'],
+  },
+  {
+    slug: '/blog/metal-powder-for-defense-pyrotechnics',
+    title: 'Metal Powder in Defense Pyrotechnics — Illuminating Flares, Signals, and Countermeasures',
+    excerpt:
+      'Which magnesium and magnalium grades belong in defense illuminating, signal, tracer, and decoy compositions — and what documentation to demand.',
+    date: 'September 2026',
+    readTime: '9 min read',
+    tags: ['Defense', 'Magnesium', 'Magnalium', 'Pyrotechnics', 'Quality'],
+  },
+  {
     slug: '/blog/understanding-al-mg-alloy-ratios-in-magnalium-powder',
     title: 'Understanding Al-Mg Alloy Ratios in Magnalium Powder',
-    excerpt: 'Why 50:50 Aluminium-Magnesium is the industry-standard Magnalium ratio for pyrotechnics — what the ratio means, why it matters, and how it’s verified batch to batch.',
+    excerpt:
+      'Why 50:50 Aluminium-Magnesium is the industry-standard Magnalium ratio for pyrotechnics — what the ratio means, why it matters, and how it’s verified batch to batch.',
     date: 'August 2026',
     readTime: '6 min read',
     tags: ['Magnalium', 'Alloys', '50:50 Ratio', 'Pyrotechnics'],
@@ -20,7 +39,8 @@ const POSTS = [
   {
     slug: '/blog/why-indian-magnalium-powder-outperforms-chinese-alternatives',
     title: 'Why Indian Magnalium Powder Outperforms Chinese Alternatives',
-    excerpt: 'Discover why Indian manufacturers excel in consistent quality and compliance for magnalium powder compared to Chinese alternatives.',
+    excerpt:
+      'Discover why Indian manufacturers excel in consistent quality and compliance for magnalium powder compared to Chinese alternatives.',
     date: 'May 2026',
     readTime: '11 min read',
     tags: ['Magnalium', 'Indian Manufacturer', 'Pyrotechnics'],
@@ -28,7 +48,8 @@ const POSTS = [
   {
     slug: '/blog/grade-1-vs-grade-2-magnesium-powder',
     title: 'Grade 1 vs. Grade 2 Magnesium Powder: Which Grade Is Right for Your Application?',
-    excerpt: 'Discover the differences between Grade 1 and Grade 2 magnesium powder — purity, cost, and performance for pyrotechnics, fireworks, and chemicals.',
+    excerpt:
+      'Discover the differences between Grade 1 and Grade 2 magnesium powder — purity, cost, and performance for pyrotechnics, fireworks, and chemicals.',
     date: 'May 2026',
     readTime: '10 min read',
     tags: ['Magnesium', 'Grades', 'Pyrotechnics', 'Fireworks'],
@@ -36,7 +57,8 @@ const POSTS = [
   {
     slug: '/blog/how-to-choose-mesh-size-magnalium-powder',
     title: 'How to Choose the Right Mesh Size for Magnalium Powder in Pyrotechnics',
-    excerpt: 'Discover how mesh size affects fireworks performance. Expert advice on choosing the right magnalium powder for strobe effects, crackling stars, and more.',
+    excerpt:
+      'Discover how mesh size affects fireworks performance. Expert advice on choosing the right magnalium powder for strobe effects, crackling stars, and more.',
     date: 'May 2026',
     readTime: '9 min read',
     tags: ['Magnalium', 'Fireworks', 'Mesh Size', 'Metal Powders'],
@@ -44,7 +66,8 @@ const POSTS = [
   {
     slug: '/blog/magnalium-vs-magnesium-vs-aluminum',
     title: 'Magnalium vs Magnesium vs Aluminum Powder: Which Metal Fuel Should You Use?',
-    excerpt: 'Compare Magnalium, Magnesium, and Aluminum powder for pyrotechnics. Learn the differences in brightness, burn rate, mesh size recommendations, and when to use each metal fuel.',
+    excerpt:
+      'Compare Magnalium, Magnesium, and Aluminum powder for pyrotechnics. Learn the differences in brightness, burn rate, mesh size recommendations, and when to use each metal fuel.',
     date: 'May 2026',
     readTime: '7 min read',
     tags: ['Magnalium', 'Magnesium', 'Comparison', 'Fireworks', 'Guide'],
@@ -74,8 +97,12 @@ export default function BlogIndex() {
             </Link>
             <p className="blog-card-excerpt">{post.excerpt}</p>
             <div className="blog-card-footer">
-              <span className="blog-card-date">{post.date} &middot; {post.readTime}</span>
-              <Link href={post.slug} className="blog-read-more">Read &rarr;</Link>
+              <span className="blog-card-date">
+                {post.date} &middot; {post.readTime}
+              </span>
+              <Link href={post.slug} className="blog-read-more">
+                Read &rarr;
+              </Link>
             </div>
           </article>
         ))}
