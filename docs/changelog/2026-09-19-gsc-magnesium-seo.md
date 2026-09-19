@@ -40,11 +40,20 @@ Goal: Fix indexing/CTR issues surfaced by GSC; expand magnesium powder content f
 - Production quality page: magnesium QC section + real CTA (removed dead `#` download)
 - Top comparison blog title/description rewritten for CTR
 
+## Follow-up (local, not yet pushed) — strategy restore
+Restored from `backup/pre-push-seo-2026-09-19` and wired:
+- Blogs: IS 2307 standard, HS-code import guide
+- Landings: magnalium-for-fireworks, magnesium-for-pyrotechnics, magnesium-exporters
+- Locations: /location/ + Mexico, Brazil, Peru, Vietnam
+- Magnalium hub CTR title/meta + application tiles + WhatsApp CTAs (footer, contact, Mg/Magnalium hubs)
+
+Still off-site (manual): IndiaMART / TradeIndia / Alibaba listings, GSC sitemap resubmit after push.
+
 ## After Deploy (manual in GSC)
 1. Re-submit `https://www.jagadagroup.com/sitemap.xml`
 2. Validate Coverage items (redirects / 404) once crawl catches new redirects
-3. Request indexing for the three new landings + two blogs
-4. Monitor CTR on comparison blog over next 28 days
+3. Request indexing for new landings + blogs
+4. Monitor CTR on comparison blog + magnalium hub over next 28 days
 
 ## Files Created / Modified
 See git status for full list. Key paths under `nextjs/src/app/` and `nextjs/scripts/generate-sitemap.js`.

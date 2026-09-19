@@ -99,10 +99,11 @@ export default function BlogPost() {
             <li>Oxide build-up from poor packaging or humid storage</li>
           </ul>
           <p>
-            Our Grade 1 magnesium powder is manufactured to Mg 99.8% under IS 2307, with Optical Emission
+            Our Grade 1 magnesium powder is manufactured to Mg 99.8% under{' '}
+            <Link href="/blog/is-2307-magnesium-powder-standard/">IS 2307</Link>, with Optical Emission
             Spectroscopy on each lot. That is the minimum bar we recommend for illuminating flare fuel. If a
             supplier cannot show you a batch COA tied to the drum numbers on your packing list, you are buying
-            hope — not a controlled input. See{' '}
+            hope — not a controlled input. See also{' '}
             <Link href="/blog/magnesium-powder-quality-control/">how we verify every batch</Link>.
           </p>
         </section>

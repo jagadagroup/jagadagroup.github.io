@@ -24,12 +24,21 @@ const pages = [
   { path: 'research-and-development', priority: '0.64', changefreq: 'monthly' },
   { path: 'blogs', priority: '0.80', changefreq: 'weekly' },
 
-  // Magnesium / defense application landings (2026-09-19)
+  // Application / commercial landings
   { path: 'magnesium-powder-for-defense', priority: '0.90', changefreq: 'monthly' },
   { path: 'magnesium-powder-for-fireworks', priority: '0.90', changefreq: 'monthly' },
   { path: 'high-purity-magnesium-powder', priority: '0.90', changefreq: 'monthly' },
   { path: 'metal-powder-for-defense', priority: '0.85', changefreq: 'monthly' },
-  // Note: only routes that exist under src/app are listed above.
+  { path: 'magnalium-for-fireworks', priority: '0.90', changefreq: 'monthly' },
+  { path: 'magnesium-for-pyrotechnics', priority: '0.85', changefreq: 'monthly' },
+  { path: 'magnesium-exporters', priority: '0.90', changefreq: 'monthly' },
+
+  // Export markets
+  { path: 'location', priority: '0.75', changefreq: 'monthly' },
+  { path: 'location/mexico', priority: '0.80', changefreq: 'monthly' },
+  { path: 'location/brazil', priority: '0.80', changefreq: 'monthly' },
+  { path: 'location/peru', priority: '0.75', changefreq: 'monthly' },
+  { path: 'location/vietnam', priority: '0.80', changefreq: 'monthly' },
 
   // Blogs
   { path: 'blog/magnalium-vs-magnesium-vs-aluminum', priority: '0.85', changefreq: 'monthly' },
@@ -39,6 +48,8 @@ const pages = [
   { path: 'blog/understanding-al-mg-alloy-ratios-in-magnalium-powder', priority: '0.70', changefreq: 'monthly' },
   { path: 'blog/metal-powder-for-defense-pyrotechnics', priority: '0.85', changefreq: 'monthly' },
   { path: 'blog/magnesium-powder-quality-control', priority: '0.85', changefreq: 'monthly' },
+  { path: 'blog/is-2307-magnesium-powder-standard', priority: '0.90', changefreq: 'monthly' },
+  { path: 'blog/magnesium-powder-hs-code-import-guide', priority: '0.90', changefreq: 'monthly' },
 ];
 
 // Other locale pages (pt-PT, fr-FR, vi-VN — SEO landing pages).

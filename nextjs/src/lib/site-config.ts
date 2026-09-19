@@ -4,6 +4,9 @@ export const siteConfig = {
   name: 'Jagada Industries',
   url: 'https://www.jagadagroup.com',
   description: 'Pioneers in Pyrotechnic & Non Ferrous Metal Powders',
+  /** Primary sales WhatsApp (India). Prefill text optional via ?text= */
+  whatsappUrl:
+    'https://wa.me/919443144719?text=Hi%20Jagada%20Industries%20—%20enquiry%20about%20metal%20powder',
 };
 
 export const organizationSchema: OrganizationSchema = {

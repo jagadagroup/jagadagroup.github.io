@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { products } from '@/data';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
 import FooterForm from '@/components/FooterForm';
+import { siteConfig } from '@/lib/site-config';
 
 export default function Footer() {
   return (
@@ -62,6 +63,14 @@ export default function Footer() {
                   <div className="d-flex flex-column">
                     <a href="tel:+919443144719" style={{ color: '#ccc' }}>+91 9443144719</a>
                     <a href="tel:+919585544719" style={{ color: '#ccc' }}>+91 9585544719</a>
+                    <a
+                      href={siteConfig.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: '#25D366', marginTop: 4 }}
+                    >
+                      WhatsApp Enquire
+                    </a>
                   </div>
                 </li>
                 <li className="mb-2 d-flex flex-row align-items-center">

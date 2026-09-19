@@ -128,6 +128,22 @@ export default function MagnesiumPage() {
           >
             Quality Controls
           </Link>
+          <a
+            href="https://wa.me/919443144719?text=Hi%20Jagada%20Industries%20—%20I%20need%20a%20quote%20for%20Magnesium%20powder"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              padding: '10px 22px',
+              background: '#25D366',
+              color: 'white',
+              borderRadius: '4px',
+              textDecoration: 'none',
+              fontWeight: 600,
+            }}
+          >
+            WhatsApp Enquire
+          </a>
         </div>
       </div>
 

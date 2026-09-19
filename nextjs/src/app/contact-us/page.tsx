@@ -37,7 +37,17 @@ export default function ContactUsPage() {
             <img src="/svgs/081-magic.svg" className="mb-4" alt="" />
             <h2>PHONE NUMBER</h2>
             <p style={{ textAlign: 'center' }}>
-              <span>M. Jeyakumar&nbsp;&nbsp;&nbsp;+91 9443144719</span><br />
+              <span>M. Jeyakumar&nbsp;&nbsp;&nbsp;+91 9443144719</span>
+              <br />
+              <a
+                href="https://wa.me/919443144719?text=Hi%20Jagada%20Industries%20—%20enquiry%20from%20contact%20page"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#25D366', fontWeight: 600 }}
+              >
+                Chat on WhatsApp
+              </a>
+              <br />
               <span>J. Deleepkumar +91 9585544719</span>
             </p>
           </div>

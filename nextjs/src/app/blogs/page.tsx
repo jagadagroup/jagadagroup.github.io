@@ -28,6 +28,24 @@ const POSTS = [
     tags: ['Defense', 'Magnesium', 'Magnalium', 'Pyrotechnics', 'Quality'],
   },
   {
+    slug: '/blog/is-2307-magnesium-powder-standard',
+    title: 'IS 2307 Magnesium Powder Standard — What Buyers Need to Know Before Ordering',
+    excerpt:
+      'IS 2307 is the quality specification Indian manufacturers use for pyrotechnic-grade magnesium powder. What it requires, how to verify compliance, and why it matters for international buyers.',
+    date: 'June 2026',
+    readTime: '8 min read',
+    tags: ['Magnesium', 'Quality', 'IS 2307', 'Standards', 'Export'],
+  },
+  {
+    slug: '/blog/magnesium-powder-hs-code-import-guide',
+    title: 'Magnesium Powder HS Code & Import Guide — Mexico, Brazil, Vietnam, Peru',
+    excerpt:
+      'HS codes, import duties, permits, and documentation for importing magnesium powder from India. Practical guide for procurement managers in four key markets.',
+    date: 'June 2026',
+    readTime: '10 min read',
+    tags: ['Export', 'Import Guide', 'Magnesium', 'Mexico', 'Brazil'],
+  },
+  {
     slug: '/blog/understanding-al-mg-alloy-ratios-in-magnalium-powder',
     title: 'Understanding Al-Mg Alloy Ratios in Magnalium Powder',
     excerpt:

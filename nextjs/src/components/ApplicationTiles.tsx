@@ -3,15 +3,15 @@ import Link from 'next/link';
 type Tile = { href: string; title: string; desc: string; icon: string };
 
 const magnaliumTiles: Tile[] = [
-  { href: '/blog/how-to-choose-mesh-size-magnalium-powder/', title: 'Mesh Size Guide', desc: 'Pick the right Magnalium mesh for fountains, strobes, and crackling stars.', icon: '✨' },
-  { href: '/blog/understanding-al-mg-alloy-ratios-in-magnalium-powder/', title: 'Al-Mg Alloy Ratios', desc: 'Why 50:50 Magnalium is the pyrotechnic industry standard.', icon: '💥' },
+  { href: '/magnalium-for-fireworks/', title: 'Magnalium for Fireworks', desc: 'Fountains, bursts, colour compositions — the right mesh for every effect.', icon: '✨' },
+  { href: '/blog/how-to-choose-mesh-size-magnalium-powder/', title: 'Mesh Size Guide', desc: 'Pick the right Magnalium mesh for strobes and crackling stars.', icon: '💥' },
   { href: '/metal-powder-for-defense/', title: 'Defense & Aerospace', desc: 'High-purity Al-Mg alloy powders meeting defense-grade specifications.', icon: '🛡️' },
 ];
 
 const magnesiumTiles: Tile[] = [
   { href: '/magnesium-powder-for-fireworks/', title: 'Fireworks Grade Magnesium', desc: 'Bright white stars & mines — Grade 1 & 2 IS 2307 powder.', icon: '✨' },
   { href: '/magnesium-powder-for-defense/', title: 'Defense Applications', desc: 'Illuminating flares, signals & countermeasures — batch-verified.', icon: '🛡️' },
-  { href: '/high-purity-magnesium-powder/', title: 'Quality & Purity', desc: 'OES assay, sieve analysis, IS 2307 COAs on every lot.', icon: '✓' },
+  { href: '/magnesium-exporters/', title: 'Export to Your Country', desc: 'Ship to Mexico, Brazil, Peru, Vietnam and worldwide.', icon: '🌍' },
 ];
 
 export function MagnaliumApplicationTiles() {

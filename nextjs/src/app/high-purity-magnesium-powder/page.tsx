@@ -33,9 +33,10 @@ export default function HighPurityMagnesiumPowderPage() {
         </p>
         <p>
           At Jagada Industries, <strong>high-purity magnesium powder</strong> means Grade 1 material at Mg
-          99.8% conforming to IS 2307, verified by Optical Emission Spectroscopy on every production batch —
-          not a brochure claim recycled from last year’s catalog. See also{' '}
-          <Link href="/blog/grade-1-vs-grade-2-magnesium-powder/">Grade 1 vs Grade 2</Link>.
+          99.8% conforming to{' '}
+          <Link href="/blog/is-2307-magnesium-powder-standard/">IS 2307</Link>, verified by Optical Emission
+          Spectroscopy on every production batch — not a brochure claim recycled from last year’s catalog.
+          See also <Link href="/blog/grade-1-vs-grade-2-magnesium-powder/">Grade 1 vs Grade 2</Link>.
         </p>
 
         <h3>What “High Purity” Means in Practice</h3>

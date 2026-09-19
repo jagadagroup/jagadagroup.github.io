@@ -41,9 +41,11 @@ export default function BlogPost() {
           <h2>1. Start With the Standard, Not the Slogan</h2>
           <p>
             Our Grade 1 magnesium powder is built to <strong>IS 2307</strong> with a magnesium assay target of{' '}
-            <strong>99.8%</strong>. That standard exists specifically for pyrotechnic-grade material. For
-            grade selection, see{' '}
-            <Link href="/blog/grade-1-vs-grade-2-magnesium-powder/">Grade 1 vs Grade 2 magnesium powder</Link>.
+            <strong>99.8%</strong>. That standard exists specifically for pyrotechnic-grade material. Read the
+            buyer guide:{' '}
+            <Link href="/blog/is-2307-magnesium-powder-standard/">IS 2307 magnesium powder standard</Link>.
+            For grade selection, see{' '}
+            <Link href="/blog/grade-1-vs-grade-2-magnesium-powder/">Grade 1 vs Grade 2</Link>.
           </p>
           <p>
             Marketing language like “ultra pure” or “defense grade” without a named standard and a test method
